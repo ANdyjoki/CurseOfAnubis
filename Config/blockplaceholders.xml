@@ -1,0 +1,197 @@
+<configs>
+
+
+
+    <append xpath="/blockplaceholders">
+
+	
+	
+	
+	
+	
+	<placeholder name="cntEgyptDoorRandomHelper">
+		<block name="EgyptDoubleDoor1-1"/>
+		<block name="EgyptDoubleDoor2-1"/>
+		<block name="EgyptDoubleDoor3-1"/>
+		<block name="EgyptDoubleDoor4-1"/>
+		<block name="EgyptDoubleWall"/>
+		<block name="EgyptDoubleWall2"/>
+	</placeholder>
+	
+	
+	<placeholder name="cntEgyptDoorSmallRandomHelper">
+		<block name="EgyptWallDoorSmall"/>
+		<block name="EgyptWallSymbol2-1"/>
+	</placeholder>
+	
+	<placeholder name="cntEgyptGroundTrapRandomHelper">
+		<block name="EgyptGroundTrapDoorClose"/>
+		<block name="EgyptGroundTrapDoorOpen"/>
+	</placeholder>
+	
+	
+	<placeholder name="cntEgyptGoldRandomHelper">
+		<block name="EgyptGoldCoinBlock"/>
+		<block name="EgyptGoldBarBlock" prob="0.5"/>
+	</placeholder>
+	
+	
+	<placeholder name="cntEgyptGroundBlocksRandomHelper">
+		<block name="EgyptCrystalRed"/>
+		<block name="EgyptCrystalYellow"/>
+		<block name="EgyptCrystalBlue"/>
+		<block name="EgyptCrystalGreen"/>
+		<block name="EgyptCrystalWhite"/>
+		<block name="EgyptMushroom"/>
+		<block name="EgyptVase2"/>
+		<block name="EgyptVase2-2"/>
+		<block name="EgyptVase2-3"/>
+		<block name="EgyptVase2-4"/>
+		<block name="EgyptVase3"/>
+		<block name="EgyptVase4"/>
+		<block name="EgyptSkull"/>
+		<block name="EgyptSkull2"/>
+		<block name="EgyptGoldCoinBlock"/>
+		<block name="EgyptGoldBarBlock" prob="0.5"/>
+		<block name="EgyptPapyrusScroll"/>
+		<block name="EgyptBookOpen"/>
+		<block name="EgyptChest1"/>
+		<block name="EgyptChest2"/>
+		<block name="EgyptChest3"/>
+		<block name="EgyptChest4"/>
+		<block name="EgyptChest5"/>
+		<block name="EgyptChest6"/>
+		<block name="EgyptChest7"/>
+	</placeholder>
+	
+	
+	<placeholder name="cntEgyptCoffinSmallRandomHelper">
+		<block name="EgyptCoffin1-1"/>
+		<block name="EgyptCoffin1-2"/>
+		<block name="EgyptCoffin1-3"/>
+		<block name="EgyptCoffin1-1Loot" prob="0.5"/>
+		<block name="EgyptCoffin1-2Loot" prob="0.5"/>
+		<block name="EgyptCoffin1-3Loot" prob="0.5"/>
+	</placeholder>
+	
+	
+	<placeholder name="cntEgyptCoffinLargeRandomHelper">
+		<block name="EgyptCoffin2-1"/>
+		<block name="EgyptCoffin2-2"/>
+		<block name="EgyptCoffin2-3"/>
+		<block name="EgyptCoffin2-1Loot" prob="0.5"/>
+		<block name="EgyptCoffin2-2Loot" prob="0.5"/>
+		<block name="EgyptCoffin2-3Loot" prob="0.5"/>
+		<block name="EgyptCoffin2Open"/>
+		<block name="EgyptCoffin3-1"/>
+		<block name="EgyptCoffin3-2"/>
+		<block name="EgyptCoffin3-3"/>
+		<block name="EgyptCoffin3-1Loot" prob="0.5"/>
+		<block name="EgyptCoffin3-2Loot" prob="0.5"/>
+		<block name="EgyptCoffin3-3Loot" prob="0.5"/>
+		<block name="EgyptCoffin3Open"/>
+	</placeholder>
+	
+	
+	
+	<placeholder name="cntEgyptVaseRandomHelper">
+		<block name="EgyptVase2"/>
+		<block name="EgyptVase2-2"/>
+		<block name="EgyptVase2-3"/>
+		<block name="EgyptVase2-4"/>
+		<block name="EgyptVase3"/>
+		<block name="EgyptVase3-2"/>
+	</placeholder>
+	
+	
+	<placeholder name="cntEgyptPillarHelper">
+		<block name="EgyptPillar1"/>
+		<block name="EgyptPillar2"/>
+		<block name="EgyptPillar5"/>
+		<block name="EgyptPillar6"/>
+		<block name="EgyptPillar7"/>
+	</placeholder>
+	
+	<placeholder name="cntEgyptCubesHelper">
+		<block name="EgyptCube1"/>
+		<block name="EgyptCube2"/>
+		<block name="EgyptCube3"/>
+		<block name="EgyptCube4"/>
+		<block name="EgyptCube5"/>
+		<block name="EgyptCube6"/>
+		<block name="EgyptCube62"/>
+	</placeholder>
+	
+	
+	
+	<placeholder name="cntEgyptChestsRandomHelper">
+		<block name="EgyptChest1"/>
+		<block name="EgyptChest2"/>
+		<block name="EgyptChest3"/>
+		<block name="EgyptChest4"/>
+		<block name="EgyptChest5"/>
+		<block name="EgyptChest6"/>
+		<block name="EgyptChest7"/>
+	</placeholder>
+	
+	
+	
+	
+	
+	<placeholder name="cntEgyptWallSymbolRandomHelper">
+		<block name="EgyptPlane1"/>
+		<block name="EgyptPlane2"/>
+		<block name="EgyptPlane3"/>
+		<block name="EgyptWallSymbol1-2"/>
+		<block name="EgyptWallSymbol1-3"/>
+		<block name="EgyptWallSymbol1-4"/>
+		<block name="EgyptWallSymbol1-5"/>
+		<block name="EgyptWallSymbol1-6"/>
+		<block name="EgyptWallSymbol1-7"/>
+		<block name="EgyptWallSymbol1-8"/>
+		<block name="EgyptWallSymbol1-9"/>
+		<block name="EgyptWallSymbol1-10"/>
+		<block name="EgyptWallSymbol1-11"/>
+		<block name="EgyptPlaneSymbol1"/>
+		<block name="EgyptPlaneSymbol2"/>
+		<block name="EgyptPlaneSymbol3"/>
+		<block name="EgyptPlaneSymbol4"/>
+		<block name="EgyptPlaneSymbol5"/>
+		<block name="EgyptPlaneSymbol6"/>
+		<block name="EgyptPlaneSymbol7"/>
+		<block name="EgyptPlaneSymbol8"/>
+		<block name="EgyptPlaneSymbol9"/>
+		<block name="EgyptPlaneSymbol10"/>
+		<block name="EgyptPlaneSymbol11"/>
+		<block name="EgyptPlaneSymbol12"/>
+		<block name="EgyptPlaneSymbol13"/>
+		<block name="EgyptPlaneSymbol14"/>
+	</placeholder>
+	
+
+	<placeholder name="cntEgyptPaintingHRandomHelper">
+		<block name="EgyptPaintingH1"/>
+		<block name="EgyptPaintingH2"/>
+		<block name="EgyptPaintingH3"/>
+		<block name="EgyptPaintingH4"/>
+		<block name="EgyptPaintingH5"/>
+		<block name="EgyptPaintingH6"/>
+	</placeholder>
+	
+	
+	
+	<placeholder name="cntEgyptPaintingVRandomHelper">
+		<block name="EgyptPaintingV1"/>
+		<block name="EgyptPaintingV2"/>
+		<block name="EgyptPaintingV3"/>
+		<block name="EgyptPaintingV4"/>
+		<block name="EgyptPaintingV5"/>
+	</placeholder>
+	
+
+	
+	
+	
+	
+    </append>
+</configs>

@@ -1,0 +1,115 @@
+<configs>
+
+    <append xpath="/gamestages">
+
+<!--XXXXXX 
+
+All Group
+
+XXXXXX  -->
+
+	<group name="S_-_Group_EgyptAll" emptyChance="0" decoyChance="0" decoy1hpChance="0">
+		<spawner name="EgyptAllHorde" count="5,6"/>
+	</group>
+	
+	<spawner name="EgyptAllHorde">
+		<gamestage stage="1"><spawn group="EgyptAllGroup" num="1" maxAlive="1" duration="1"/></gamestage>
+		<gamestage stage="1"><spawn group="EgyptAllGroup" num="1" maxAlive="1" duration="1"/></gamestage>
+		<gamestage stage="50"><spawn group="EgyptAllGroup" num="1" maxAlive="1" duration="1"/></gamestage>
+		<gamestage stage="100"><spawn group="EgyptAllGroup" num="1" maxAlive="1" duration="1"/></gamestage>
+		<gamestage stage="200"><spawn group="EgyptAllGroup" num="1" maxAlive="1" duration="1"/></gamestage>
+		<gamestage stage="400"><spawn group="EgyptAllGroup" num="1" maxAlive="1" duration="1"/></gamestage>
+		<gamestage stage="800"><spawn group="EgyptAllGroup" num="1" maxAlive="1" duration="1"/></gamestage>
+	</spawner>
+	
+	
+	
+<!--XXXXXX 
+
+Boss Groups
+
+XXXXXX  -->
+	
+	<group name="S_-_Group_EgyptBoss" emptyChance="0" decoyChance="0" decoy1hpChance="0">
+		<spawner name="EgyptBossHorde" count="5,6"/>
+	</group>
+	
+	<spawner name="EgyptBossHorde">
+		<gamestage stage="1"><spawn group="EgyptBossGroup" num="1" maxAlive="1" duration="1"/></gamestage>
+		<gamestage stage="1"><spawn group="EgyptBossGroup" num="1" maxAlive="1" duration="1"/></gamestage>
+		<gamestage stage="50"><spawn group="EgyptBossGroup" num="1" maxAlive="1" duration="1"/></gamestage>
+		<gamestage stage="100"><spawn group="EgyptBossGroup" num="1" maxAlive="1" duration="1"/></gamestage>
+		<gamestage stage="200"><spawn group="EgyptBossGroup" num="1" maxAlive="1" duration="1"/></gamestage>
+		<gamestage stage="400"><spawn group="EgyptBossGroup" num="1" maxAlive="1" duration="1"/></gamestage>
+		<gamestage stage="800"><spawn group="EgyptBossGroup" num="1" maxAlive="1" duration="1"/></gamestage>
+	</spawner>
+	
+	<group name="S_-_Group_EgyptAnubis" emptyChance="0" decoyChance="0" decoy1hpChance="0">
+		<spawner name="EgyptAnubisHorde" count="5,6"/>
+	</group>
+	
+	<spawner name="EgyptAnubisHorde">
+		<gamestage stage="1"><spawn group="EgyptAnubisGroup" num="1" maxAlive="1" duration="1"/></gamestage>
+		<gamestage stage="1"><spawn group="EgyptAnubisGroup" num="1" maxAlive="1" duration="1"/></gamestage>
+		<gamestage stage="50"><spawn group="EgyptAnubisGroup" num="1" maxAlive="1" duration="1"/></gamestage>
+		<gamestage stage="100"><spawn group="EgyptAnubisGroup" num="1" maxAlive="1" duration="1"/></gamestage>
+		<gamestage stage="200"><spawn group="EgyptAnubisGroup" num="1" maxAlive="1" duration="1"/></gamestage>
+		<gamestage stage="400"><spawn group="EgyptAnubisGroup" num="1" maxAlive="1" duration="1"/></gamestage>
+		<gamestage stage="800"><spawn group="EgyptAnubisGroup" num="1" maxAlive="1" duration="1"/></gamestage>
+	</spawner>
+	
+	<group name="S_-_Group_EgyptPharaoh" emptyChance="0" decoyChance="0" decoy1hpChance="0">
+		<spawner name="EgyptPharaohHorde" count="5,6"/>
+	</group>
+	
+	<spawner name="EgyptPharaohHorde">
+		<gamestage stage="1"><spawn group="EgyptPharaohGroup" num="1" maxAlive="1" duration="1"/></gamestage>
+		<gamestage stage="1"><spawn group="EgyptPharaohGroup" num="1" maxAlive="1" duration="1"/></gamestage>
+		<gamestage stage="50"><spawn group="EgyptPharaohGroup" num="1" maxAlive="1" duration="1"/></gamestage>
+		<gamestage stage="100"><spawn group="EgyptPharaohGroup" num="1" maxAlive="1" duration="1"/></gamestage>
+		<gamestage stage="200"><spawn group="EgyptPharaohGroup" num="1" maxAlive="1" duration="1"/></gamestage>
+		<gamestage stage="400"><spawn group="EgyptPharaohGroup" num="1" maxAlive="1" duration="1"/></gamestage>
+		<gamestage stage="800"><spawn group="EgyptPharaohGroup" num="1" maxAlive="1" duration="1"/></gamestage>
+	</spawner>
+	
+	
+	<group name="S_-_Group_EgyptHiveQueen" emptyChance="0" decoyChance="0" decoy1hpChance="0">
+		<spawner name="EgyptHiveQueenHorde" count="5,6"/>
+	</group>
+	
+	<spawner name="EgyptHiveQueenHorde">
+		<gamestage stage="1"><spawn group="EgyptHiveQueenGroup" num="1" maxAlive="1" duration="1"/></gamestage>
+		<gamestage stage="1"><spawn group="EgyptHiveQueenGroup" num="1" maxAlive="1" duration="1"/></gamestage>
+		<gamestage stage="50"><spawn group="EgyptHiveQueenGroup" num="1" maxAlive="1" duration="1"/></gamestage>
+		<gamestage stage="100"><spawn group="EgyptHiveQueenGroup" num="1" maxAlive="1" duration="1"/></gamestage>
+		<gamestage stage="200"><spawn group="EgyptHiveQueenGroup" num="1" maxAlive="1" duration="1"/></gamestage>
+		<gamestage stage="400"><spawn group="EgyptHiveQueenGroup" num="1" maxAlive="1" duration="1"/></gamestage>
+		<gamestage stage="800"><spawn group="EgyptHiveQueenGroup" num="1" maxAlive="1" duration="1"/></gamestage>
+	</spawner>
+	
+	
+<!--XXXXXX 
+
+Minions Group
+
+XXXXXX  -->
+
+	<group name="S_-_Group_EgyptMinions" emptyChance="0" decoyChance="0" decoy1hpChance="0">
+		<spawner name="EgyptMinionsHorde" count="5,6"/>
+	</group>
+	
+	<spawner name="EgyptMinionsHorde">
+		<gamestage stage="1"><spawn group="EgyptMinionsGroup" num="1" maxAlive="1" duration="1"/></gamestage>
+		<gamestage stage="1"><spawn group="EgyptMinionsGroup" num="1" maxAlive="1" duration="1"/></gamestage>
+		<gamestage stage="50"><spawn group="EgyptMinionsGroup" num="1" maxAlive="1" duration="1"/></gamestage>
+		<gamestage stage="100"><spawn group="EgyptMinionsGroup" num="1" maxAlive="1" duration="1"/></gamestage>
+		<gamestage stage="200"><spawn group="EgyptMinionsGroup" num="1" maxAlive="1" duration="1"/></gamestage>
+		<gamestage stage="400"><spawn group="EgyptMinionsGroup" num="1" maxAlive="1" duration="1"/></gamestage>
+		<gamestage stage="800"><spawn group="EgyptMinionsGroup" num="1" maxAlive="1" duration="1"/></gamestage>
+	</spawner>
+	
+	
+	
+    </append>
+
+</configs>

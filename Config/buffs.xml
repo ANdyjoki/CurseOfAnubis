@@ -1,0 +1,419 @@
+<configs>
+
+    <append xpath="/buffs">
+	
+	
+	
+	
+	
+	
+	
+	<buff name="EgyptbuffWeapon" name_key="buffRingOfFireEffectName" description_key="buffRingOfFireEffectDesc" icon="ui_game_symbol_medical" icon_color="255,0,0">
+	<stack_type value="replace"/>
+	<duration value="0"/>
+	<update_rate value=".2"/>
+		<effect_group>
+			<requirement name="EntityTagCompare" tags="player"/>
+
+			
+		<passive_effect name="EntityDamage" operation="base_add" value="10"/>
+		
+			
+				<triggered_effect trigger="onSelfBuffStart" action="AttachParticleEffectToEntity" particle="#@modfolder:Resources/CoAParticle.unity3d?Particle1Orange"/>
+				<triggered_effect trigger="onSelfBuffFinish" action="RemoveParticleEffectFromEntity" particle="#@modfolder:Resources/CoAParticle.unity3d?Particle1Orange"/>
+				<triggered_effect trigger="onSelfDied" action="RemoveParticleEffectFromEntity" particle="#@modfolder:Resources/CoAParticle.unity3d?Particle1Orange" />
+			
+		</effect_group>
+		
+		
+		<effect_group>
+			<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" target="otherAOE" range="15" buff="EgyptRemove"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" target="otherAOE" range="15" buff="EgyptRemove"/>
+		</effect_group>
+	</buff>
+	
+	
+	
+	<buff name="EgyptbuffShield" name_key="buffRingOfFireEffectName" description_key="buffRingOfFireEffectDesc" icon="ui_game_symbol_medical" icon_color="255,0,0">
+	<stack_type value="replace"/>
+	<duration value="0"/>
+	<update_rate value=".2"/>
+		<effect_group>
+			<requirement name="EntityTagCompare" tags="player"/>
+			
+		<passive_effect name="PhysicalDamageResist" operation="base_add" value="80"/>
+		<passive_effect name="BuffResistance" operation="base_add" value="1" tags="EgyptbuffColdEffect,EgyptbuffShockedEffect,EgyptbuffRingOfFireEffect,EgyptbuffColdEffect2,EgyptbuffShockedEffect2,EgyptbuffRingOfFireEffect2"/>
+		<passive_effect name="Mobility" operation="perc_subtract" value="0.7"/>
+		
+		
+				<triggered_effect trigger="onSelfBuffStart" action="AttachParticleEffectToEntity" particle="#@modfolder:Resources/CoAParticle.unity3d?Particle2Blue"/>
+				<triggered_effect trigger="onSelfBuffFinish" action="RemoveParticleEffectFromEntity" particle="#@modfolder:Resources/CoAParticle.unity3d?Particle2Blue"/>
+				<triggered_effect trigger="onSelfDied" action="RemoveParticleEffectFromEntity" particle="#@modfolder:Resources/CoAParticle.unity3d?Particle2Blue" />
+			
+		</effect_group>
+		
+		
+		<effect_group>
+			<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" target="otherAOE" range="15" buff="EgyptRemove"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" target="otherAOE" range="15" buff="EgyptRemove"/>
+		</effect_group>
+	</buff>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<buff name="EgyptRemove" icon="ui_game_symbol_fire" icon_color="0,0,255" icon_blink="true">
+	<stack_type value="replace"/>
+	<duration value="5"/>
+	<update_rate value=".1"/>
+		<effect_group>
+			<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" target="self" buff="EgyptbuffRage"/>
+			<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" target="self" buff="EgyptbuffRage"/>
+			<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" target="self" buff="EgyptbuffEntity"/>
+			<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" target="self" buff="EgyptbuffEntity"/>
+			
+                
+		</effect_group>
+		</buff>
+	
+	
+	
+	
+	<buff name="EgyptbuffRage" name_key="buffRadiatedRegenDesc" description_key="buffRadiatedRegenDesc" tooltip_key="buffRadiatedRegenDesc" icon="ui_game_symbol_radiation" icon_color="255,0,0">
+		<stack_type value="replace"/>
+		<duration value="10"/>
+		<update_rate value="5"/>
+
+		<effect_group>
+			<requirement name="EntityTagCompare" tags="egyptboss"/>
+			<requirement name="NotHasBuff" buff="EgyptbuffEntityRemove"/>
+			<passive_effect name="RunSpeed" operation="perc_add" value="1.2,0" />
+			<passive_effect name="WalkSpeed" operation="perc_add" value="1.2,0" />
+			<passive_effect name="JumpStrength" operation="perc_add" value="1.2,0" />
+			<triggered_effect trigger="onSelfBuffStart" action="AttachParticleEffectToEntity" particle="p_hotembersZombie"  local_offset="0,2.2,0"/>
+			<triggered_effect trigger="onSelfBuffRemove" action="RemoveParticleEffectFromEntity" particle="p_hotembersZombie"/>
+			<triggered_effect trigger="onSelfDied" action="RemoveParticleEffectFromEntity" particle="p_hotembersZombie" />
+		</effect_group>
+		
+		<effect_group>
+			<requirement name="EntityTagCompare" tags="egyptentity"/>
+			<passive_effect name="RunSpeed" operation="perc_add" value="1.2,0" />
+			<passive_effect name="WalkSpeed" operation="perc_add" value="1.2,0" />
+			<passive_effect name="JumpStrength" operation="perc_add" value="1.2,0" />
+			<triggered_effect trigger="onSelfBuffStart" action="AttachParticleEffectToEntity" particle="p_hotembersZombie" local_offset="0,2.2,0"/>
+			<triggered_effect trigger="onSelfBuffRemove" action="RemoveParticleEffectFromEntity" particle="p_hotembersZombie"/>
+			<triggered_effect trigger="onSelfDied" action="RemoveParticleEffectFromEntity" particle="p_hotembersZombie" />
+		</effect_group>
+		
+	</buff>
+	
+	
+	
+	
+	<buff name="EgyptbuffEntity" name_key="buffRadiatedRegenDesc" description_key="buffRadiatedRegenDesc" tooltip_key="buffRadiatedRegenDesc" icon="ui_game_symbol_radiation" icon_color="255,0,0">
+		<stack_type value="replace"/>
+		<duration value="10"/>
+
+		<effect_group>
+			<requirement name="EntityTagCompare" tags="egyptboss"/>
+			<requirement name="NotHasBuff" buff="EgyptbuffEntityRemove"/>
+			<passive_effect name="HealthChangeOT" operation="base_add" value="3"/>
+				<triggered_effect trigger="onSelfBuffStart" action="AttachParticleEffectToEntity" particle="#@modfolder:Resources/CoAParticle.unity3d?Particle2Blue"/>
+				<triggered_effect trigger="onSelfBuffFinish" action="RemoveParticleEffectFromEntity" particle="#@modfolder:Resources/CoAParticle.unity3d?Particle2Blue"/>
+			<triggered_effect trigger="onSelfBuffUpdate" action="AttachParticleEffectToEntity" particle="#@modfolder:Resources/CoAParticle.unity3d?Particle2Blue"/>
+				<triggered_effect trigger="onSelfDied" action="RemoveParticleEffectFromEntity" particle="#@modfolder:Resources/CoAParticle.unity3d?Particle2Blue" />
+		</effect_group>
+		
+		<effect_group>
+			<requirement name="EntityTagCompare" tags="egyptentity"/>
+			<passive_effect name="HealthChangeOT" operation="base_add" value="1"/>
+				<triggered_effect trigger="onSelfBuffStart" action="AttachParticleEffectToEntity" particle="#@modfolder:Resources/CoAParticle.unity3d?Particle2Blue"/>
+				
+			<triggered_effect trigger="onSelfBuffUpdate" action="AttachParticleEffectToEntity" particle="#@modfolder:Resources/CoAParticle.unity3d?Particle2Blue"/>
+			<triggered_effect trigger="onSelfBuffFinish" action="RemoveParticleEffectFromEntity" particle="#@modfolder:Resources/CoAParticle.unity3d?Particle2Blue"/>
+				<triggered_effect trigger="onSelfDied" action="RemoveParticleEffectFromEntity" particle="#@modfolder:Resources/CoAParticle.unity3d?Particle2Blue" />
+		</effect_group>
+		
+	</buff>
+	
+
+	
+	
+	
+	<buff name="EgyptbuffRingOfFire" name_key="buffRingOfFireEffectName" description_key="buffRingOfFireEffectDesc" tooltip_key="buffRingOfFireEffectDesc"
+		icon="ui_game_symbol_fire" icon_color="255,0,0">
+		<stack_type value="replace"/>
+		<duration value="1"/>
+		<effect_group>
+			<triggered_effect trigger="onSelfBuffStart" action="AddBuff" target="otherAOE" range="15" buff="EgyptbuffRingOfFirePlayer" />
+			<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" target="otherAOE" range="15" buff="EgyptbuffRingOfFirePlayer"/>
+				
+		</effect_group>
+		
+		<effect_group>
+			<triggered_effect trigger="onSelfBuffStart" action="AddBuff" target="otherAOE" range="15" buff="EgyptbuffEntity" />
+			<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" target="otherAOE" range="15" buff="EgyptbuffEntity"/>
+				
+			<triggered_effect trigger="onSelfBuffStart" action="AddBuff" target="otherAOE" range="15" buff="EgyptbuffRage" />
+			<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" target="otherAOE" range="15" buff="EgyptbuffRage"/>
+			
+		</effect_group>
+	</buff>
+	
+	
+	<buff name="EgyptbuffRingOfFirePlayer" name_key="buffRingOfFireEffectName" description_key="buffRingOfFireEffectDesc" tooltip_key="buffRingOfFireEffectDesc"
+		icon="ui_game_symbol_fire" icon_color="255,0,0">
+		<damage_type value="heat"/>
+		<stack_type value="ignore"/>
+		<duration value="2"/>
+		<effect_group>
+			<requirement name="EntityTagCompare" tags="player"/>
+			<passive_effect name="HealthChangeOT" operation="base_add" value="-2"/>
+			<passive_effect name="RunSpeed" operation="perc_subtract" value="1.5,0" duration="0,3.2"/>
+			<passive_effect name="WalkSpeed" operation="perc_subtract" value="1.5,0" duration="0,3.2"/>
+			<passive_effect name="CrouchSpeed" operation="perc_subtract" value="1.5,0" duration="0,3.2"/>
+			<passive_effect name="JumpStrength" operation="perc_subtract" value="1.5,0" duration="0,3.2"/>
+
+			<triggered_effect trigger="onSelfBuffStart" action="AttachParticleEffectToEntity" particle="p_onFire"/>
+			<triggered_effect trigger="onSelfBuffRemove" action="RemoveParticleEffectFromEntity" particle="p_onFire"/>
+			<triggered_effect trigger="onSelfDied" action="RemoveParticleEffectFromEntity" particle="p_onFire" />
+			
+			<triggered_effect trigger="onSelfBuffStart" action="PlaySound" target="self" sound="FireMediumLoop" play_in_head="true"/>
+			<triggered_effect trigger="onSelfBuffStart" action="FadeOutSound" target="self" sound="FireMediumLoop" play_in_head="true"/>
+			<triggered_effect trigger="onSelfBuffRemove" action="PlaySound" target="self" sound="forge_fire_die" play_in_head="true"/>
+		</effect_group>
+	</buff>
+	
+	
+	<buff name="EgyptbuffShocked" name_key="buffRingOfFireEffectName" description_key="buffRingOfFireEffectDesc" tooltip_key="buffRingOfFireEffectDesc"
+		icon="ui_game_symbol_fire" icon_color="255,0,0">
+		<stack_type value="replace"/>
+		<duration value="1"/>
+		<effect_group>
+			<triggered_effect trigger="onSelfBuffStart" action="AddBuff" target="otherAOE" range="15" buff="EgyptbuffShockedPlayer" />
+				
+		</effect_group>
+		
+		<effect_group>
+			<triggered_effect trigger="onSelfBuffStart" action="AddBuff" target="otherAOE" range="15" buff="EgyptbuffEntity" />
+				
+			<triggered_effect trigger="onSelfBuffStart" action="AddBuff" target="otherAOE" range="15" buff="EgyptbuffRage" />
+			
+		</effect_group>
+	</buff>
+	
+	<buff name="EgyptbuffShockedPlayer" name_key="buffRingOfFireEffectName" description_key="buffRingOfFireEffectDesc" tooltip_key="buffRingOfFireEffectDesc"
+		icon="ui_game_symbol_fire" icon_color="255,0,0">
+		<damage_type value="electrical"/>
+		<stack_type value="ignore"/>
+		<duration value="3"/>
+		<effect_group>
+			<requirement name="EntityTagCompare" tags="player"/>
+			<passive_effect name="HealthChangeOT" operation="base_add" value="-2"/>
+			<passive_effect name="RunSpeed" operation="perc_subtract" value="1.5,0" duration="0,3.2"/>
+			<passive_effect name="WalkSpeed" operation="perc_subtract" value="1.5,0" duration="0,3.2"/>
+			<passive_effect name="CrouchSpeed" operation="perc_subtract" value="1.5,0" duration="0,3.2"/>
+			<passive_effect name="JumpStrength" operation="perc_subtract" value="1.5,0" duration="0,3.2"/>
+
+			<triggered_effect trigger="onSelfBuffStart" action="AttachParticleEffectToEntity" particle="p_electric_shock" local_offset="0,0.75,0"/>
+			<triggered_effect trigger="onSelfEnteredGame" action="AttachParticleEffectToEntity" particle="p_electric_shock" local_offset="0,0.75,0"/>
+
+			<triggered_effect trigger="onSelfDied" action="RemoveParticleEffectFromEntity" particle="p_electric_shock" />
+
+			<triggered_effect trigger="onSelfBuffFinish" action="RemoveParticleEffectFromEntity" particle="p_electric_shock" />
+			<triggered_effect trigger="onSelfBuffRemove" action="RemoveParticleEffectFromEntity" particle="p_electric_shock" />
+			<triggered_effect trigger="onSelfLeaveGame" action="RemoveParticleEffectFromEntity" particle="p_electric_shock" />
+		</effect_group>
+	</buff>
+	
+	
+	
+	<buff name="EgyptbuffShockedCurse0" hidden="true">
+		<damage_type value="Infection"/>
+		<stack_type value="ignore"/>
+		<duration value="10"/>
+		<effect_group>
+			<passive_effect name="StaminaLoss" operation="perc_add" value="0.1"/>
+
+			<triggered_effect trigger="onSelfBuffStart" action="AddBuff" target="self" buff="EgyptbuffShockedPlayer"/>
+			
+			<triggered_effect trigger="onSelfBuffFinish" action="AddBuff" target="self" buff="EgyptbuffShockedCurse1"/>
+		</effect_group>
+	</buff>
+
+	<buff name="EgyptbuffShockedCurse1" name_key="buffIllInfection1Name" description_key="buffIllInfection1Desc" tooltip_key="buffIllInfection1Tooltip" icon="ui_game_symbol_infection">
+		<damage_type value="Infection"/>
+		<stack_type value="ignore"/>
+		<duration value="300"/>
+		<update_rate value="15"/>
+		<effect_group>
+			<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" target="self" buff="EgyptbuffShockedPlayer"/>
+			
+			<passive_effect name="AttributeLevel" operation="base_subtract" value="2" tags="attPerception,attAgility"/>
+			<passive_effect name="AttributeLevel" operation="base_add" value="1" tags="attStrength,attFortitude"/>
+
+			<passive_effect name="StaminaChangeOT" operation="base_subtract" value="0.5" />
+			<passive_effect name="HealthChangeOT" operation="base_subtract" value="0.5" />
+			<passive_effect name="HealthLoss" operation="perc_add" value="0.2"/>
+			<passive_effect name="StaminaLoss" operation="perc_add" value="0.5"/>
+
+		</effect_group>
+	</buff>
+	
+	
+	<buff name="EgyptbuffFireCurse0" hidden="true">
+		<damage_type value="Infection"/>
+		<stack_type value="ignore"/>
+		<duration value="10"/>
+		<effect_group>
+			<passive_effect name="StaminaLoss" operation="perc_add" value="0.1"/>
+
+			<triggered_effect trigger="onSelfBuffStart" action="AddBuff" target="self" buff="EgyptbuffRingOfFirePlayer"/>
+			
+			<triggered_effect trigger="onSelfBuffFinish" action="AddBuff" target="self" buff="EgyptbuffShockedCurse1"/>
+		</effect_group>
+	</buff>
+
+	<buff name="EgyptbuffFireCurse1" name_key="buffIllInfection1Name" description_key="buffIllInfection1Desc" tooltip_key="buffIllInfection1Tooltip" icon="ui_game_symbol_infection">
+		<damage_type value="Infection"/>
+		<stack_type value="ignore"/>
+		<duration value="300"/>
+		<update_rate value="15"/>
+		<effect_group>
+			<triggered_effect trigger="onSelfBuffStart" action="AddBuff" target="self" buff="EgyptbuffRingOfFirePlayer"/>
+			<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" target="self" buff="EgyptbuffRingOfFirePlayer"/>
+			
+			<passive_effect name="AttributeLevel" operation="base_subtract" value="2" tags="attPerception,attAgility"/>
+			<passive_effect name="AttributeLevel" operation="base_add" value="1" tags="attStrength,attFortitude"/>
+
+			<passive_effect name="StaminaChangeOT" operation="base_subtract" value="0.5" />
+			<passive_effect name="HealthChangeOT" operation="base_subtract" value="0.5" />
+			<passive_effect name="HealthLoss" operation="perc_add" value="0.2"/>
+			<passive_effect name="StaminaLoss" operation="perc_add" value="0.5"/>
+
+		</effect_group>
+	</buff>
+	
+	
+	
+
+
+	
+	<buff name="EgyptbuffMinionHand" name_key="buffRadiation3Name" description_key="buffRadiation3Desc" tooltip_key="buffRadiation3Tooltip" icon="ui_game_symbol_radiation" icon_color="255,0,0">
+		<damage_type value="radiation"/>
+		<stack_type value="ignore"/>
+		<duration value="20"/>
+		<update_rate value="1"/>
+		<effect_group>
+			<passive_effect name="HealthChangeOT" operation="base_subtract" duration="0,10" value="1,1"/>
+			<passive_effect name="HealthChangeOT" operation="base_subtract" duration="10,50" value="1,2"/>
+
+			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="RadiationSignal" operation="add" value="1"/>
+
+		
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyScreenEffect" effect_name="Radiation" intensity=".6" fade="2"/>
+			<triggered_effect trigger="onSelfDied" action="ModifyScreenEffect" effect_name="Radiation" intensity="0" fade="0"/>
+			<triggered_effect trigger="onSelfBuffRemove" action="ModifyScreenEffect" effect_name="Radiation" intensity="0" fade="2"/>
+		</effect_group>
+	</buff>
+
+	<buff name="EgyptbuffBossHand" name_key="buffRadiation3Name" description_key="buffRadiation3Desc" tooltip_key="buffRadiation3Tooltip" icon="ui_game_symbol_radiation" icon_color="255,0,0">
+		<damage_type value="radiation"/>
+		<stack_type value="ignore"/>
+		<duration value="20"/>
+		<update_rate value="1"/>
+		<effect_group>
+			<passive_effect name="HealthChangeOT" operation="base_subtract" duration="0,10" value="1,1"/>
+			<passive_effect name="HealthChangeOT" operation="base_subtract" duration="10,50" value="1,2"/>
+
+			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="RadiationSignal" operation="add" value="1"/>
+
+		
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyScreenEffect" effect_name="Radiation" intensity=".6" fade="2"/>
+			<triggered_effect trigger="onSelfDied" action="ModifyScreenEffect" effect_name="Radiation" intensity="0" fade="0"/>
+			<triggered_effect trigger="onSelfBuffRemove" action="ModifyScreenEffect" effect_name="Radiation" intensity="0" fade="2"/>
+		</effect_group>
+	</buff>
+
+
+
+	
+	
+	
+	
+	<buff name="EgyptbuffZombieEffect" name_key="buffRingOfFireEffectName" description_key="buffRingOfFireEffectDesc" tooltip_key="buffRingOfFireEffectDesc"
+		icon="ui_game_symbol_fire" icon_color="255,0,0">
+	<stack_type value="replace"/>
+	<duration value="10"/>
+		<effect_group>
+			<requirement name="EntityTagCompare" tags="egyptentity"/>
+			
+			<passive_effect name="HealthChangeOT" operation="base_add" value="2"/>
+			<passive_effect name="RunSpeed" operation="perc_add" value="1.2,0" />
+			<passive_effect name="WalkSpeed" operation="perc_add" value="1.2,0" />
+			<passive_effect name="JumpStrength" operation="perc_add" value="1.2,0" />
+			<passive_effect name="EntityDamage" operation="base_add" value="5"/> 
+			<passive_effect name="PhysicalDamageResist" operation="base_add" value="30"/>
+
+			<triggered_effect trigger="onSelfBuffStart" action="AttachParticleEffectToEntity" particle="RadiatedParticlesOnMesh"/>
+			<triggered_effect trigger="onSelfBuffRemove" action="RemoveParticleEffectFromEntity" particle="RadiatedParticlesOnMesh"/>
+			<triggered_effect trigger="onSelfDied" action="RemoveParticleEffectFromEntity" particle="RadiatedParticlesOnMesh" />
+			
+		</effect_group>
+		
+		<effect_group>
+			<requirement name="EntityTagCompare" tags="egyptsubboss"/>
+			
+			<passive_effect name="HealthChangeOT" operation="base_add" value="2"/>
+			<passive_effect name="RunSpeed" operation="perc_add" value="1.2,0" />
+			<passive_effect name="WalkSpeed" operation="perc_add" value="1.2,0" />
+			<passive_effect name="JumpStrength" operation="perc_add" value="1.2,0" />
+			<passive_effect name="EntityDamage" operation="base_add" value="5"/> 
+			<passive_effect name="PhysicalDamageResist" operation="base_add" value="30"/>
+
+			<triggered_effect trigger="onSelfBuffStart" action="AttachParticleEffectToEntity" particle="RadiatedParticlesOnMesh"/>
+			<triggered_effect trigger="onSelfBuffRemove" action="RemoveParticleEffectFromEntity" particle="RadiatedParticlesOnMesh"/>
+			<triggered_effect trigger="onSelfDied" action="RemoveParticleEffectFromEntity" particle="RadiatedParticlesOnMesh" />
+			
+		</effect_group>
+		
+		<effect_group>
+			<requirement name="EntityTagCompare" tags="egyptboss"/>
+			
+			<passive_effect name="HealthChangeOT" operation="base_add" value="2"/>
+			<passive_effect name="RunSpeed" operation="perc_add" value="1.2,0" />
+			<passive_effect name="WalkSpeed" operation="perc_add" value="1.2,0" />
+			<passive_effect name="JumpStrength" operation="perc_add" value="1.2,0" />
+			<passive_effect name="EntityDamage" operation="base_add" value="5"/> 
+			<passive_effect name="PhysicalDamageResist" operation="base_add" value="30"/>
+
+			
+		</effect_group>
+	</buff>
+	
+	
+	<buff name="EgyptbuffPlayerHeal" name_key="buffRingOfFireEffectName" description_key="buffRingOfFireEffectDesc" icon="ui_game_symbol_medical" icon_color="255,0,0">
+	<stack_type value="replace"/>
+	<duration value="5"/>
+		<effect_group>
+			<requirement name="EntityTagCompare" tags="player"/>
+			
+			<passive_effect name="HealthChangeOT" operation="base_add" value="2"/>
+			<passive_effect name="RunSpeed" operation="perc_add" value="1.2,0" />
+			<passive_effect name="WalkSpeed" operation="perc_add" value="1.2,0" />
+			<passive_effect name="JumpStrength" operation="perc_add" value="1.2,0" />
+			
+		</effect_group>
+	</buff>
+	
+	
+	
+    </append>
+
+</configs>

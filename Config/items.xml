@@ -1,0 +1,2008 @@
+<configs>
+	<append xpath="/items">
+  <!--   -->
+  
+  
+  
+  
+  
+<!-- ZOMBIE HANDS -->
+ 
+  
+ 
+<item name="EgyptmeleeHandAnubis">
+	<property name="Extends" value="meleeHandMaster"/>
+	<property name="CreativeMode" value="None"/>
+	<property name="Degradation" value="99999" param1="true"/>
+	<property class="Action0">
+		<property name="Range" value="1.75"/>
+		<property name="DamageEntity" value="10"/>
+		<property name="DamageBlock" value="70"/>
+		<property name="Buff" value="EgyptbuffShockedCurse0,buffInjuryStunned1"/>
+	</property>
+	<property class="Action1"> <!-- UseAction -->
+		<property name="Class" value="Vomit"/>
+		<property name="Delay" value="0"/> <!-- obsolete if rounds per minute exists -->
+		<property name="Range" value="30"/>
+		<property name="Infinite_ammo" value="true"/>
+		<property name="Magazine_items" value="EgyptammoProjectileAnubis"/>
+		<property name="Sound_warning" value=""/>
+		<property name="Sound_start" value=""/>
+		<property name="Sound_repeat" value=""/>
+		<property name="Sound_end" value=""/>
+		<property name="Sound_empty" value=""/>
+		<property name="Sound_reload" value=""/>
+		<property name="Buff" value="EgyptbuffShockedCurse0"/>
+	</property>
+	<effect_group name="Base Effects">
+		<passive_effect name="ModSlots" operation="base_set" value="0"/>
+		<!--<passive_effect name="AttacksPerMinute" operation="base_set" value="75"/>  A16 .8 -->
+		<passive_effect name="DamageFalloffRange" operation="base_set" value="50"/>
+		<passive_effect name="MaxRange" operation="base_set" value="100"/>
+		<passive_effect name="MagazineSize" operation="base_set" value="1"/>
+		<passive_effect name="BurstRoundCount" operation="base_set" value="1"/>
+		<passive_effect name="SpreadDegreesVertical" operation="base_set" value="1"/>
+		<passive_effect name="SpreadDegreesHorizontal" operation="base_set" value="1"/>
+		<passive_effect name="SpreadMultiplierIdle" operation="base_set" value="1"/>
+		<passive_effect name="BuffProcChance" operation="base_set" value="0.6" tags="EgyptbuffShockedCurse0"/>
+	</effect_group>
+</item>
+ 
+ 
+ 
+<item name="EgyptammoProjectileAnubis">
+	<property name="Meshfile" value="#@modfolder:Resources/CoaItem.unity3d?Spear3" />
+	<property name="Material" value="Morganic" />
+	<property name="CreativeMode" value="None"/>
+	<property class="Action1">
+		<property name="Class" value="Projectile"/>
+		<property name="DamageEntity" value="6"/>
+		<property name="DamageBlock" value="50"/>
+		<property name="Velocity" value="15"/>
+		<property name="FlyTime" value="1"/>
+		<property name="LifeTime" value="5"/>
+		<property name="CollisionRadius" value=".3"/>
+	</property>
+	<effect_group name="Base Effects">
+		<passive_effect name="DamageModifier" operation="perc_set" value="1" tags="earth"/>
+		<passive_effect name="DamageModifier" operation="perc_add" value="1" tags="metal"/>
+	</effect_group>	
+</item>
+
+<item name="EgyptmeleeHandPharaoh">
+	<property name="Extends" value="meleeHandMaster"/>
+	<property name="CreativeMode" value="None"/>
+	<property name="Degradation" value="99999" param1="true"/>
+	<property class="Action0">
+		<property name="Range" value="1.75"/>
+		<property name="DamageEntity" value="10"/>
+		<property name="DamageBlock" value="70"/>
+		<property name="Buff" value="EgyptbuffShockedCurse0,buffInjuryStunned1"/>
+	</property>
+	<property class="Action1"> <!-- UseAction -->
+		<property name="Class" value="Vomit"/>
+		<property name="Delay" value="0"/> <!-- obsolete if rounds per minute exists -->
+		<property name="Range" value="30"/>
+		<property name="Infinite_ammo" value="true"/>
+		<property name="Magazine_items" value="EgyptammoProjectilePharaoh"/>
+		<property name="Sound_warning" value=""/>
+		<property name="Sound_start" value=""/>
+		<property name="Sound_repeat" value=""/>
+		<property name="Sound_end" value=""/>
+		<property name="Sound_empty" value=""/>
+		<property name="Sound_reload" value=""/>
+		<property name="Buff" value="EgyptbuffShockedCurse0"/>
+	</property>
+	<effect_group name="Base Effects">
+		<passive_effect name="ModSlots" operation="base_set" value="0"/>
+		<!--<passive_effect name="AttacksPerMinute" operation="base_set" value="75"/>  A16 .8 -->
+		<passive_effect name="DamageFalloffRange" operation="base_set" value="50"/>
+		<passive_effect name="MaxRange" operation="base_set" value="100"/>
+		<passive_effect name="MagazineSize" operation="base_set" value="1"/>
+		<passive_effect name="BurstRoundCount" operation="base_set" value="1"/>
+		<passive_effect name="SpreadDegreesVertical" operation="base_set" value="1"/>
+		<passive_effect name="SpreadDegreesHorizontal" operation="base_set" value="1"/>
+		<passive_effect name="SpreadMultiplierIdle" operation="base_set" value="1"/>
+		<passive_effect name="BuffProcChance" operation="base_set" value="0.6" tags="EgyptbuffShockedCurse0"/>
+	</effect_group>
+</item>
+ 
+ 
+ 
+<item name="EgyptammoProjectilePharaoh">
+	<property name="Meshfile" value="#@modfolder:Resources/CoaItem.unity3d?Spear1" />
+	<property name="Material" value="Morganic" />
+	<property name="CreativeMode" value="None"/>
+	<property class="Action1">
+		<property name="Class" value="Projectile"/>
+		<property name="DamageEntity" value="6"/>
+		<property name="DamageBlock" value="50"/>
+		<property name="Velocity" value="15"/>
+		<property name="FlyTime" value="1"/>
+		<property name="LifeTime" value="5"/>
+		<property name="CollisionRadius" value=".3"/>
+	</property>
+	<effect_group name="Base Effects">
+		<passive_effect name="DamageModifier" operation="perc_set" value="1" tags="earth"/>
+		<passive_effect name="DamageModifier" operation="perc_add" value="1" tags="metal"/>
+	</effect_group>	
+</item>
+
+
+
+
+
+
+
+<item name="EgyptmeleeHandSubBossAnubis">
+	<property name="Extends" value="meleeHandMaster"/>
+	<property name="CreativeMode" value="None"/>
+	<property name="Degradation" value="99999" param1="true"/>
+	<property class="Action0">
+		<property name="Range" value="1.75"/>
+		<property name="DamageEntity" value="10"/>
+		<property name="DamageBlock" value="70"/>
+		<property name="Buff" value="EgyptbuffShockedCurse0,buffInjuryStunned1"/>
+	</property>
+	<property class="Action1"> <!-- UseAction -->
+		<property name="Class" value="Vomit"/>
+		<property name="Delay" value="0"/> <!-- obsolete if rounds per minute exists -->
+		<property name="Range" value="30"/>
+		<property name="Infinite_ammo" value="true"/>
+		<property name="Magazine_items" value="EgyptammoProjectileSubBossAnubis"/>
+		<property name="Sound_warning" value=""/>
+		<property name="Sound_start" value=""/>
+		<property name="Sound_repeat" value=""/>
+		<property name="Sound_end" value=""/>
+		<property name="Sound_empty" value=""/>
+		<property name="Sound_reload" value=""/>
+		<property name="Buff" value="EgyptbuffShockedCurse0"/>
+	</property>
+	<effect_group name="Base Effects">
+		<passive_effect name="ModSlots" operation="base_set" value="0"/>
+		<!--<passive_effect name="AttacksPerMinute" operation="base_set" value="75"/>  A16 .8 -->
+		<passive_effect name="DamageFalloffRange" operation="base_set" value="50"/>
+		<passive_effect name="MaxRange" operation="base_set" value="100"/>
+		<passive_effect name="MagazineSize" operation="base_set" value="1"/>
+		<passive_effect name="BurstRoundCount" operation="base_set" value="1"/>
+		<passive_effect name="SpreadDegreesVertical" operation="base_set" value="1"/>
+		<passive_effect name="SpreadDegreesHorizontal" operation="base_set" value="1"/>
+		<passive_effect name="SpreadMultiplierIdle" operation="base_set" value="1"/>
+		<passive_effect name="BuffProcChance" operation="base_set" value="0.6" tags="EgyptbuffShockedCurse0"/>
+	</effect_group>
+</item>
+ 
+ 
+ 
+<item name="EgyptammoProjectileSubBossAnubis">
+	<property name="Meshfile" value="#@modfolder:Resources/CoaItem.unity3d?Spear2" />
+	<property name="Material" value="Morganic" />
+	<property name="CreativeMode" value="None"/>
+	<property class="Action1">
+		<property name="Class" value="Projectile"/>
+		<property name="DamageEntity" value="6"/>
+		<property name="DamageBlock" value="50"/>
+		<property name="Velocity" value="15"/>
+		<property name="FlyTime" value="1"/>
+		<property name="LifeTime" value="5"/>
+		<property name="CollisionRadius" value=".3"/>
+	</property>
+	<effect_group name="Base Effects">
+		<passive_effect name="DamageModifier" operation="perc_set" value="1" tags="earth"/>
+		<passive_effect name="DamageModifier" operation="perc_add" value="1" tags="metal"/>
+	</effect_group>	
+</item>
+
+
+
+
+
+<item name="EgyptmeleeHandSubBossPharaoh">
+	<property name="Extends" value="meleeHandMaster"/>
+	<property name="CreativeMode" value="None"/>
+	<property name="Degradation" value="99999" param1="true"/>
+	<property class="Action0">
+		<property name="Range" value="1.75"/>
+		<property name="DamageEntity" value="10"/>
+		<property name="DamageBlock" value="70"/>
+		<property name="Buff" value="EgyptbuffShockedCurse0,buffInjuryStunned1"/>
+	</property>
+	<property class="Action1"> <!-- UseAction -->
+		<property name="Class" value="Vomit"/>
+		<property name="Delay" value="0"/> <!-- obsolete if rounds per minute exists -->
+		<property name="Range" value="30"/>
+		<property name="Infinite_ammo" value="true"/>
+		<property name="Magazine_items" value="EgyptammoProjectileSubBossPharaoh"/>
+		<property name="Sound_warning" value=""/>
+		<property name="Sound_start" value=""/>
+		<property name="Sound_repeat" value=""/>
+		<property name="Sound_end" value=""/>
+		<property name="Sound_empty" value=""/>
+		<property name="Sound_reload" value=""/>
+		<property name="Buff" value="EgyptbuffShockedCurse0"/>
+	</property>
+	<effect_group name="Base Effects">
+		<passive_effect name="ModSlots" operation="base_set" value="0"/>
+		<!--<passive_effect name="AttacksPerMinute" operation="base_set" value="75"/>  A16 .8 -->
+		<passive_effect name="DamageFalloffRange" operation="base_set" value="50"/>
+		<passive_effect name="MaxRange" operation="base_set" value="100"/>
+		<passive_effect name="MagazineSize" operation="base_set" value="1"/>
+		<passive_effect name="BurstRoundCount" operation="base_set" value="1"/>
+		<passive_effect name="SpreadDegreesVertical" operation="base_set" value="1"/>
+		<passive_effect name="SpreadDegreesHorizontal" operation="base_set" value="1"/>
+		<passive_effect name="SpreadMultiplierIdle" operation="base_set" value="1"/>
+		<passive_effect name="BuffProcChance" operation="base_set" value="0.6" tags="EgyptbuffShockedCurse0"/>
+	</effect_group>
+</item>
+ 
+ 
+ 
+<item name="EgyptammoProjectileSubBossPharaoh">
+	<property name="Meshfile" value="#@modfolder:Resources/CoaItem.unity3d?Spear2" />
+	<property name="Material" value="Morganic" />
+	<property name="CreativeMode" value="None"/>
+	<property class="Action1">
+		<property name="Class" value="Projectile"/>
+		<property name="DamageEntity" value="6"/>
+		<property name="DamageBlock" value="50"/>
+		<property name="Velocity" value="15"/>
+		<property name="FlyTime" value="1"/>
+		<property name="LifeTime" value="5"/>
+		<property name="CollisionRadius" value=".3"/>
+	</property>
+	<effect_group name="Base Effects">
+		<passive_effect name="DamageModifier" operation="perc_set" value="1" tags="earth"/>
+		<passive_effect name="DamageModifier" operation="perc_add" value="1" tags="metal"/>
+	</effect_group>	
+</item>
+
+
+
+<item name="EgyptmeleeHandSubBossQueen">
+	<property name="Extends" value="meleeHandMaster"/>
+	<property name="CreativeMode" value="None"/>
+	<property name="Degradation" value="99999" param1="true"/>
+	<property class="Action0">
+		<property name="Range" value="1.75"/>
+		<property name="DamageEntity" value="10"/>
+		<property name="DamageBlock" value="70"/>
+		<property name="Buff" value="EgyptbuffShockedCurse0,buffInjuryStunned1"/>
+	</property>
+	<property class="Action1"> <!-- UseAction -->
+		<property name="Class" value="Vomit"/>
+		<property name="Delay" value="0"/> <!-- obsolete if rounds per minute exists -->
+		<property name="Range" value="30"/>
+		<property name="Infinite_ammo" value="true"/>
+		<property name="Magazine_items" value="EgyptammoProjectileSubBossQueen"/>
+		<property name="Sound_warning" value=""/>
+		<property name="Sound_start" value=""/>
+		<property name="Sound_repeat" value=""/>
+		<property name="Sound_end" value=""/>
+		<property name="Sound_empty" value=""/>
+		<property name="Sound_reload" value=""/>
+		<property name="Buff" value="EgyptbuffShockedCurse0"/>
+	</property>
+	<effect_group name="Base Effects">
+		<passive_effect name="ModSlots" operation="base_set" value="0"/>
+		<!--<passive_effect name="AttacksPerMinute" operation="base_set" value="75"/>  A16 .8 -->
+		<passive_effect name="DamageFalloffRange" operation="base_set" value="50"/>
+		<passive_effect name="MaxRange" operation="base_set" value="100"/>
+		<passive_effect name="MagazineSize" operation="base_set" value="1"/>
+		<passive_effect name="BurstRoundCount" operation="base_set" value="1"/>
+		<passive_effect name="SpreadDegreesVertical" operation="base_set" value="1"/>
+		<passive_effect name="SpreadDegreesHorizontal" operation="base_set" value="1"/>
+		<passive_effect name="SpreadMultiplierIdle" operation="base_set" value="1"/>
+		<passive_effect name="BuffProcChance" operation="base_set" value="0.6" tags="EgyptbuffShockedCurse0"/>
+	</effect_group>
+</item>
+ 
+ 
+ 
+<item name="EgyptammoProjectileSubBossQueen">
+	<property name="Meshfile" value="#@modfolder:Resources/CoaItem.unity3d?Knife1" />
+	<property name="Material" value="Morganic" />
+	<property name="CreativeMode" value="None"/>
+	<property class="Action1">
+		<property name="Class" value="Projectile"/>
+		<property name="DamageEntity" value="6"/>
+		<property name="DamageBlock" value="50"/>
+		<property name="Velocity" value="15"/>
+		<property name="FlyTime" value="1"/>
+		<property name="LifeTime" value="5"/>
+		<property name="CollisionRadius" value=".3"/>
+	</property>
+	<effect_group name="Base Effects">
+		<passive_effect name="DamageModifier" operation="perc_set" value="1" tags="earth"/>
+		<passive_effect name="DamageModifier" operation="perc_add" value="1" tags="metal"/>
+	</effect_group>	
+</item>
+
+
+<item name="EgyptmeleeHandMummy">
+	<property name="Extends" value="meleeHandMaster"/>
+	<property name="CreativeMode" value="None"/>
+	<property name="Degradation" value="99999" param1="true"/>
+	<property class="Action0">
+		<property name="Range" value="1.75"/>
+		<property name="DamageEntity" value="10"/>
+		<property name="DamageBlock" value="70"/>
+		<property name="Buff" value="EgyptbuffShockedCurse0,buffInjuryStunned1"/>
+	</property>
+	<effect_group name="Base Effects">
+		<passive_effect name="ModSlots" operation="base_set" value="0"/>
+		<!--<passive_effect name="AttacksPerMinute" operation="base_set" value="75"/>  A16 .8 -->
+		<passive_effect name="DamageFalloffRange" operation="base_set" value="50"/>
+		<passive_effect name="MaxRange" operation="base_set" value="100"/>
+		<passive_effect name="MagazineSize" operation="base_set" value="1"/>
+		<passive_effect name="BurstRoundCount" operation="base_set" value="1"/>
+		<passive_effect name="SpreadDegreesVertical" operation="base_set" value="1"/>
+		<passive_effect name="SpreadDegreesHorizontal" operation="base_set" value="1"/>
+		<passive_effect name="SpreadMultiplierIdle" operation="base_set" value="1"/>
+		<passive_effect name="BuffProcChance" operation="base_set" value="0.6" tags="EgyptbuffShockedCurse0"/>
+	</effect_group>
+</item>
+ 
+ 
+ 
+<item name="EgyptmeleeHandSkeleton">
+	<property name="Extends" value="meleeHandMaster"/>
+	<property name="CreativeMode" value="None"/>
+	<property name="Degradation" value="99999" param1="true"/>
+	<property class="Action0">
+		<property name="Range" value="1.75"/>
+		<property name="DamageEntity" value="10"/>
+		<property name="DamageBlock" value="70"/>
+		<property name="Buff" value="EgyptbuffShockedCurse0,buffInjuryStunned1"/>
+	</property>
+	<effect_group name="Base Effects">
+		<passive_effect name="ModSlots" operation="base_set" value="0"/>
+		<!--<passive_effect name="AttacksPerMinute" operation="base_set" value="75"/>  A16 .8 -->
+		<passive_effect name="DamageFalloffRange" operation="base_set" value="50"/>
+		<passive_effect name="MaxRange" operation="base_set" value="100"/>
+		<passive_effect name="MagazineSize" operation="base_set" value="1"/>
+		<passive_effect name="BurstRoundCount" operation="base_set" value="1"/>
+		<passive_effect name="SpreadDegreesVertical" operation="base_set" value="1"/>
+		<passive_effect name="SpreadDegreesHorizontal" operation="base_set" value="1"/>
+		<passive_effect name="SpreadMultiplierIdle" operation="base_set" value="1"/>
+		<passive_effect name="BuffProcChance" operation="base_set" value="0.6" tags="EgyptbuffShockedCurse0"/>
+	</effect_group>
+</item>
+ 
+ 
+ 
+
+<item name="EgyptmeleeHandArcher">
+	<property name="Extends" value="meleeHandMaster"/>
+	<property name="CreativeMode" value="None"/>
+	<property name="Degradation" value="99999" param1="true"/>
+	<property class="Action0">
+		<property name="Range" value="1.75"/>
+		<property name="DamageEntity" value="10"/>
+		<property name="DamageBlock" value="70"/>
+		<property name="Buff" value="EgyptbuffShockedCurse0,buffInjuryStunned1"/>
+	</property>
+	<property class="Action1"> <!-- UseAction -->
+		<property name="Class" value="Vomit"/>
+		<property name="Delay" value="0"/> <!-- obsolete if rounds per minute exists -->
+		<property name="Range" value="30"/>
+		<property name="Infinite_ammo" value="true"/>
+		<property name="Magazine_items" value="EgyptammoProjectileArcher"/>
+		<property name="Sound_warning" value=""/>
+		<property name="Sound_start" value=""/>
+		<property name="Sound_repeat" value=""/>
+		<property name="Sound_end" value=""/>
+		<property name="Sound_empty" value=""/>
+		<property name="Sound_reload" value=""/>
+		<property name="Buff" value="EgyptbuffShockedCurse0"/>
+	</property>
+	<effect_group name="Base Effects">
+		<passive_effect name="ModSlots" operation="base_set" value="0"/>
+		<!--<passive_effect name="AttacksPerMinute" operation="base_set" value="75"/>  A16 .8 -->
+		<passive_effect name="DamageFalloffRange" operation="base_set" value="50"/>
+		<passive_effect name="MaxRange" operation="base_set" value="100"/>
+		<passive_effect name="MagazineSize" operation="base_set" value="1"/>
+		<passive_effect name="BurstRoundCount" operation="base_set" value="1"/>
+		<passive_effect name="SpreadDegreesVertical" operation="base_set" value="1"/>
+		<passive_effect name="SpreadDegreesHorizontal" operation="base_set" value="1"/>
+		<passive_effect name="SpreadMultiplierIdle" operation="base_set" value="1"/>
+		<passive_effect name="BuffProcChance" operation="base_set" value="0.6" tags="EgyptbuffShockedCurse0"/>
+	</effect_group>
+</item>
+ 
+ 
+ 
+<item name="EgyptammoProjectileArcher">
+	<property name="Meshfile" value="Items/Weapons/Ranged/Bows/WoodenBow/Arrow"/>
+	<property name="Material" value="Morganic" />
+	<property name="CreativeMode" value="None"/>
+	<property class="Action1">
+		<property name="Class" value="Projectile"/>
+		<property name="DamageEntity" value="6"/>
+		<property name="DamageBlock" value="50"/>
+		<property name="Velocity" value="15"/>
+		<property name="FlyTime" value="1"/>
+		<property name="LifeTime" value="5"/>
+		<property name="CollisionRadius" value=".3"/>
+	</property>
+	<effect_group name="Base Effects">
+		<passive_effect name="DamageModifier" operation="perc_set" value="1" tags="earth"/>
+		<passive_effect name="DamageModifier" operation="perc_add" value="1" tags="metal"/>
+	</effect_group>	
+</item>
+
+
+<item name="EgyptmeleeHandHiveQueen">
+	<property name="Extends" value="meleeHandMaster"/>
+	<property name="CreativeMode" value="None"/>
+	<property name="Degradation" value="99999" param1="true"/>
+	<property class="Action0">
+		<property name="Range" value="1.75"/>
+		<property name="DamageEntity" value="10"/>
+		<property name="DamageBlock" value="70"/>
+		<property name="Buff" value="EgyptbuffShockedCurse0,buffInjuryStunned1"/>
+	</property>
+	<property class="Action1"> <!-- UseAction -->
+		<property name="Class" value="Vomit"/>
+		<property name="Delay" value="0"/> <!-- obsolete if rounds per minute exists -->
+		<property name="Range" value="30"/>
+		<property name="Infinite_ammo" value="true"/>
+		<property name="Magazine_items" value="EgyptammoProjectileHiveQueen"/>
+		<property name="Sound_warning" value=""/>
+		<property name="Sound_start" value=""/>
+		<property name="Sound_repeat" value=""/>
+		<property name="Sound_end" value=""/>
+		<property name="Sound_empty" value=""/>
+		<property name="Sound_reload" value=""/>
+		<property name="Buff" value="EgyptbuffShockedCurse0"/>
+	</property>
+	<effect_group name="Base Effects">
+		<passive_effect name="ModSlots" operation="base_set" value="0"/>
+		<!--<passive_effect name="AttacksPerMinute" operation="base_set" value="75"/>  A16 .8 -->
+		<passive_effect name="DamageFalloffRange" operation="base_set" value="50"/>
+		<passive_effect name="MaxRange" operation="base_set" value="100"/>
+		<passive_effect name="MagazineSize" operation="base_set" value="1"/>
+		<passive_effect name="BurstRoundCount" operation="base_set" value="1"/>
+		<passive_effect name="SpreadDegreesVertical" operation="base_set" value="1"/>
+		<passive_effect name="SpreadDegreesHorizontal" operation="base_set" value="1"/>
+		<passive_effect name="SpreadMultiplierIdle" operation="base_set" value="1"/>
+		<passive_effect name="BuffProcChance" operation="base_set" value="0.6" tags="EgyptbuffShockedCurse0"/>
+	</effect_group>
+</item>
+ 
+ 
+ 
+<item name="EgyptammoProjectileHiveQueen">
+	<property name="Meshfile" value="#@modfolder:Resources/Spear3.unity3d?Spear3" />
+	<property name="Material" value="Morganic" />
+	<property name="CreativeMode" value="None"/>
+	<property class="Action1">
+		<property name="Class" value="Projectile"/>
+		<property name="DamageEntity" value="6"/>
+		<property name="DamageBlock" value="50"/>
+		<property name="Velocity" value="15"/>
+		<property name="FlyTime" value="1"/>
+		<property name="LifeTime" value="5"/>
+		<property name="CollisionRadius" value=".3"/>
+	</property>
+	<effect_group name="Base Effects">
+		<passive_effect name="DamageModifier" operation="perc_set" value="1" tags="earth"/>
+		<passive_effect name="DamageModifier" operation="perc_add" value="1" tags="metal"/>
+	</effect_group>	
+</item>
+
+<item name="EgyptmeleeHandSpider">
+	<property name="Extends" value="meleeHandMaster"/>
+	<property name="CreativeMode" value="None"/>
+	<property name="Degradation" value="99999" param1="true"/>
+	<property class="Action0">
+		<property name="Range" value="1.75"/>
+		<property name="DamageEntity" value="10"/>
+		<property name="DamageBlock" value="70"/>
+		<property name="Buff" value="EgyptbuffShockedCurse0,buffInjuryStunned1"/>
+	</property>
+	<property class="Action1"> <!-- UseAction -->
+		<property name="Class" value="Vomit"/>
+		<property name="Delay" value="0"/> <!-- obsolete if rounds per minute exists -->
+		<property name="Range" value="30"/>
+		<property name="Infinite_ammo" value="true"/>
+		<property name="Magazine_items" value="EgyptammoProjectileSpider"/>
+		<property name="Sound_warning" value=""/>
+		<property name="Sound_start" value=""/>
+		<property name="Sound_repeat" value=""/>
+		<property name="Sound_end" value=""/>
+		<property name="Sound_empty" value=""/>
+		<property name="Sound_reload" value=""/>
+		<property name="Buff" value="EgyptbuffShockedCurse0"/>
+	</property>
+	<effect_group name="Base Effects">
+		<passive_effect name="ModSlots" operation="base_set" value="0"/>
+		<!--<passive_effect name="AttacksPerMinute" operation="base_set" value="75"/>  A16 .8 -->
+		<passive_effect name="DamageFalloffRange" operation="base_set" value="50"/>
+		<passive_effect name="MaxRange" operation="base_set" value="100"/>
+		<passive_effect name="MagazineSize" operation="base_set" value="1"/>
+		<passive_effect name="BurstRoundCount" operation="base_set" value="1"/>
+		<passive_effect name="SpreadDegreesVertical" operation="base_set" value="1"/>
+		<passive_effect name="SpreadDegreesHorizontal" operation="base_set" value="1"/>
+		<passive_effect name="SpreadMultiplierIdle" operation="base_set" value="1"/>
+		<passive_effect name="BuffProcChance" operation="base_set" value="0.6" tags="EgyptbuffShockedCurse0"/>
+	</effect_group>
+</item>
+ 
+ 
+ 
+<item name="EgyptammoProjectileSpider">
+	<property name="Meshfile" value="#@modfolder:Resources/Spear3.unity3d?Spear3" />
+	<property name="Material" value="Morganic" />
+	<property name="CreativeMode" value="None"/>
+	<property class="Action1">
+		<property name="Class" value="Projectile"/>
+		<property name="DamageEntity" value="6"/>
+		<property name="DamageBlock" value="50"/>
+		<property name="Velocity" value="15"/>
+		<property name="FlyTime" value="1"/>
+		<property name="LifeTime" value="5"/>
+		<property name="CollisionRadius" value=".3"/>
+	</property>
+	<effect_group name="Base Effects">
+		<passive_effect name="DamageModifier" operation="perc_set" value="1" tags="earth"/>
+		<passive_effect name="DamageModifier" operation="perc_add" value="1" tags="metal"/>
+	</effect_group>	
+</item>
+
+
+
+<!--XXXXXX 
+
+Quest NOTES (Starts Quest)
+
+XXXXXX  -->
+
+
+<item name="qc_EgyptMummy">
+	<property name="Extends" value="challengeQuestMaster"/>
+	<property name="CustomIcon" value="Quest" />
+	<property name="DescriptionKey" value="qc_TheSphinxDesc"/>
+	<property class="Action0">
+		<property name="QuestGiven" value="challenge_EgyptMummy"/>
+	</property>
+</item>
+<item name="qc_EgyptAnubis">
+	<property name="Extends" value="challengeQuestMaster"/>
+	<property name="CustomIcon" value="Quest" />
+	<property name="DescriptionKey" value="qc_TheSphinxDesc"/>
+	<property class="Action0">
+		<property name="QuestGiven" value="challenge_EgyptAnubis"/>
+	</property>
+</item>
+
+<item name="qc_TheSphinx">
+	<property name="Extends" value="challengeQuestMaster"/>
+	<property name="CustomIcon" value="Quest" />
+	<property name="DescriptionKey" value="qc_TheSphinxDesc"/>
+	<property class="Action0">
+		<property name="QuestGiven" value="quest_TheSphinx1"/>
+	</property>
+</item>
+
+
+
+<item name="qc_SphinxSidequest1">
+	<property name="Extends" value="challengeQuestMaster"/>
+	<property name="CustomIcon" value="Quest" />
+	<property class="Action0">
+		<property name="QuestGiven" value="quest_SidequestTheSphinx1"/>
+	</property>
+	<!--<requirement name="CVarCompare" target="self" cvar="qc_FindTheSphinx" operation="Equals" value="1"/> </triggered_effect>-->
+</item>
+
+
+
+
+<!--XXXXXX 
+
+Quest Item (Reward for completing quests)
+Sphinx info Book
+XXXXXX  -->
+
+
+		
+
+<!--XXXXXX 
+
+Loot
+
+XXXXXX  -->	
+
+<item name="EgyptHiveQueenHeart">
+	<property name="DescriptionKey" value="EgyptSellableDesc"/>
+	<property name="Meshfile" value="Items/Misc/sackPrefab"/>
+	<property name="CustomIcon" value="MagicStone" />
+	<property name="HoldType" value="45"/>
+	<property name="Material" value="Mmetal"/>
+	<property name="Stacknumber" value="250"/>
+	<property name="EconomicValue" value="150"/>
+	<property name="EconomicBundleSize" value="50"/>
+	<property name="Group" value="Resources,Basics"/>
+	<property name="LootExpValue" value="100"/>
+	<property name="SellableToTrader" value="true"/>
+</item>
+
+<item name="EgyptAncientStone">
+	<property name="DescriptionKey" value="EgyptSellableDesc"/>
+	<property name="Meshfile" value="#@modfolder:Resources/CoAItem.unity3d?CrystalWhiteHand" />
+	<property name="HandMeshfile" value="#@modfolder:Resources/CoAItem.unity3d?CrystalWhiteHand" />
+	<property name="CustomIcon" value="MagicStone" />
+	<property name="HoldType" value="45"/>
+	<property name="Material" value="Mmetal"/>
+	<property name="Stacknumber" value="250"/>
+	<property name="EconomicValue" value="150"/>
+	<property name="EconomicBundleSize" value="50"/>
+	<property name="Group" value="Resources,Basics"/>
+	<property name="LootExpValue" value="100"/>
+	<property name="SellableToTrader" value="true"/>
+</item>
+
+<item name="EgyptAncientStoneRed">
+	<property name="DescriptionKey" value="EgyptSellableDesc"/>
+	<property name="Meshfile" value="#@modfolder:Resources/CoAItem.unity3d?CrystalRedHand" />
+	<property name="HandMeshfile" value="#@modfolder:Resources/CoAItem.unity3d?CrystalRedHand" />
+	<property name="CustomIcon" value="MagicStoneFire" />
+	<property name="HoldType" value="45"/>
+	<property name="Material" value="Mmetal"/>
+	<property name="Stacknumber" value="250"/>
+	<property name="EconomicValue" value="150"/>
+	<property name="EconomicBundleSize" value="50"/>
+	<property name="Group" value="Resources,Basics"/>
+	<property name="LootExpValue" value="100"/>
+	<property name="SellableToTrader" value="true"/>
+</item>
+
+<item name="EgyptAncientStoneBlue">
+	<property name="DescriptionKey" value="EgyptSellableDesc"/>
+	<property name="Meshfile" value="#@modfolder:Resources/CoAItem.unity3d?CrystalBlueHand" />
+	<property name="HandMeshfile" value="#@modfolder:Resources/CoAItem.unity3d?CrystalBlueHand" />
+	<property name="CustomIcon" value="MagicStoneCold" />
+	<property name="HoldType" value="45"/>
+	<property name="Material" value="Mmetal"/>
+	<property name="Stacknumber" value="250"/>
+	<property name="EconomicValue" value="150"/>
+	<property name="EconomicBundleSize" value="50"/>
+	<property name="Group" value="Resources,Basics"/>
+	<property name="LootExpValue" value="100"/>
+	<property name="SellableToTrader" value="true"/>
+</item>
+
+<item name="EgyptAncientStoneYellow">
+	<property name="DescriptionKey" value="EgyptSellableDesc"/>
+	<property name="Meshfile" value="#@modfolder:Resources/CoAItem.unity3d?CrystalYellowHand" />
+	<property name="HandMeshfile" value="#@modfolder:Resources/CoAItem.unity3d?CrystalYellowHand" />
+	<property name="CustomIcon" value="MagicStoneElectric" />
+	<property name="HoldType" value="45"/>
+	<property name="Material" value="Mmetal"/>
+	<property name="Stacknumber" value="250"/>
+	<property name="EconomicValue" value="150"/>
+	<property name="EconomicBundleSize" value="50"/>
+	<property name="Group" value="Resources,Basics"/>
+	<property name="LootExpValue" value="100"/>
+	<property name="SellableToTrader" value="true"/>
+</item>
+
+<item name="EgyptAncientStoneGreen">
+	<property name="DescriptionKey" value="EgyptSellableDesc"/>
+	<property name="Meshfile" value="#@modfolder:Resources/CoAItem.unity3d?CrystalGreenHand" />
+	<property name="HandMeshfile" value="#@modfolder:Resources/CoAItem.unity3d?CrystalGreenHand" />
+	<property name="CustomIcon" value="MagicStoneElectric" />
+	<property name="HoldType" value="45"/>
+	<property name="Material" value="Mmetal"/>
+	<property name="Stacknumber" value="250"/>
+	<property name="EconomicValue" value="150"/>
+	<property name="EconomicBundleSize" value="50"/>
+	<property name="Group" value="Resources,Basics"/>
+	<property name="LootExpValue" value="100"/>
+	<property name="SellableToTrader" value="true"/>
+</item>
+
+<item name="EgyptAncientStoneWhite">
+	<property name="DescriptionKey" value="EgyptSellableDesc"/>
+	<property name="Meshfile" value="#@modfolder:Resources/CoAItem.unity3d?CrystalWhiteHand" />
+	<property name="HandMeshfile" value="#@modfolder:Resources/CoAItem.unity3d?CrystalWhiteHand" />
+	<property name="CustomIcon" value="MagicStoneElectric" />
+	<property name="HoldType" value="45"/>
+	<property name="Material" value="Mmetal"/>
+	<property name="Stacknumber" value="250"/>
+	<property name="EconomicValue" value="150"/>
+	<property name="EconomicBundleSize" value="50"/>
+	<property name="Group" value="Resources,Basics"/>
+	<property name="LootExpValue" value="100"/>
+	<property name="SellableToTrader" value="true"/>
+</item>
+
+
+
+
+<item name="EgyptAncientMushroom">
+	<property name="DescriptionKey" value="EgyptSellableDesc"/>
+	<property name="Meshfile" value="#@modfolder:Resources/CoAItem.unity3d?MushroomHand" />
+	<property name="HandMeshfile" value="#@modfolder:Resources/CoAItem.unity3d?MushroomHand" />
+	<property name="CustomIcon" value="" />
+	<property name="HoldType" value="45"/>
+	<property name="Material" value="Mmetal"/>
+	<property name="Stacknumber" value="250"/>
+	<property name="EconomicValue" value="150"/>
+	<property name="EconomicBundleSize" value="50"/>
+	<property name="Group" value="Resources,Basics"/>
+	<property name="LootExpValue" value="100"/>
+	<property name="SellableToTrader" value="true"/>
+</item>
+
+
+
+
+
+<item name="EgyptFragments">
+	<property name="DescriptionKey" value="EgyptSellableDesc"/>
+	<property name="Meshfile" value="Items/Misc/sackPrefab"/>
+	<property name="CustomIcon" value="WeaponFragment" />
+	<property name="HoldType" value="45"/>
+	<property name="Material" value="Mmetal"/>
+	<property name="Stacknumber" value="250"/>
+	<property name="EconomicValue" value="150"/>
+	<property name="EconomicBundleSize" value="50"/>
+	<property name="Group" value="Resources,Basics"/>
+	<property name="LootExpValue" value="100"/>
+	<property name="SellableToTrader" value="true"/>
+</item>
+
+
+
+<item name="EgyptGold">
+	<property name="DescriptionKey" value="EgyptSellableDesc"/>
+	<property name="CustomIcon" value="" />
+	<property name="Meshfile" value="Items/Misc/sackPrefab"/>
+	<property name="HoldType" value="45"/>
+	<property name="Material" value="MresourceWood"/>
+	<property name="Stacknumber" value="100"/>
+	<property name="EconomicValue" value="400"/>
+	<property name="EconomicBundleSize" value="10"/>
+	<property name="Group" value="Resources,Basics"/>
+	<property name="LootExpValue" value="100"/>
+	<property name="SellableToTrader" value="true"/>
+</item>
+
+<item name="EgyptGoldCoin">
+	<property name="DescriptionKey" value="EgyptSellableDesc"/>
+	<property name="CustomIcon" value="GoldCoin" />
+	<property name="Meshfile" value="#@modfolder:Resources/CoAItem.unity3d?GoldCoinHand" />
+	<property name="HandMeshfile" value="#@modfolder:Resources/CoAItem.unity3d?GoldCoinHand" />
+	<property name="HoldType" value="45"/>
+	<property name="Material" value="MresourceWood"/>
+	<property name="Stacknumber" value="100"/>
+	<property name="EconomicValue" value="200"/>
+	<property name="EconomicBundleSize" value="10"/>
+	<property name="Group" value="Resources,Basics"/>
+	<property name="LootExpValue" value="100"/>
+	<property name="SellableToTrader" value="true"/>
+</item>
+
+<item name="EgyptGoldBar">
+	<property name="DescriptionKey" value="EgyptSellableDesc"/>
+	<property name="CustomIcon" value="GoldBar" />
+	<property name="Meshfile" value="#@modfolder:Resources/CoAItem.unity3d?GoldBarHand" />
+	<property name="HandMeshfile" value="#@modfolder:Resources/CoAItem.unity3d?GoldBarHand" />
+	<property name="HoldType" value="45"/>
+	<property name="Material" value="MresourceWood"/>
+	<property name="Stacknumber" value="100"/>
+	<property name="EconomicValue" value="400"/>
+	<property name="EconomicBundleSize" value="10"/>
+	<property name="Group" value="Resources,Basics"/>
+	<property name="LootExpValue" value="100"/>
+	<property name="SellableToTrader" value="true"/>
+</item>
+
+
+<item name="EgyptCup">
+	<property name="DescriptionKey" value="EgyptSellableDesc"/>
+	<property name="CustomIcon" value="Cup1" />
+	<property name="Meshfile" value="Items/Misc/sackPrefab"/>
+	<property name="HoldType" value="45"/>
+	<property name="Material" value="MresourceWood"/>
+	<property name="Stacknumber" value="10"/>
+	<property name="EconomicValue" value="50"/>
+	<property name="EconomicBundleSize" value="1"/>
+	<property name="Group" value="Resources,Basics"/>
+	<property name="LootExpValue" value="100"/>
+	<property name="SellableToTrader" value="true"/>
+</item>
+
+
+<item name="EgyptBook">
+	<property name="DescriptionKey" value="EgyptSellableDesc"/>
+	<property name="CustomIcon" value="BookOpen" />
+	<property name="Meshfile" value="#@modfolder:Resources/CoAItem.unity3d?BookOpenHand" />
+	<property name="HandMeshfile" value="#@modfolder:Resources/CoAItem.unity3d?BookOpenHand" />
+	<property name="HoldType" value="45"/>
+	<property name="Material" value="MresourceWood"/>
+	<property name="Stacknumber" value="10"/>
+	<property name="EconomicValue" value="50"/>
+	<property name="EconomicBundleSize" value="1"/>
+	<property name="Group" value="Resources,Basics"/>
+	<property name="LootExpValue" value="100"/>
+	<property name="SellableToTrader" value="true"/>
+</item>
+
+
+<item name="EgyptPapyrusScroll">
+	<property name="DescriptionKey" value="EgyptSellableDesc"/>
+	<property name="CustomIcon" value="BookOpen" />
+	<property name="Meshfile" value="#@modfolder:Resources/CoAItem.unity3d?PapyrusScrollHand" />
+	<property name="HandMeshfile" value="#@modfolder:Resources/CoAItem.unity3d?PapyrusScrollHand" />
+	<property name="HoldType" value="45"/>
+	<property name="Material" value="MresourceWood"/>
+	<property name="Stacknumber" value="10"/>
+	<property name="EconomicValue" value="50"/>
+	<property name="EconomicBundleSize" value="1"/>
+	<property name="Group" value="Resources,Basics"/>
+	<property name="LootExpValue" value="100"/>
+	<property name="SellableToTrader" value="true"/>
+</item>
+
+<item name="EgyptCross">
+	<property name="DescriptionKey" value="EgyptSellableDesc"/>
+	<property name="CustomIcon" value="PharaoCross1" />
+	<property name="Meshfile" value="Items/Misc/sackPrefab"/>
+	<property name="Meshfile" value="#@modfolder:Resources/CoAItem.unity3d?CrossHand" />
+	<property name="HandMeshfile" value="#@modfolder:Resources/CoAItem.unity3d?CrossHand" />
+	<property name="HoldType" value="12"/>
+	<property name="Material" value="MresourceWood"/>
+	<property name="Stacknumber" value="10"/>
+	<property name="EconomicValue" value="50"/>
+	<property name="EconomicBundleSize" value="1"/>
+	<property name="Group" value="Resources,Basics"/>
+	<property name="LootExpValue" value="100"/>
+	<property name="SellableToTrader" value="true"/>
+</item>
+
+
+
+<!--XXXXXX 
+
+Schematics / Books
+
+XXXXXX  -->
+
+
+
+<item name="EgyptModSchematic">
+	<property name="Extends" value="unlockBookMaster"/>
+	<property name="Stacknumber" value="5"/>
+	<property name="EconomicValue" value="100"/>
+	<property name="EconomicBundleSize" value="1"/>
+	<property name="LootExpValue" value="100"/>
+	<property name="DescriptionKey" value="EgyptModSchematicDesc"/>
+	<property name="CreativeMode" value="Player"/>
+	<property name="SellableToTrader" value="true"/>
+	<property class="Action0">
+		<requirement name="CVarCompare" cvar="drinkJarBeer" operation="Equals" value="0"/>
+	</property>
+	<effect_group tiered="false">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="modAnubis" operation="set" value="1"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="modPharao" operation="set" value="1"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="modQueen" operation="set" value="1"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="modMinionsRAD" operation="set" value="1"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="modBossRAD" operation="set" value="1"/>
+		
+	</effect_group>
+</item>
+
+<item name="EgyptModRareSchematic">
+	<property name="Extends" value="unlockBookMaster"/>
+	<property name="Stacknumber" value="5"/>
+	<property name="EconomicValue" value="100"/>
+	<property name="EconomicBundleSize" value="1"/>
+	<property name="LootExpValue" value="100"/>
+	<property name="DescriptionKey" value="EgyptModSchematicDesc"/>
+	<property name="CreativeMode" value="Player"/>
+	<property name="SellableToTrader" value="true"/>
+	<property class="Action0">
+		<requirement name="CVarCompare" cvar="drinkJarBeer" operation="Equals" value="0"/>
+	</property>
+	<effect_group tiered="false">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="modAnubisRare" operation="set" value="1"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="modPharaoRare" operation="set" value="1"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="modQueenRare" operation="set" value="1"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="modMinionsRADRare" operation="set" value="1"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="modBossRADRare" operation="set" value="1"/>
+		
+	</effect_group>
+</item>
+
+
+<item name="EgyptInfoBookSchematic">
+	<property name="Extends" value="unlockBookMaster"/>
+	<property name="Stacknumber" value="5"/>
+	<property name="EconomicValue" value="100"/>
+	<property name="EconomicBundleSize" value="1"/>
+	<property name="LootExpValue" value="100"/>
+	<property name="DescriptionKey" value="EgyptInfoBookSchematicDesc"/>
+	<property name="CreativeMode" value="Player"/>
+	<property name="SellableToTrader" value="true"/>
+	<property class="Action0">
+		<requirement name="CVarCompare" cvar="drinkJarBeer" operation="Equals" value="0"/>
+	</property>
+	<effect_group tiered="false">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="TheSphinxInfoBook" operation="set" value="1"/>
+	</effect_group>
+</item>
+
+
+<item name="EgyptSwordSchematic">
+	<property name="Extends" value="unlockBookMaster"/>
+	<property name="Stacknumber" value="5"/>
+	<property name="EconomicValue" value="100"/>
+	<property name="EconomicBundleSize" value="1"/>
+	<property name="LootExpValue" value="100"/>
+	<property name="DescriptionKey" value="EgyptSwordSchematicDesc"/>
+	<property name="CreativeMode" value="Player"/>
+	<property name="SellableToTrader" value="true"/>
+	<property class="Action0">
+		<requirement name="CVarCompare" cvar="drinkJarBeer" operation="Equals" value="0"/>
+	</property>
+	<effect_group tiered="false">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="EgyptSword" operation="set" value="1"/>
+	</effect_group>
+</item>
+
+<item name="EgyptKnifeSchematic">
+	<property name="Extends" value="unlockBookMaster"/>
+	<property name="Stacknumber" value="5"/>
+	<property name="EconomicValue" value="100"/>
+	<property name="EconomicBundleSize" value="1"/>
+	<property name="LootExpValue" value="100"/>
+	<property name="DescriptionKey" value="EgyptKnifeSchematicDesc"/>
+	<property name="CreativeMode" value="Player"/>
+	<property name="SellableToTrader" value="true"/>
+	<property class="Action0">
+		<requirement name="CVarCompare" cvar="drinkJarBeer" operation="Equals" value="0"/>
+	</property>
+	<effect_group tiered="false">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="EgyptKnife1" operation="set" value="1"/>
+	</effect_group>
+</item>
+
+<item name="EgyptSickleSchematic">
+	<property name="Extends" value="unlockBookMaster"/>
+	<property name="Stacknumber" value="5"/>
+	<property name="EconomicValue" value="100"/>
+	<property name="EconomicBundleSize" value="1"/>
+	<property name="LootExpValue" value="100"/>
+	<property name="DescriptionKey" value="EgyptSickleSchematicDesc"/>
+	<property name="CreativeMode" value="Player"/>
+	<property name="SellableToTrader" value="true"/>
+	<property class="Action0">
+		<requirement name="CVarCompare" cvar="drinkJarBeer" operation="Equals" value="0"/>
+	</property>
+	<effect_group tiered="false">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="EgyptSickle1" operation="set" value="1"/>
+	</effect_group>
+</item>
+
+
+<item name="EgyptKhopeshSchematic">
+	<property name="Extends" value="unlockBookMaster"/>
+	<property name="Stacknumber" value="5"/>
+	<property name="EconomicValue" value="100"/>
+	<property name="EconomicBundleSize" value="1"/>
+	<property name="LootExpValue" value="100"/>
+	<property name="DescriptionKey" value="EgyptKhopeshSchematicDesc"/>
+	<property name="CreativeMode" value="Player"/>
+	<property name="SellableToTrader" value="true"/>
+	<property class="Action0">
+		<requirement name="CVarCompare" cvar="drinkJarBeer" operation="Equals" value="0"/>
+	</property>
+	<effect_group tiered="false">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="EgyptKhopesh" operation="set" value="1"/>
+	</effect_group>
+</item>
+
+<item name="EgyptSpear1Schematic">
+	<property name="Extends" value="unlockBookMaster"/>
+	<property name="Stacknumber" value="5"/>
+	<property name="EconomicValue" value="100"/>
+	<property name="EconomicBundleSize" value="1"/>
+	<property name="LootExpValue" value="100"/>
+	<property name="DescriptionKey" value=""/>
+	<property name="CreativeMode" value="Player"/>
+	<property name="SellableToTrader" value="true"/>
+	<property class="Action0">
+		<requirement name="CVarCompare" cvar="drinkJarBeer" operation="Equals" value="0"/>
+	</property>
+	<effect_group tiered="false">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="EgyptSpear1" operation="set" value="1"/>
+	</effect_group>
+</item>
+
+
+<item name="EgyptSpear2Schematic">
+	<property name="Extends" value="unlockBookMaster"/>
+	<property name="Stacknumber" value="5"/>
+	<property name="EconomicValue" value="100"/>
+	<property name="EconomicBundleSize" value="1"/>
+	<property name="LootExpValue" value="100"/>
+	<property name="DescriptionKey" value=""/>
+	<property name="CreativeMode" value="Player"/>
+	<property name="SellableToTrader" value="true"/>
+	<property class="Action0">
+		<requirement name="CVarCompare" cvar="drinkJarBeer" operation="Equals" value="0"/>
+	</property>
+	<effect_group tiered="false">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="EgyptSpear2" operation="set" value="1"/>
+	</effect_group>
+</item>
+
+<item name="EgyptSpear3Schematic">
+	<property name="Extends" value="unlockBookMaster"/>
+	<property name="Stacknumber" value="5"/>
+	<property name="EconomicValue" value="100"/>
+	<property name="EconomicBundleSize" value="1"/>
+	<property name="LootExpValue" value="100"/>
+	<property name="DescriptionKey" value=""/>
+	<property name="CreativeMode" value="Player"/>
+	<property name="SellableToTrader" value="true"/>
+	<property class="Action0">
+		<requirement name="CVarCompare" cvar="drinkJarBeer" operation="Equals" value="0"/>
+	</property>
+	<effect_group tiered="false">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="EgyptSpear3" operation="set" value="1"/>
+	</effect_group>
+</item>
+
+<item name="EgyptZeptar1Schematic">
+	<property name="Extends" value="unlockBookMaster"/>
+	<property name="Stacknumber" value="5"/>
+	<property name="EconomicValue" value="100"/>
+	<property name="EconomicBundleSize" value="1"/>
+	<property name="LootExpValue" value="100"/>
+	<property name="DescriptionKey" value="EgyptKhopeshSchematicDesc"/>
+	<property name="CreativeMode" value="Player"/>
+	<property name="SellableToTrader" value="true"/>
+	<property class="Action0">
+		<requirement name="CVarCompare" cvar="drinkJarBeer" operation="Equals" value="0"/>
+	</property>
+	<effect_group tiered="false">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="EgyptZeptar1" operation="set" value="1"/>
+	</effect_group>
+</item>
+
+
+<!--XXXXXX 
+
+Weapons
+
+XXXXXX  -->
+
+<item name="EgyptAncientStoneTool">
+	<property name="Tags" value="hammer,tool"/>
+	<property name="DisplayType" value="meleeRepairTool"/>
+	<property name="HoldType" value="32"/>
+	<property name="Meshfile" value="#@modfolder:Resources/CoAItem.unity3d?CrystalWhiteHand" />
+	<property name="Material" value="Mmetal"/>
+	<property name="RepairTools" value="resourceForgedIron"/>
+	<property name="DegradationBreaksAfter" value="false"/>
+	<property name="SoundJammed" value="ItemNeedsRepair"/>
+	<property name="SoundDestroy" value="wooddestroy1"/>
+	<property name="FuelValue" value="150"/>
+	<property name="EconomicValue" value="200"/>
+	<property class="Action0">
+		<property name="Class" value="Repair"/>
+		<property name="Delay" value=".64"/> <!-- Repair actions still need the delay amount -->
+		<property name="Repair_amount" value="250"/>
+		<property name="Upgrade_hit_offset" value="-3"/>
+		<property name="Sound_start" value="repair_block"/>
+		<property name="Allowed_upgrade_items" value="EgyptAncientStone,EgyptAncientStoneRed,EgyptAncientStoneYellow,EgyptAncientStoneBlue,EgyptAncientStoneWhite,EgyptAncientStoneGreen"/>
+		<property name="UsePowerAttackAnimation" value="false"/>
+	</property>
+	<effect_group name="Base Effects">
+		<passive_effect name="MaxRange" operation="base_set" value="2.0"/>
+		<passive_effect name="BlockRange" operation="base_set" value="2.5"/>
+		<passive_effect name="EntityDamage" operation="base_set" value="9"/> <!-- meleeToolClawHammer -->
+		<passive_effect name="BlockDamage" operation="base_set" value="20"/>
+		<passive_effect name="AttacksPerMinute" operation="base_set" value="70"/> <!-- A16 .8 -->
+		<passive_effect name="StaminaLoss" operation="base_set" value="12.0" tags="primary"/>
+		<passive_effect name="DegradationMax" operation="base_set" value="200,800" tier="1,6"/>
+		<passive_effect name="ModSlots" operation="base_set" value="0,5" tier="1,6"/>
+		<passive_effect name="ModPowerBonus" operation="perc_add" value=".15" tags="EntityDamage,BlockDamage"/>
+		<passive_effect name="ModPowerBonus" operation="base_add" value="200" tags="EconomicValue"/>
+	</effect_group>
+	<property name="Group" value="Tools/Traps"/>
+	<property name="ActionSkillGroup" value="Construction Tools"/>
+	<property name="CraftingSkillGroup" value="craftSkillTools"/>
+	<property name="RepairExpMultiplier" value="5.5"/>
+</item>
+
+
+<item name="EgyptpyramideMiddle">
+	<property name="Tags" value="hammer,tool"/>
+	<property name="DisplayType" value="meleeRepairTool"/>
+	<property name="HoldType" value="32"/>
+	<property name="Meshfile" value="#@modfolder:Resources/CoAItem.unity3d?PyramideMiddleHand" />
+	<property name="HandMeshfile" value="#@modfolder:Resources/CoAItem.unity3d?PyramideMiddleHand" />
+	<property name="Material" value="Mmetal"/>
+	<property name="RepairTools" value="resourceForgedIron"/>
+	<property name="DegradationBreaksAfter" value="false"/>
+	<property name="SoundJammed" value="ItemNeedsRepair"/>
+	<property name="SoundDestroy" value="wooddestroy1"/>
+	<property name="FuelValue" value="150"/>
+	<property name="EconomicValue" value="200"/>
+	<property class="Action0">
+		<property name="Class" value="Repair"/>
+		<property name="Delay" value=".64"/> <!-- Repair actions still need the delay amount -->
+		<property name="Repair_amount" value="250"/>
+		<property name="Upgrade_hit_offset" value="-3"/>
+		<property name="Sound_start" value="repair_block"/>
+		<property name="Allowed_upgrade_items" value="EgyptpyramideMiddle"/>
+		<property name="UsePowerAttackAnimation" value="false"/>
+	</property>
+	<effect_group name="Base Effects">
+		<passive_effect name="MaxRange" operation="base_set" value="2.0"/>
+		<passive_effect name="BlockRange" operation="base_set" value="2.5"/>
+		<passive_effect name="EntityDamage" operation="base_set" value="9"/> <!-- meleeToolClawHammer -->
+		<passive_effect name="BlockDamage" operation="base_set" value="20"/>
+		<passive_effect name="AttacksPerMinute" operation="base_set" value="70"/> <!-- A16 .8 -->
+		<passive_effect name="StaminaLoss" operation="base_set" value="12.0" tags="primary"/>
+		<passive_effect name="DegradationMax" operation="base_set" value="200,800" tier="1,6"/>
+		<passive_effect name="ModSlots" operation="base_set" value="0,5" tier="1,6"/>
+		<passive_effect name="ModPowerBonus" operation="perc_add" value=".15" tags="EntityDamage,BlockDamage"/>
+		<passive_effect name="ModPowerBonus" operation="base_add" value="200" tags="EconomicValue"/>
+	</effect_group>
+	<property name="Group" value="Tools/Traps"/>
+	<property name="ActionSkillGroup" value="Construction Tools"/>
+	<property name="CraftingSkillGroup" value="craftSkillTools"/>
+	<property name="RepairExpMultiplier" value="5.5"/>
+</item>
+
+<item name="EgyptpyramideTop">
+	<property name="Tags" value="hammer,tool"/>
+	<property name="DisplayType" value="meleeRepairTool"/>
+	<property name="HoldType" value="32"/>
+	<property name="Meshfile" value="#@modfolder:Resources/CoAItem.unity3d?PyramideTopHand" />
+	<property name="HandMeshfile" value="#@modfolder:Resources/CoAItem.unity3d?PyramideTopHand" />
+	<property name="Material" value="Mmetal"/>
+	<property name="RepairTools" value="resourceForgedIron"/>
+	<property name="DegradationBreaksAfter" value="false"/>
+	<property name="SoundJammed" value="ItemNeedsRepair"/>
+	<property name="SoundDestroy" value="wooddestroy1"/>
+	<property name="FuelValue" value="150"/>
+	<property name="EconomicValue" value="200"/>
+	<property class="Action0">
+		<property name="Class" value="Repair"/>
+		<property name="Delay" value=".64"/> <!-- Repair actions still need the delay amount -->
+		<property name="Repair_amount" value="250"/>
+		<property name="Upgrade_hit_offset" value="-3"/>
+		<property name="Sound_start" value="repair_block"/>
+		<property name="Allowed_upgrade_items" value="EgyptpyramideTop"/>
+		<property name="UsePowerAttackAnimation" value="false"/>
+	</property>
+	<effect_group name="Base Effects">
+		<passive_effect name="MaxRange" operation="base_set" value="2.0"/>
+		<passive_effect name="BlockRange" operation="base_set" value="2.5"/>
+		<passive_effect name="EntityDamage" operation="base_set" value="9"/> <!-- meleeToolClawHammer -->
+		<passive_effect name="BlockDamage" operation="base_set" value="20"/>
+		<passive_effect name="AttacksPerMinute" operation="base_set" value="70"/> <!-- A16 .8 -->
+		<passive_effect name="StaminaLoss" operation="base_set" value="12.0" tags="primary"/>
+		<passive_effect name="DegradationMax" operation="base_set" value="200,800" tier="1,6"/>
+		<passive_effect name="ModSlots" operation="base_set" value="0,5" tier="1,6"/>
+		<passive_effect name="ModPowerBonus" operation="perc_add" value=".15" tags="EntityDamage,BlockDamage"/>
+		<passive_effect name="ModPowerBonus" operation="base_add" value="200" tags="EconomicValue"/>
+	</effect_group>
+	<property name="Group" value="Tools/Traps"/>
+	<property name="ActionSkillGroup" value="Construction Tools"/>
+	<property name="CraftingSkillGroup" value="craftSkillTools"/>
+	<property name="RepairExpMultiplier" value="5.5"/>
+</item>
+
+  <item name="EgyptAnubisDoorKey1">
+	<property name="Tags" value="hammer,tool"/>
+	<property name="DisplayType" value="meleeRepairTool"/>
+	<property name="HoldType" value="32"/>
+	<property name="Meshfile" value="Items/Tools/hammerPrefab"/>
+	<property name="Material" value="Mmetal"/>
+	<property name="RepairTools" value="resourceForgedIron"/>
+	<property name="DegradationBreaksAfter" value="false"/>
+	<property name="SoundJammed" value="ItemNeedsRepair"/>
+	<property name="SoundDestroy" value="wooddestroy1"/>
+	<property name="FuelValue" value="150"/>
+	<property name="EconomicValue" value="200"/>
+	<property class="Action0">
+		<property name="Class" value="Repair"/>
+		<property name="Delay" value=".64"/> <!-- Repair actions still need the delay amount -->
+		<property name="Repair_amount" value="250"/>
+		<property name="Upgrade_hit_offset" value="-3"/>
+		<property name="Sound_start" value="repair_block"/>
+		<property name="Allowed_upgrade_items" value="EgyptAnubisDoorKey1"/>
+		<property name="UsePowerAttackAnimation" value="false"/>
+	</property>
+	<effect_group name="Base Effects">
+		<passive_effect name="MaxRange" operation="base_set" value="2.0"/>
+		<passive_effect name="BlockRange" operation="base_set" value="2.5"/>
+		<passive_effect name="EntityDamage" operation="base_set" value="9"/> <!-- meleeToolClawHammer -->
+		<passive_effect name="BlockDamage" operation="base_set" value="20"/>
+		<passive_effect name="AttacksPerMinute" operation="base_set" value="70"/> <!-- A16 .8 -->
+		<passive_effect name="StaminaLoss" operation="base_set" value="12.0" tags="primary"/>
+		<passive_effect name="DegradationMax" operation="base_set" value="200,800" tier="1,6"/>
+		<passive_effect name="ModSlots" operation="base_set" value="0,5" tier="1,6"/>
+		<passive_effect name="ModPowerBonus" operation="perc_add" value=".15" tags="EntityDamage,BlockDamage"/>
+		<passive_effect name="ModPowerBonus" operation="base_add" value="200" tags="EconomicValue"/>
+	</effect_group>
+	<property name="Group" value="Tools/Traps"/>
+	<property name="ActionSkillGroup" value="Construction Tools"/>
+	<property name="CraftingSkillGroup" value="craftSkillTools"/>
+	<property name="RepairExpMultiplier" value="5.5"/>
+</item>
+
+
+  <item name="EgyptAnubisDoorKey2">
+	<property name="Tags" value="hammer,tool"/>
+	<property name="DisplayType" value="meleeRepairTool"/>
+	<property name="HoldType" value="32"/>
+	<property name="Meshfile" value="Items/Tools/hammerPrefab"/>
+	<property name="Material" value="Mmetal"/>
+	<property name="RepairTools" value="resourceForgedIron"/>
+	<property name="DegradationBreaksAfter" value="false"/>
+	<property name="SoundJammed" value="ItemNeedsRepair"/>
+	<property name="SoundDestroy" value="wooddestroy1"/>
+	<property name="FuelValue" value="150"/>
+	<property name="EconomicValue" value="200"/>
+	<property class="Action0">
+		<property name="Class" value="Repair"/>
+		<property name="Delay" value=".64"/> <!-- Repair actions still need the delay amount -->
+		<property name="Repair_amount" value="250"/>
+		<property name="Upgrade_hit_offset" value="-3"/>
+		<property name="Sound_start" value="repair_block"/>
+		<property name="Allowed_upgrade_items" value="EgyptAnubisDoorKey2"/>
+		<property name="UsePowerAttackAnimation" value="false"/>
+	</property>
+	<effect_group name="Base Effects">
+		<passive_effect name="MaxRange" operation="base_set" value="2.0"/>
+		<passive_effect name="BlockRange" operation="base_set" value="2.5"/>
+		<passive_effect name="EntityDamage" operation="base_set" value="9"/> <!-- meleeToolClawHammer -->
+		<passive_effect name="BlockDamage" operation="base_set" value="20"/>
+		<passive_effect name="AttacksPerMinute" operation="base_set" value="70"/> <!-- A16 .8 -->
+		<passive_effect name="StaminaLoss" operation="base_set" value="12.0" tags="primary"/>
+		<passive_effect name="DegradationMax" operation="base_set" value="200,800" tier="1,6"/>
+		<passive_effect name="ModSlots" operation="base_set" value="0,5" tier="1,6"/>
+		<passive_effect name="ModPowerBonus" operation="perc_add" value=".15" tags="EntityDamage,BlockDamage"/>
+		<passive_effect name="ModPowerBonus" operation="base_add" value="200" tags="EconomicValue"/>
+	</effect_group>
+	<property name="Group" value="Tools/Traps"/>
+	<property name="ActionSkillGroup" value="Construction Tools"/>
+	<property name="CraftingSkillGroup" value="craftSkillTools"/>
+	<property name="RepairExpMultiplier" value="5.5"/>
+</item>
+
+  <item name="EgyptAnubisDoorKey3">
+	<property name="Tags" value="hammer,tool"/>
+	<property name="DisplayType" value="meleeRepairTool"/>
+	<property name="HoldType" value="32"/>
+	<property name="Meshfile" value="Items/Tools/hammerPrefab"/>
+	<property name="Material" value="Mmetal"/>
+	<property name="RepairTools" value="resourceForgedIron"/>
+	<property name="DegradationBreaksAfter" value="false"/>
+	<property name="SoundJammed" value="ItemNeedsRepair"/>
+	<property name="SoundDestroy" value="wooddestroy1"/>
+	<property name="FuelValue" value="150"/>
+	<property name="EconomicValue" value="200"/>
+	<property class="Action0">
+		<property name="Class" value="Repair"/>
+		<property name="Delay" value=".64"/> <!-- Repair actions still need the delay amount -->
+		<property name="Repair_amount" value="250"/>
+		<property name="Upgrade_hit_offset" value="-3"/>
+		<property name="Sound_start" value="repair_block"/>
+		<property name="Allowed_upgrade_items" value="EgyptAnubisDoorKey3"/>
+		<property name="UsePowerAttackAnimation" value="false"/>
+	</property>
+	<effect_group name="Base Effects">
+		<passive_effect name="MaxRange" operation="base_set" value="2.0"/>
+		<passive_effect name="BlockRange" operation="base_set" value="2.5"/>
+		<passive_effect name="EntityDamage" operation="base_set" value="9"/> <!-- meleeToolClawHammer -->
+		<passive_effect name="BlockDamage" operation="base_set" value="20"/>
+		<passive_effect name="AttacksPerMinute" operation="base_set" value="70"/> <!-- A16 .8 -->
+		<passive_effect name="StaminaLoss" operation="base_set" value="12.0" tags="primary"/>
+		<passive_effect name="DegradationMax" operation="base_set" value="200,800" tier="1,6"/>
+		<passive_effect name="ModSlots" operation="base_set" value="0,5" tier="1,6"/>
+		<passive_effect name="ModPowerBonus" operation="perc_add" value=".15" tags="EntityDamage,BlockDamage"/>
+		<passive_effect name="ModPowerBonus" operation="base_add" value="200" tags="EconomicValue"/>
+	</effect_group>
+	<property name="Group" value="Tools/Traps"/>
+	<property name="ActionSkillGroup" value="Construction Tools"/>
+	<property name="CraftingSkillGroup" value="craftSkillTools"/>
+	<property name="RepairExpMultiplier" value="5.5"/>
+</item>
+
+  <item name="EgyptAnubisDoorKey4">
+	<property name="Tags" value="hammer,tool"/>
+	<property name="DisplayType" value="meleeRepairTool"/>
+	<property name="HoldType" value="32"/>
+	<property name="Meshfile" value="Items/Tools/hammerPrefab"/>
+	<property name="Material" value="Mmetal"/>
+	<property name="RepairTools" value="resourceForgedIron"/>
+	<property name="DegradationBreaksAfter" value="false"/>
+	<property name="SoundJammed" value="ItemNeedsRepair"/>
+	<property name="SoundDestroy" value="wooddestroy1"/>
+	<property name="FuelValue" value="150"/>
+	<property name="EconomicValue" value="200"/>
+	<property class="Action0">
+		<property name="Class" value="Repair"/>
+		<property name="Delay" value=".64"/> <!-- Repair actions still need the delay amount -->
+		<property name="Repair_amount" value="250"/>
+		<property name="Upgrade_hit_offset" value="-3"/>
+		<property name="Sound_start" value="repair_block"/>
+		<property name="Allowed_upgrade_items" value="EgyptAnubisDoorKey4"/>
+		<property name="UsePowerAttackAnimation" value="false"/>
+	</property>
+	<effect_group name="Base Effects">
+		<passive_effect name="MaxRange" operation="base_set" value="2.0"/>
+		<passive_effect name="BlockRange" operation="base_set" value="2.5"/>
+		<passive_effect name="EntityDamage" operation="base_set" value="9"/> <!-- meleeToolClawHammer -->
+		<passive_effect name="BlockDamage" operation="base_set" value="20"/>
+		<passive_effect name="AttacksPerMinute" operation="base_set" value="70"/> <!-- A16 .8 -->
+		<passive_effect name="StaminaLoss" operation="base_set" value="12.0" tags="primary"/>
+		<passive_effect name="DegradationMax" operation="base_set" value="200,800" tier="1,6"/>
+		<passive_effect name="ModSlots" operation="base_set" value="0,5" tier="1,6"/>
+		<passive_effect name="ModPowerBonus" operation="perc_add" value=".15" tags="EntityDamage,BlockDamage"/>
+		<passive_effect name="ModPowerBonus" operation="base_add" value="200" tags="EconomicValue"/>
+	</effect_group>
+	<property name="Group" value="Tools/Traps"/>
+	<property name="ActionSkillGroup" value="Construction Tools"/>
+	<property name="CraftingSkillGroup" value="craftSkillTools"/>
+	<property name="RepairExpMultiplier" value="5.5"/>
+</item>
+
+
+<item name="EgyptShield">
+	<property name="Tags" value="knife,melee,light,weapon,meleeWeapon,perkDeepCuts,perkTheHuntsman"/>
+	<property name="DisplayType" value="melee"/>
+	<property name="HoldType" value="47"/>
+	<property name="Meshfile" value="#@modfolder:Resources/CoAItem.unity3d?Shield" />
+	<property name="DropMeshfile" value="#@modfolder:Resources/CoAItem.unity3d?Shield"/>
+	<property name="Material" value="Mmetal"/>
+	<property name="RepairTools" value="resourceForgedSteel"/>
+	<property name="DegradationBreaksAfter" value="false"/>
+	<property name="EconomicValue" value="600"/>
+	<property name="SoundJammed" value="ItemNeedsRepair"/>
+	<property name="SoundDestroy" value="wooddestroy1"/>
+	<property name="Weight" value="200"/>
+	<property name="Group" value="Ammo/Weapons"/>
+	<property name="ActionSkillGroup" value="Blade Weapons"/>
+	<property name="CraftingSkillGroup" value="craftSkillWeapons"/>
+	<property name="RepairExpMultiplier" value="5.5"/>
+
+	<property class="Action0">
+		<property name="Class" value="DynamicMelee"/>
+		<property name="Damage_type" value="Slashing"/>
+		<property name="Sphere" value="0.15"/>   <!-- limit to 0.15, else the sphere cast can overlap the target already -->
+		<property name="Sound_start" value="swoosh"/>
+		<property name="ToolCategory.Butcher" value="0" param1="4"/>
+			<!-- This triggers the use of the special corpse harvesting animation if there is a matching harvest event.
+			Also, param1  is the damage multiplier for corpse harvesting. -->
+		<property name="Sound_harvesting" value="open_animal" param1="organic"/>
+	</property>
+	<property class="Action1">
+		<property name="Class" value="DynamicMelee"/>
+		<property name="Damage_type" value="Slashing"/>
+		<property name="Sphere" value="0.15"/>   <!-- limit to 0.15, else the sphere cast can overlap the target already -->
+		<property name="Sound_start" value="swoosh"/>
+		<property name="ToolCategory.Butcher" value="0" param1="4"/>
+		<property name="Sound_harvesting" value="open_animal" param1="organic"/>
+		<property name="UsePowerAttackAnimation" value="true"/>
+	</property>
+
+	<effect_group name="Base Effects">
+		<passive_effect name="MaxRange" operation="base_set" value="2.4"/>
+		<passive_effect name="BlockRange" operation="base_set" value="3"/>
+		<passive_effect name="EntityDamage" operation="base_set" value="3"/> <!-- meleeToolMachete -->
+		<passive_effect name="BlockDamage" operation="base_set" value="3"/>
+		<passive_effect name="DamageModifier" operation="perc_add" value="0" tags="wood"/>
+		<passive_effect name="DamageModifier" operation="perc_add" value="-.9" tags="earth"/>
+		<passive_effect name="DamageModifier" operation="perc_add" value="-.9" tags="stone"/>
+		<passive_effect name="DamageModifier" operation="perc_add" value="-.9" tags="metal"/>
+		<passive_effect name="AttacksPerMinute" operation="base_set" value="50"/> <!-- A16 1.2 -->
+		<passive_effect name="HarvestCount" operation="base_set" value="1" tags="butcherHarvest"/>
+		<passive_effect name="StaminaLoss" operation="base_set" value="15.8" tags="primary"/>
+		<passive_effect name="DegradationMax" operation="base_set" value="300,800" tier="1,6"/>
+		<passive_effect name="ModSlots" operation="base_set" value="0,5" tier="1,6"/>
+		<passive_effect name="ModPowerBonus" operation="perc_add" value=".15" tags="EntityDamage,BlockDamage"/>
+		<passive_effect name="ModPowerBonus" operation="base_add" value="200" tags="EconomicValue"/>
+		
+		<passive_effect name="ModSlots" operation="base_set" value="1"/>
+	
+
+		<triggered_effect trigger="onSelfItemActivate" action="AddBuff" target="self" buff="EgyptbuffShield"/>
+		<triggered_effect trigger="onSelfItemDeactivate" action="RemoveBuff" target="self" buff="EgyptbuffShield"/>
+		
+			
+	
+	</effect_group>
+	<effect_group name="Power Attack">
+		<passive_effect name="EntityDamage" operation="perc_add" value="1" tags="secondary"/>
+		<passive_effect name="BlockDamage" operation="perc_add" value="1" tags="secondary"/>
+		<passive_effect name="AttacksPerMinute" operation="perc_subtract" value="0" tags="secondary"/>
+		<passive_effect name="StaminaLoss" operation="base_add" value="24" tags="secondary"/>
+		<triggered_effect trigger="onSelfSecondaryActionStart" action="PlaySound" target="self" sound="player1painlg">
+			<requirement name="RandomRoll" seed_type="Random" target="self" min_max="0,100" operation="LTE" value="80"/>
+			<requirement name="IsMale" target="self"/>
+		</triggered_effect>
+		<triggered_effect trigger="onSelfSecondaryActionStart" action="PlaySound" target="self" sound="player2painlg">
+			<requirement name="RandomRoll" seed_type="Random" target="self" min_max="0,100" operation="LTE" value="80"/>
+			<requirement name="IsMale" target="self" invert="true"/>
+		</triggered_effect>
+		<triggered_effect trigger="onSelfSecondaryActionStart" action="Ragdoll" target="otherAOE" range="1" duration="3"/>
+	</effect_group>
+</item>
+
+
+<item name="EgyptKhopesh">
+	<property name="Tags" value="knife,melee,light,weapon,meleeWeapon,perkDeepCuts,perkTheHuntsman,Khopesh"/>
+	<property name="DisplayType" value="melee"/>
+	<property name="HoldType" value="47"/>
+	<property name="CustomIcon" value="Khopesh"/>
+	<property name="Meshfile" value="#@modfolder:Resources/CoAItem.unity3d?Khopesh" />
+	<property name="Material" value="Mmetal"/>
+	<property name="RepairTools" value="resourceForgedSteel"/>
+	<property name="DegradationBreaksAfter" value="false"/>
+	<property name="SoundJammed" value="ItemNeedsRepair"/>
+	<property name="SoundDestroy" value="wooddestroy1"/>
+	<property name="Weight" value="200"/>
+	<property name="Group" value="Ammo/Weapons"/>
+	<property name="ActionSkillGroup" value="Blade Weapons"/>
+	<property name="CraftingSkillGroup" value="craftSkillWeapons"/>
+	<property name="RepairExpMultiplier" value="5.5"/>
+	<property name="EconomicBundleSize" value="1"/>
+	<property name="EconomicValue" value="1300"/>
+	<property name="LootExpValue" value="500"/>
+	<property name="SellableToTrader" value="true"/>
+
+	<property class="Action0">
+		<property name="Class" value="DynamicMelee"/>
+		<property name="Damage_type" value="Slashing"/>
+		<property name="Sphere" value="0.2"/>   <!-- limit to 0.15, else the sphere cast can overlap the target already -->
+		<property name="Sound_start" value="swoosh"/>
+		<property name="ToolCategory.Butcher" value="0" param1="4"/>
+			<!-- This triggers the use of the special corpse harvesting animation if there is a matching harvest event.
+			Also, param1  is the damage multiplier for corpse harvesting. -->
+		<property name="Sound_harvesting" value="open_animal" param1="organic"/>
+	</property>
+	<property class="Action1">
+		<property name="Class" value="DynamicMelee"/>
+		<property name="Damage_type" value="Slashing"/>
+		<property name="Sphere" value="0.2"/>   <!-- limit to 0.15, else the sphere cast can overlap the target already -->
+		<property name="Sound_start" value="swoosh"/>
+		<property name="ToolCategory.Butcher" value="0" param1="4"/>
+		<property name="Sound_harvesting" value="open_animal" param1="organic"/>
+		<property name="UsePowerAttackAnimation" value="true"/>
+	</property>
+
+	<effect_group name="Base Effects">
+		<passive_effect name="MaxRange" operation="base_set" value="2.4"/>
+		<passive_effect name="BlockRange" operation="base_set" value="3"/>
+		<passive_effect name="EntityDamage" operation="base_set" value="17"/> <!-- meleeToolMachete -->
+		<passive_effect name="BlockDamage" operation="base_set" value="5"/>
+		<passive_effect name="AttacksPerMinute" operation="base_set" value="50"/> <!-- A16 1.2 -->
+		<passive_effect name="HarvestCount" operation="base_set" value=".5" tags="butcherHarvest"/>
+		<passive_effect name="StaminaLoss" operation="base_set" value="14" tags="primary"/>
+		<passive_effect name="DegradationMax" operation="base_set" value="300,800" tier="1,6"/>
+		<passive_effect name="ModSlots" operation="base_set" value="0,5" tier="1,6"/>
+		<passive_effect name="ModPowerBonus" operation="perc_add" value=".15" tags="EntityDamage,BlockDamage"/>
+		<passive_effect name="ModPowerBonus" operation="base_add" value="200" tags="EconomicValue"/>
+	</effect_group>
+	<effect_group name="Power Attack">
+		<passive_effect name="EntityDamage" operation="perc_add" value="1.3" tags="secondary"/>
+		<passive_effect name="BlockDamage" operation="perc_add" value="2" tags="secondary"/>
+		<passive_effect name="AttacksPerMinute" operation="perc_subtract" value="0" tags="secondary"/>
+		<passive_effect name="StaminaLoss" operation="base_add" value="21" tags="secondary"/>
+
+		<triggered_effect trigger="onSelfSecondaryActionStart" action="PlaySound" target="self" sound="player1painlg">
+			<requirement name="RandomRoll" seed_type="Random" target="self" min_max="0,100" operation="LTE" value="50"/>
+			<requirement name="IsMale" target="self"/>
+		</triggered_effect>
+		<triggered_effect trigger="onSelfSecondaryActionStart" action="PlaySound" target="self" sound="player2painlg">
+			<requirement name="RandomRoll" seed_type="Random" target="self" min_max="0,100" operation="LTE" value="50"/>
+			<requirement name="IsMale" target="self" invert="true"/>
+		</triggered_effect>
+</effect_group>	
+
+<effect_group>
+		<triggered_effect trigger="onSelfItemActivate" action="AddBuff" target="self" buff="EgyptbuffWeapon"/>
+		<triggered_effect trigger="onSelfItemDeactivate" action="RemoveBuff" target="self" buff="EgyptbuffWeapon"/>
+	</effect_group>
+</item>	
+
+
+
+<item name="EgyptSword">
+	<property name="Tags" value="knife,melee,light,weapon,meleeWeapon,perkDeepCuts,perkTheHuntsman"/>
+	<property name="DisplayType" value="melee"/>
+	<property name="HoldType" value="47"/>
+	<property name="CustomIcon" value="Sword"/>
+	<property name="Meshfile" value="#@modfolder:Resources/CoAItem.unity3d?Sword" />
+	<property name="Material" value="Mmetal"/>
+	<property name="RepairTools" value="resourceForgedSteel"/>
+	<property name="DegradationBreaksAfter" value="false"/>
+	<property name="SoundJammed" value="ItemNeedsRepair"/>
+	<property name="SoundDestroy" value="wooddestroy1"/>
+	<property name="Weight" value="200"/>
+	<property name="Group" value="Ammo/Weapons"/>
+	<property name="ActionSkillGroup" value="Blade Weapons"/>
+	<property name="CraftingSkillGroup" value="craftSkillWeapons"/>
+	<property name="RepairExpMultiplier" value="5.5"/>
+	<property name="EconomicBundleSize" value="1"/>
+	<property name="EconomicValue" value="1100"/>
+	<property name="LootExpValue" value="500"/>
+	<property name="SellableToTrader" value="true"/>
+
+	<property class="Action0">
+		<property name="Class" value="DynamicMelee"/>
+		<property name="Damage_type" value="Slashing"/>
+		<property name="Sphere" value="0.2"/>   <!-- limit to 0.15, else the sphere cast can overlap the target already -->
+		<property name="Sound_start" value="swoosh"/>
+		<property name="ToolCategory.Butcher" value="0" param1="4"/>
+			<!-- This triggers the use of the special corpse harvesting animation if there is a matching harvest event.
+			Also, param1  is the damage multiplier for corpse harvesting. -->
+		<property name="Sound_harvesting" value="open_animal" param1="organic"/>
+	</property>
+	<property class="Action1">
+		<property name="Class" value="DynamicMelee"/>
+		<property name="Damage_type" value="Slashing"/>
+		<property name="Sphere" value="0.2"/>   <!-- limit to 0.15, else the sphere cast can overlap the target already -->
+		<property name="Sound_start" value="swoosh"/>
+		<property name="ToolCategory.Butcher" value="0" param1="4"/>
+		<property name="Sound_harvesting" value="open_animal" param1="organic"/>
+		<property name="UsePowerAttackAnimation" value="true"/>
+	</property>
+
+	<effect_group name="Base Effects">
+		<passive_effect name="MaxRange" operation="base_set" value="4"/>
+		<passive_effect name="BlockRange" operation="base_set" value="4"/>
+		<passive_effect name="EntityDamage" operation="base_set" value="70"/> <!-- meleeToolMachete -->
+		<passive_effect name="BlockDamage" operation="base_set" value="5"/>
+		<passive_effect name="AttacksPerMinute" operation="base_set" value="50"/> <!-- A16 1.2 -->
+		<passive_effect name="HarvestCount" operation="base_set" value=".5" tags="butcherHarvest"/>
+		<passive_effect name="StaminaLoss" operation="base_set" value="14" tags="primary"/>
+		<passive_effect name="DegradationMax" operation="base_set" value="300,800" tier="1,6"/>
+		
+				<passive_effect name="ModSlots" operation="base_set" value="0"/>
+			
+				<passive_effect name="DistractionRadius" operation="base_set" value="45"/>
+				<passive_effect name="DistractionLifetime" operation="base_set" value="1"/>
+				<passive_effect name="DistractionStrength" operation="base_set" value="100"/>	
+				
+				<triggered_effect trigger="onSelfEquipStart" action="AddBuff" target="self" buff="EgyptRemoveRadRegenBuff"/>
+				<triggered_effect trigger="onSelfEquipStart" action="RemoveBuff" target="self" buff="EgyptAddRadRegenBuff"/>
+				
+				<triggered_effect trigger="onSelfEquipStop" action="RemoveBuff" target="self" buff="EgyptRemoveRadRegenBuff"/>
+				<triggered_effect trigger="onSelfEquipStop" action="AddBuff" target="self" buff="EgyptAddRadRegenBuff"/>
+				
+	</effect_group>
+	<effect_group name="Power Attack">
+		<passive_effect name="EntityDamage" operation="perc_add" value="1.3" tags="secondary"/>
+		<passive_effect name="BlockDamage" operation="perc_add" value="2" tags="secondary"/>
+		<passive_effect name="AttacksPerMinute" operation="perc_subtract" value="0" tags="secondary"/>
+		<passive_effect name="StaminaLoss" operation="base_add" value="21" tags="secondary"/>
+
+		<triggered_effect trigger="onSelfSecondaryActionStart" action="PlaySound" target="self" sound="player1painlg">
+			<requirement name="RandomRoll" seed_type="Random" target="self" min_max="0,100" operation="LTE" value="50"/>
+			<requirement name="IsMale" target="self"/>
+		</triggered_effect>
+		<triggered_effect trigger="onSelfSecondaryActionStart" action="PlaySound" target="self" sound="player2painlg">
+			<requirement name="RandomRoll" seed_type="Random" target="self" min_max="0,100" operation="LTE" value="50"/>
+			<requirement name="IsMale" target="self" invert="true"/>
+		</triggered_effect>
+
+	</effect_group>
+</item>	
+
+
+
+
+<item name="EgyptKnife1">
+	<property name="Tags" value="knife,melee,light,weapon,meleeWeapon,perkDeepCuts,perkTheHuntsman"/>
+	<property name="DisplayType" value="melee"/>
+	<property name="HoldType" value="47"/>
+	<property name="Meshfile" value="#@modfolder:Resources/CoAItem.unity3d?Knife1" />
+	<property name="Material" value="Mmetal"/>
+	<property name="CustomIcon" value="Knife1"/>
+	<property name="RepairTools" value="resourceForgedSteel"/>
+	<property name="DegradationBreaksAfter" value="false"/>
+	<property name="SoundJammed" value="ItemNeedsRepair"/>
+	<property name="SoundDestroy" value="wooddestroy1"/>
+	<property name="Weight" value="200"/>
+	<property name="Group" value="Ammo/Weapons"/>
+	<property name="ActionSkillGroup" value="Blade Weapons"/>
+	<property name="CraftingSkillGroup" value="craftSkillWeapons"/>
+	<property name="RepairExpMultiplier" value="5.5"/>
+	<property name="EconomicBundleSize" value="1"/>
+	<property name="EconomicValue" value="900"/>
+	<property name="LootExpValue" value="250"/>
+	<property name="SellableToTrader" value="true"/>
+
+	<property class="Action0">
+		<property name="Class" value="DynamicMelee"/>
+		<property name="Damage_type" value="Slashing"/>
+		<property name="Sphere" value="0.2"/>   <!-- limit to 0.15, else the sphere cast can overlap the target already -->
+		<property name="Sound_start" value="swoosh"/>
+		<property name="ToolCategory.Butcher" value="0" param1="4"/>
+			<!-- This triggers the use of the special corpse harvesting animation if there is a matching harvest event.
+			Also, param1  is the damage multiplier for corpse harvesting. -->
+		<property name="Sound_harvesting" value="open_animal" param1="organic"/>
+	</property>
+	<property class="Action1">
+		<property name="Class" value="DynamicMelee"/>
+		<property name="Damage_type" value="Slashing"/>
+		<property name="Sphere" value="0.2"/>   <!-- limit to 0.15, else the sphere cast can overlap the target already -->
+		<property name="Sound_start" value="swoosh"/>
+		<property name="ToolCategory.Butcher" value="0" param1="4"/>
+		<property name="Sound_harvesting" value="open_animal" param1="organic"/>
+		<property name="UsePowerAttackAnimation" value="true"/>
+	</property>
+
+	<effect_group name="Base Effects">
+		<passive_effect name="MaxRange" operation="base_set" value="2.4"/>
+		<passive_effect name="BlockRange" operation="base_set" value="3"/>
+		<passive_effect name="EntityDamage" operation="base_set" value="17"/> <!-- meleeToolMachete -->
+		<passive_effect name="BlockDamage" operation="base_set" value="5"/>
+		<passive_effect name="AttacksPerMinute" operation="base_set" value="50"/> <!-- A16 1.2 -->
+		<passive_effect name="HarvestCount" operation="base_set" value=".5" tags="butcherHarvest"/>
+		<passive_effect name="StaminaLoss" operation="base_set" value="14" tags="primary"/>
+		<passive_effect name="DegradationMax" operation="base_set" value="300,800" tier="1,6"/>
+	</effect_group>
+	<effect_group name="Power Attack">
+		<passive_effect name="EntityDamage" operation="perc_add" value="1.3" tags="secondary"/>
+		<passive_effect name="BlockDamage" operation="perc_add" value="2" tags="secondary"/>
+		<passive_effect name="AttacksPerMinute" operation="perc_subtract" value="0" tags="secondary"/>
+		<passive_effect name="StaminaLoss" operation="base_add" value="21" tags="secondary"/>
+
+		<triggered_effect trigger="onSelfSecondaryActionStart" action="PlaySound" target="self" sound="player1painlg">
+			<requirement name="RandomRoll" seed_type="Random" target="self" min_max="0,100" operation="LTE" value="50"/>
+			<requirement name="IsMale" target="self"/>
+		</triggered_effect>
+		<triggered_effect trigger="onSelfSecondaryActionStart" action="PlaySound" target="self" sound="player2painlg">
+			<requirement name="RandomRoll" seed_type="Random" target="self" min_max="0,100" operation="LTE" value="50"/>
+			<requirement name="IsMale" target="self" invert="true"/>
+		</triggered_effect>
+
+	</effect_group>
+</item>	
+
+<item name="EgyptZeptar1">
+	<property name="Tags" value="knife,melee,light,weapon,meleeWeapon,perkDeepCuts,perkTheHuntsman"/>
+	<property name="DisplayType" value="melee"/>
+	<property name="HoldType" value="47"/>
+	<property name="Meshfile" value="#@modfolder:Resources/CoAItem.unity3d?Zeptar1" />
+	<property name="Material" value="Mmetal"/>
+	<property name="CustomIcon" value="Knife1"/>
+	<property name="RepairTools" value="resourceForgedSteel"/>
+	<property name="DegradationBreaksAfter" value="false"/>
+	<property name="SoundJammed" value="ItemNeedsRepair"/>
+	<property name="SoundDestroy" value="wooddestroy1"/>
+	<property name="Weight" value="200"/>
+	<property name="Group" value="Ammo/Weapons"/>
+	<property name="ActionSkillGroup" value="Blade Weapons"/>
+	<property name="CraftingSkillGroup" value="craftSkillWeapons"/>
+	<property name="RepairExpMultiplier" value="5.5"/>
+	<property name="EconomicBundleSize" value="1"/>
+	<property name="EconomicValue" value="900"/>
+	<property name="LootExpValue" value="250"/>
+	<property name="SellableToTrader" value="true"/>
+
+	<property class="Action0">
+		<property name="Class" value="DynamicMelee"/>
+		<property name="Damage_type" value="Slashing"/>
+		<property name="Sphere" value="0.2"/>   <!-- limit to 0.15, else the sphere cast can overlap the target already -->
+		<property name="Sound_start" value="swoosh"/>
+		<property name="ToolCategory.Butcher" value="0" param1="4"/>
+			<!-- This triggers the use of the special corpse harvesting animation if there is a matching harvest event.
+			Also, param1  is the damage multiplier for corpse harvesting. -->
+		<property name="Sound_harvesting" value="open_animal" param1="organic"/>
+	</property>
+	<property class="Action1">
+		<property name="Class" value="DynamicMelee"/>
+		<property name="Damage_type" value="Slashing"/>
+		<property name="Sphere" value="0.2"/>   <!-- limit to 0.15, else the sphere cast can overlap the target already -->
+		<property name="Sound_start" value="swoosh"/>
+		<property name="ToolCategory.Butcher" value="0" param1="4"/>
+		<property name="Sound_harvesting" value="open_animal" param1="organic"/>
+		<property name="UsePowerAttackAnimation" value="true"/>
+	</property>
+
+	<effect_group name="Base Effects">
+		<passive_effect name="MaxRange" operation="base_set" value="2.4"/>
+		<passive_effect name="BlockRange" operation="base_set" value="3"/>
+		<passive_effect name="EntityDamage" operation="base_set" value="17"/> <!-- meleeToolMachete -->
+		<passive_effect name="BlockDamage" operation="base_set" value="5"/>
+		<passive_effect name="AttacksPerMinute" operation="base_set" value="50"/> <!-- A16 1.2 -->
+		<passive_effect name="HarvestCount" operation="base_set" value=".5" tags="butcherHarvest"/>
+		<passive_effect name="StaminaLoss" operation="base_set" value="14" tags="primary"/>
+		<passive_effect name="DegradationMax" operation="base_set" value="300,800" tier="1,6"/>
+	</effect_group>
+	<effect_group name="Power Attack">
+		<passive_effect name="EntityDamage" operation="perc_add" value="1.3" tags="secondary"/>
+		<passive_effect name="BlockDamage" operation="perc_add" value="2" tags="secondary"/>
+		<passive_effect name="AttacksPerMinute" operation="perc_subtract" value="0" tags="secondary"/>
+		<passive_effect name="StaminaLoss" operation="base_add" value="21" tags="secondary"/>
+
+		<triggered_effect trigger="onSelfSecondaryActionStart" action="PlaySound" target="self" sound="player1painlg">
+			<requirement name="RandomRoll" seed_type="Random" target="self" min_max="0,100" operation="LTE" value="50"/>
+			<requirement name="IsMale" target="self"/>
+		</triggered_effect>
+		<triggered_effect trigger="onSelfSecondaryActionStart" action="PlaySound" target="self" sound="player2painlg">
+			<requirement name="RandomRoll" seed_type="Random" target="self" min_max="0,100" operation="LTE" value="50"/>
+			<requirement name="IsMale" target="self" invert="true"/>
+		</triggered_effect>
+
+	</effect_group>
+</item>	
+
+
+
+<item name="EgyptSpear1">
+	<property name="Tags" value="melee,medium,tool,perkDeepCuts,perkMotherLode"/>
+	<property name="DisplayType" value="melee"/>
+	<property name="HoldType" value="18"/>
+	<property name="Meshfile" value="#@modfolder:Resources/CoAItem.unity3d?Spear1" />
+	<property name="CustomIcon" value="Rod1"/>
+	<property name="Material" value="Mstone"/>
+	<property name="RepairTools" value="resourceForgedSteel"/>
+	<property name="DegradationBreaksAfter" value="false"/>
+	<property name="SoundJammed" value="ItemNeedsRepair"/>
+	<property name="SoundDestroy" value="wooddestroy1"/>
+	<property name="FuelValue" value="75"/>
+	<property name="SellableToTrader" value="false"/>
+	<property name="EconomicBundleSize" value="1"/>
+	<property name="EconomicValue" value="900"/>
+	<property name="LootExpValue" value="250"/>
+	<property name="SellableToTrader" value="true"/>
+	<property class="Action0">
+		<property name="Class" value="DynamicMelee"/>
+		<property name="Sphere" value="0.15"/>   <!-- limit to 0.15, else the sphere cast can overlap the target already -->
+		<property name="Sound_start" value="swoosh"/>
+		<property name="ToolCategory.harvestingTools" value="1" param1="1"/>
+	</property>
+	<property class="Action1">
+		<property name="Class" value="DynamicMelee"/>
+		<property name="Sphere" value="0.15"/>   <!-- limit to 0.15, else the sphere cast can overlap the target already -->
+		<property name="Sound_start" value="swoosh"/>
+		<property name="ToolCategory.harvestingTools" value="1" param1="1"/>
+		<property name="UsePowerAttackAnimation" value="true"/>
+	</property>
+	<effect_group name="Base Effects">
+		<passive_effect name="MaxRange" operation="base_set" value="3.4"/>
+		<passive_effect name="BlockRange" operation="base_set" value="4"/>
+		<passive_effect name="EntityDamage" operation="base_set" value="16"/> <!-- meleeToolShovelSteel -->
+		<passive_effect name="BlockDamage" operation="base_set" value="70"/>
+		<passive_effect name="DamageModifier" operation="perc_add" value="-.8" tags="wood"/>
+		<passive_effect name="DamageModifier" operation="perc_add" value="0" tags="earth"/>
+		<passive_effect name="DamageModifier" operation="perc_add" value="-.9" tags="stone"/>
+		<passive_effect name="DamageModifier" operation="perc_add" value="-.9" tags="metal"/>
+		<passive_effect name="AttacksPerMinute" operation="base_set" value="50"/>
+		<passive_effect name="StaminaLoss" operation="base_set" value="18.8" tags="primary"/>
+		<passive_effect name="DegradationMax" operation="base_set" value="300,1200" tier="1,6"/>
+				<passive_effect name="DistractionRadius" operation="base_set" value="45"/>
+				<passive_effect name="DistractionLifetime" operation="base_set" value="1"/>
+				<passive_effect name="DistractionStrength" operation="base_set" value="100"/>	
+				
+				<triggered_effect trigger="onSelfEquipStart" action="AddBuff" target="self" buff="EgyptRemoveRadRegenBuff"/>
+				<triggered_effect trigger="onSelfEquipStart" action="RemoveBuff" target="self" buff="EgyptAddRadRegenBuff"/>
+				
+				<triggered_effect trigger="onSelfEquipStop" action="RemoveBuff" target="self" buff="EgyptRemoveRadRegenBuff"/>
+				<triggered_effect trigger="onSelfEquipStop" action="AddBuff" target="self" buff="EgyptAddRadRegenBuff"/>
+	</effect_group>
+	<effect_group name="Power Attack">
+		<passive_effect name="EntityDamage" operation="perc_add" value="1" tags="secondary"/>
+		<passive_effect name="BlockDamage" operation="perc_add" value="1" tags="secondary"/>
+		<passive_effect name="AttacksPerMinute" operation="perc_add" value="-.3" tags="secondary"/>
+		<passive_effect name="StaminaLoss" operation="base_add" value="38" tags="secondary"/>
+	</effect_group>
+	<property name="Group" value="Tools/Traps,Basics"/>
+	<property name="CraftingSkillGroup" value="craftSkillTools"/>
+	<property name="RepairExpMultiplier" value="5.5"/>
+</item>
+
+<item name="EgyptSpear2">
+	<property name="Tags" value="melee,medium,tool,perkDeepCuts,perkMotherLode"/>
+	<property name="DisplayType" value="melee"/>
+	<property name="HoldType" value="18"/>
+	<property name="Meshfile" value="#@modfolder:Resources/CoAItem.unity3d?Spear2" />
+	<property name="CustomIcon" value="Rod1"/>
+	<property name="Material" value="Mstone"/>
+	<property name="RepairTools" value="resourceForgedSteel"/>
+	<property name="DegradationBreaksAfter" value="false"/>
+	<property name="SoundJammed" value="ItemNeedsRepair"/>
+	<property name="SoundDestroy" value="wooddestroy1"/>
+	<property name="FuelValue" value="75"/>
+	<property name="SellableToTrader" value="false"/>
+	<property name="EconomicBundleSize" value="1"/>
+	<property name="EconomicValue" value="900"/>
+	<property name="LootExpValue" value="250"/>
+	<property name="SellableToTrader" value="true"/>
+	<property class="Action0">
+		<property name="Class" value="DynamicMelee"/>
+		<property name="Sphere" value="0.15"/>   <!-- limit to 0.15, else the sphere cast can overlap the target already -->
+		<property name="Sound_start" value="swoosh"/>
+		<property name="ToolCategory.harvestingTools" value="1" param1="1"/>
+	</property>
+	<property class="Action1">
+		<property name="Class" value="DynamicMelee"/>
+		<property name="Sphere" value="0.15"/>   <!-- limit to 0.15, else the sphere cast can overlap the target already -->
+		<property name="Sound_start" value="swoosh"/>
+		<property name="ToolCategory.harvestingTools" value="1" param1="1"/>
+		<property name="UsePowerAttackAnimation" value="true"/>
+	</property>
+	<effect_group name="Base Effects">
+		<passive_effect name="MaxRange" operation="base_set" value="3.4"/>
+		<passive_effect name="BlockRange" operation="base_set" value="4"/>
+		<passive_effect name="EntityDamage" operation="base_set" value="16"/> <!-- meleeToolShovelSteel -->
+		<passive_effect name="BlockDamage" operation="base_set" value="70"/>
+		<passive_effect name="DamageModifier" operation="perc_add" value="-.8" tags="wood"/>
+		<passive_effect name="DamageModifier" operation="perc_add" value="0" tags="earth"/>
+		<passive_effect name="DamageModifier" operation="perc_add" value="-.9" tags="stone"/>
+		<passive_effect name="DamageModifier" operation="perc_add" value="-.9" tags="metal"/>
+		<passive_effect name="AttacksPerMinute" operation="base_set" value="50"/>
+		<passive_effect name="StaminaLoss" operation="base_set" value="18.8" tags="primary"/>
+		<passive_effect name="DegradationMax" operation="base_set" value="300,1200" tier="1,6"/>
+				<passive_effect name="DistractionRadius" operation="base_set" value="45"/>
+				<passive_effect name="DistractionLifetime" operation="base_set" value="1"/>
+				<passive_effect name="DistractionStrength" operation="base_set" value="100"/>	
+				
+				<triggered_effect trigger="onSelfEquipStart" action="AddBuff" target="self" buff="EgyptRemoveRadRegenBuff"/>
+				<triggered_effect trigger="onSelfEquipStart" action="RemoveBuff" target="self" buff="EgyptAddRadRegenBuff"/>
+				
+				<triggered_effect trigger="onSelfEquipStop" action="RemoveBuff" target="self" buff="EgyptRemoveRadRegenBuff"/>
+				<triggered_effect trigger="onSelfEquipStop" action="AddBuff" target="self" buff="EgyptAddRadRegenBuff"/>
+	</effect_group>
+	<effect_group name="Power Attack">
+		<passive_effect name="EntityDamage" operation="perc_add" value="1" tags="secondary"/>
+		<passive_effect name="BlockDamage" operation="perc_add" value="1" tags="secondary"/>
+		<passive_effect name="AttacksPerMinute" operation="perc_add" value="-.3" tags="secondary"/>
+		<passive_effect name="StaminaLoss" operation="base_add" value="38" tags="secondary"/>
+	</effect_group>
+	<property name="Group" value="Tools/Traps,Basics"/>
+	<property name="CraftingSkillGroup" value="craftSkillTools"/>
+	<property name="RepairExpMultiplier" value="5.5"/>
+</item>
+
+
+<item name="EgyptSpear3">
+	<property name="Tags" value="melee,medium,tool,perkDeepCuts,perkMotherLode"/>
+	<property name="DisplayType" value="melee"/>
+	<property name="HoldType" value="18"/>
+	<property name="Meshfile" value="#@modfolder:Resources/CoAItem.unity3d?Spear3" />
+	<property name="CustomIcon" value="Rod1"/>
+	<property name="Material" value="Mstone"/>
+	<property name="RepairTools" value="resourceForgedSteel"/>
+	<property name="DegradationBreaksAfter" value="false"/>
+	<property name="SoundJammed" value="ItemNeedsRepair"/>
+	<property name="SoundDestroy" value="wooddestroy1"/>
+	<property name="FuelValue" value="75"/>
+	<property name="SellableToTrader" value="false"/>
+	<property name="EconomicBundleSize" value="1"/>
+	<property name="EconomicValue" value="900"/>
+	<property name="LootExpValue" value="250"/>
+	<property name="SellableToTrader" value="true"/>
+	<property class="Action0">
+		<property name="Class" value="DynamicMelee"/>
+		<property name="Sphere" value="0.15"/>   <!-- limit to 0.15, else the sphere cast can overlap the target already -->
+		<property name="Sound_start" value="swoosh"/>
+		<property name="ToolCategory.harvestingTools" value="1" param1="1"/>
+	</property>
+	<property class="Action1">
+		<property name="Class" value="DynamicMelee"/>
+		<property name="Sphere" value="0.15"/>   <!-- limit to 0.15, else the sphere cast can overlap the target already -->
+		<property name="Sound_start" value="swoosh"/>
+		<property name="ToolCategory.harvestingTools" value="1" param1="1"/>
+		<property name="UsePowerAttackAnimation" value="true"/>
+	</property>
+	<effect_group name="Base Effects">
+		<passive_effect name="MaxRange" operation="base_set" value="3.4"/>
+		<passive_effect name="BlockRange" operation="base_set" value="4"/>
+		<passive_effect name="EntityDamage" operation="base_set" value="16"/> <!-- meleeToolShovelSteel -->
+		<passive_effect name="BlockDamage" operation="base_set" value="70"/>
+		<passive_effect name="DamageModifier" operation="perc_add" value="-.8" tags="wood"/>
+		<passive_effect name="DamageModifier" operation="perc_add" value="0" tags="earth"/>
+		<passive_effect name="DamageModifier" operation="perc_add" value="-.9" tags="stone"/>
+		<passive_effect name="DamageModifier" operation="perc_add" value="-.9" tags="metal"/>
+		<passive_effect name="AttacksPerMinute" operation="base_set" value="50"/>
+		<passive_effect name="StaminaLoss" operation="base_set" value="18.8" tags="primary"/>
+		<passive_effect name="DegradationMax" operation="base_set" value="300,1200" tier="1,6"/>
+				<passive_effect name="DistractionRadius" operation="base_set" value="45"/>
+				<passive_effect name="DistractionLifetime" operation="base_set" value="1"/>
+				<passive_effect name="DistractionStrength" operation="base_set" value="100"/>	
+				
+				<triggered_effect trigger="onSelfEquipStart" action="AddBuff" target="self" buff="EgyptRemoveRadRegenBuff"/>
+				<triggered_effect trigger="onSelfEquipStart" action="RemoveBuff" target="self" buff="EgyptAddRadRegenBuff"/>
+				
+				<triggered_effect trigger="onSelfEquipStop" action="RemoveBuff" target="self" buff="EgyptRemoveRadRegenBuff"/>
+				<triggered_effect trigger="onSelfEquipStop" action="AddBuff" target="self" buff="EgyptAddRadRegenBuff"/>
+	</effect_group>
+	<effect_group name="Power Attack">
+		<passive_effect name="EntityDamage" operation="perc_add" value="1" tags="secondary"/>
+		<passive_effect name="BlockDamage" operation="perc_add" value="1" tags="secondary"/>
+		<passive_effect name="AttacksPerMinute" operation="perc_add" value="-.3" tags="secondary"/>
+		<passive_effect name="StaminaLoss" operation="base_add" value="38" tags="secondary"/>
+	</effect_group>
+	<property name="Group" value="Tools/Traps,Basics"/>
+	<property name="CraftingSkillGroup" value="craftSkillTools"/>
+	<property name="RepairExpMultiplier" value="5.5"/>
+</item>
+
+
+<item name="EgyptSickle1">
+	<property name="Tags" value="knife,melee,light,weapon,meleeWeapon,perkDeepCuts,perkTheHuntsman"/>
+	<property name="DisplayType" value="melee"/>
+	<property name="HoldType" value="47"/>
+	<property name="Meshfile" value="#@modfolder:Resources/CoAItem.unity3d?Sickle1" />
+	<property name="Material" value="Mmetal"/>
+	<property name="CustomIcon" value="Sickle1"/>
+	<property name="RepairTools" value="resourceForgedSteel"/>
+	<property name="DegradationBreaksAfter" value="false"/>
+	<property name="SoundJammed" value="ItemNeedsRepair"/>
+	<property name="SoundDestroy" value="wooddestroy1"/>
+	<property name="Weight" value="200"/>
+	<property name="Group" value="Ammo/Weapons"/>
+	<property name="ActionSkillGroup" value="Blade Weapons"/>
+	<property name="CraftingSkillGroup" value="craftSkillWeapons"/>
+	<property name="RepairExpMultiplier" value="5.5"/>
+	<property name="EconomicBundleSize" value="1"/>
+	<property name="EconomicValue" value="900"/>
+	<property name="LootExpValue" value="250"/>
+	<property name="SellableToTrader" value="true"/>
+
+	<property class="Action0">
+		<property name="Class" value="DynamicMelee"/>
+		<property name="Damage_type" value="Slashing"/>
+		<property name="Sphere" value="0.2"/>   <!-- limit to 0.15, else the sphere cast can overlap the target already -->
+		<property name="Sound_start" value="swoosh"/>
+		<property name="ToolCategory.Butcher" value="0" param1="4"/>
+			<!-- This triggers the use of the special corpse harvesting animation if there is a matching harvest event.
+			Also, param1  is the damage multiplier for corpse harvesting. -->
+		<property name="Sound_harvesting" value="open_animal" param1="organic"/>
+	</property>
+	<property class="Action1">
+		<property name="Class" value="DynamicMelee"/>
+		<property name="Damage_type" value="Slashing"/>
+		<property name="Sphere" value="0.2"/>   <!-- limit to 0.15, else the sphere cast can overlap the target already -->
+		<property name="Sound_start" value="swoosh"/>
+		<property name="ToolCategory.Butcher" value="0" param1="4"/>
+		<property name="Sound_harvesting" value="open_animal" param1="organic"/>
+		<property name="UsePowerAttackAnimation" value="true"/>
+	</property>
+
+	<effect_group name="Base Effects">
+		<passive_effect name="MaxRange" operation="base_set" value="2.4"/>
+		<passive_effect name="BlockRange" operation="base_set" value="5"/>
+		<passive_effect name="EntityDamage" operation="base_set" value="1"/> <!-- meleeToolMachete -->
+		<passive_effect name="BlockDamage" operation="base_set" value="1"/>
+		<passive_effect name="AttacksPerMinute" operation="base_set" value="90"/> <!-- A16 1.2 -->
+		<passive_effect name="HarvestCount" operation="base_set" value=".5" tags="butcherHarvest"/>
+		<passive_effect name="StaminaLoss" operation="base_set" value="8" tags="primary"/>
+		<passive_effect name="DegradationMax" operation="base_set" value="300,800" tier="1,6"/>
+	</effect_group>
+	<effect_group name="Power Attack">
+		<passive_effect name="EntityDamage" operation="base_set" value="18"/> <!-- meleeToolMachete -->
+		<passive_effect name="BlockDamage" operation="perc_add" value="1" tags="secondary"/>
+		<passive_effect name="AttacksPerMinute" operation="perc_subtract" value="0" tags="secondary"/>
+		<passive_effect name="StaminaLoss" operation="base_add" value="21" tags="secondary"/>
+
+		<triggered_effect trigger="onSelfSecondaryActionStart" action="PlaySound" target="self" sound="player1painlg">
+			<requirement name="RandomRoll" seed_type="Random" target="self" min_max="0,100" operation="LTE" value="50"/>
+			<requirement name="IsMale" target="self"/>
+		</triggered_effect>
+		<triggered_effect trigger="onSelfSecondaryActionStart" action="PlaySound" target="self" sound="player2painlg">
+			<requirement name="RandomRoll" seed_type="Random" target="self" min_max="0,100" operation="LTE" value="50"/>
+			<requirement name="IsMale" target="self" invert="true"/>
+		</triggered_effect>
+
+	</effect_group>
+</item>	
+
+
+	</append>
+</configs>

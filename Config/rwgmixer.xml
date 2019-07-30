@@ -1,0 +1,28 @@
+<configs>
+
+
+    <append xpath="/rwgmixer/prefab_rules">
+	
+		<prefab_rule name="EgyptGroup"> <!-- Egypt Prefabs groups -->
+		<prefab name="EgyptSphinx" />
+		</prefab_rule>
+	
+    </append>
+	
+	
+	
+    <append xpath="/rwgmixer/prefab_rules/prefab_rule[@name='ruralGroup']">
+	<prefab name="EgyptSphinx" />
+	<prefab rule="EgyptGroup" min_count="1"/>
+    </append>
+
+	
+    <append xpath="/rwgmixer/prefab_rules/prefab_rule[@name='wildernessGroup']">
+	<prefab name="EgyptSphinx" />
+	<prefab rule="EgyptGroup" min_count="1"/>
+    </append>
+	
+	
+	
+	
+</configs>

@@ -1,0 +1,204 @@
+<configs>
+	
+		<append xpath="/item_modifiers" >
+		
+	<!-- ARMOR Mods  -->	
+	
+	
+	
+			
+			<item_modifier name="modKhopeshBlueParticle" installable_tags="Khopesh" type="attachment" blocking_tags="notbraced" rarity="0.25"> 
+				<item_property_overrides name="*">
+					<property name="Material" value="Mmetal"/> 
+					<property name="Damage_type" value="Piercing"/>
+				</item_property_overrides>	
+				<property name="CustomIcon" value=""/>
+				<property name="DescriptionKey" value=""/>
+				<property name="HoldType" value="14"/> 
+				<property name="HandMeshfile" value="#@modfolder:Resources/CoAParticle.unity3d?Particle2Blue" />
+				<property name="DropMeshfile" value="#@modfolder:Resources/CoAParticle.unity3d?Particle2Blue" />
+				<property name="Stacknumber" value="1"/>
+				<property name="DropScale" value="1"/>
+				
+				<effect_group name="Adding Some Effects">
+					<passive_effect name="MaxRange" operation="base_add" value="0.2"/>
+					<passive_effect name="BlockRange" operation="base_add" value="0.2"/>
+				</effect_group>	
+				
+		<effect_group >				
+				<triggered_effect trigger="onSelfItemActivate" action="AttachParticleEffectToEntity" particle="#@modfolder:Resources/CoAParticle.unity3d?Particle2Blue"/>
+				<triggered_effect trigger="onSelfItemDeactivate" action="RemoveParticleEffectFromEntity" particle="#@modfolder:Resources/CoAParticle.unity3d?Particle2Blue" />
+		</effect_group>
+		
+			</item_modifier>			
+			
+			
+	<item_modifier name="EgyptmodArmorHelmetLight" installable_tags="head" blocked_tags="clothing" modifier_tags="misc" type="attachment" rarity="0.5">
+		<property name="Stacknumber" value="1"/>
+		<property name="Material" value="Msteel"/>
+		<property name="LightValue" value="0.7"/>
+		<effect_group tiered="false">
+			<triggered_effect trigger="onSelfEquipStart" action="AddPart" part="HeadLight" prefab="Entities/Lighting/miningHelmetLightSource" parentTransform="Spotlight" localPos="0,0,0" localRot="90,0,0"/>
+			<triggered_effect trigger="onSelfEquipStart" action="AddPart" part="HeadLightCam" prefab="Entities/Lighting/miningHelmetLightSource" parentTransform="CameraNode" localPos="0,0,0" localRot="-90,0,0"/>
+			<triggered_effect trigger="onSelfEquipStop" action="RemovePart" part="HeadLight"/>
+			<triggered_effect trigger="onSelfEquipStop" action="RemovePart" part="HeadLightCam"/>
+			<triggered_effect trigger="onSelfItemActivate" action="SetPartActive" part="HeadLight" active="@!.IsFPV"/>
+			<triggered_effect trigger="onSelfItemActivate" action="SetPartActive" part="HeadLightCam" active="@.IsFPV"/>
+			<triggered_effect trigger="onSelfItemDeactivate" action="SetPartActive" part="HeadLight" active="false"/>
+			<triggered_effect trigger="onSelfItemDeactivate" action="SetPartActive" part="HeadLightCam" active="false"/>
+		</effect_group>
+	</item_modifier>
+
+	
+	
+			<item_modifier name="modKhopeshTexture1" installable_tags="Khopesh" type="attachment" blocking_tags="notbraced" rarity="0.25"> 
+				<item_property_overrides name="*">
+					<property name="Material" value="Mmetal"/> 
+					<property name="Damage_type" value="Piercing"/>
+				</item_property_overrides>	
+				<property name="CustomIcon" value=""/>
+				<property name="DescriptionKey" value=""/>
+				<property name="HoldType" value="14"/> 
+				<property name="HandMeshfile" value="#@modfolder:Resources/CoAParticle.unity3d?Particle2Blue" />
+				<property name="DropMeshfile" value="#@modfolder:Resources/CoAParticle.unity3d?Particle2Blue" />
+				<property name="Stacknumber" value="1"/>
+				<property name="DropScale" value="1"/>
+				
+				
+		<effect_group >				
+				<triggered_effect trigger="onSelfItemActivate" action="AttachParticleEffectToEntity" particle="#@modfolder:Resources/CoAParticle.unity3d?Particle2Blue"/>
+				<triggered_effect trigger="onSelfItemDeactivate" action="RemoveParticleEffectFromEntity" particle="#@modfolder:Resources/CoAParticle.unity3d?Particle2Blue" />
+		</effect_group>
+		
+				<effect_group name="SpecialEffects"> 
+					<triggered_effect trigger="onSelfHoldingItemCreated" action="AttachPrefabToHeldItem" prefab="#@modfolder:Resources/CoAParticle.unity3d?Particle2Blue" parent_transform="Attachments" local_offset="0,0,0" />
+				</effect_group>
+				
+			</item_modifier>			
+			
+			
+			
+	<item_modifier name="modAnubis" installable_tags="head,armor" modifier_tags="resistance" type="attachment" rarity="0.5">
+		<property name="Stacknumber" value="1"/>
+		<property name="CustomIcon" value="modAnubis"/>
+		<property name="DescriptionKey" value="modAnubisDesc"/>
+	
+		<effect_group >
+		<passive_effect name="BuffResistance" operation="base_add" value="0.4" tags="EgyptbuffRingOfFireEffect,EgyptbuffRingOfFireEffect2"/>
+		
+		</effect_group>
+	</item_modifier>
+	
+	<item_modifier name="modAnubisRare" installable_tags="head,armor" modifier_tags="resistance" type="attachment" rarity="0.5">
+		<property name="Stacknumber" value="1"/>
+		<property name="CustomIcon" value="modAnubisRare"/>
+		<property name="DescriptionKey" value="modAnubisRareDesc"/>
+		<effect_group >
+		<passive_effect name="BuffResistance" operation="base_add" value="0.7" tags="EgyptbuffRingOfFireEffect,EgyptbuffRingOfFireEffect2"/>
+		
+		</effect_group>
+	</item_modifier>
+	
+	<item_modifier name="modPharao" installable_tags="head,armor" modifier_tags="resistance" type="attachment" rarity="0.5">
+		<property name="Stacknumber" value="1"/>
+		<property name="CustomIcon" value="modPharao"/>
+		<property name="DescriptionKey" value="modPharaoDesc"/>
+		<effect_group >
+		<passive_effect name="BuffResistance" operation="base_add" value="0.4" tags="EgyptbuffShockedEffect,EgyptbuffShockedEffect2"/>
+		
+		</effect_group>
+	</item_modifier>
+	
+	<item_modifier name="modPharaoRare" installable_tags="head,armor" modifier_tags="resistance" type="attachment" rarity="0.5">
+		<property name="Stacknumber" value="1"/>
+		<property name="CustomIcon" value="modPharaoRare"/>
+		<property name="DescriptionKey" value="modPharaoRareDesc"/>
+		<effect_group >
+		<passive_effect name="BuffResistance" operation="base_add" value="0.4" tags="EgyptbuffShockedEffect,EgyptbuffShockedEffect2"/>
+		
+		</effect_group>
+	</item_modifier>
+	
+	<item_modifier name="modQueen" installable_tags="head,armor" modifier_tags="resistance" type="attachment" rarity="0.5">
+		<property name="Stacknumber" value="1"/>
+		<property name="CustomIcon" value="modQueen"/>
+		<property name="DescriptionKey" value="modQueenDesc"/>
+		<effect_group >
+		<passive_effect name="BuffResistance" operation="base_add" value="0.4" tags="EgyptbuffColdEffect,EgyptbuffColdEffect2"/>
+		
+		</effect_group>
+	</item_modifier>
+	
+	<item_modifier name="modQueenRare" installable_tags="head,armor" modifier_tags="resistance" type="attachment" rarity="0.5">
+		<property name="Stacknumber" value="1"/>
+		<property name="CustomIcon" value="modQueenRare"/>
+		<property name="DescriptionKey" value="modQueenRareDesc"/>
+		<effect_group >
+		<passive_effect name="BuffResistance" operation="base_add" value="0.4" tags="EgyptbuffColdEffect,EgyptbuffColdEffect2"/>
+		
+		</effect_group>
+	</item_modifier>
+	
+	<item_modifier name="modMinionsRAD" installable_tags="head,armor" modifier_tags="resistance" type="attachment" rarity="0.5">
+		<property name="Stacknumber" value="1"/>
+		<property name="CustomIcon" value="modMinionsRAD"/>
+		<property name="DescriptionKey" value="modMinionsRADDesc"/>
+		<effect_group >
+		<passive_effect name="BuffResistance" operation="base_add" value="0.3" tags="EgyptbuffRadiationMinion"/>
+		
+		</effect_group>
+	</item_modifier>
+	
+	<item_modifier name="modMinionsRADRare" installable_tags="head,armor" modifier_tags="resistance" type="attachment" rarity="0.5">
+		<property name="Stacknumber" value="1"/>
+		<property name="CustomIcon" value="modMinionsRADRare"/>
+		<property name="DescriptionKey" value="modMinionsRADRareDesc"/>
+		<effect_group >
+		<passive_effect name="BuffResistance" operation="base_add" value="0.7" tags="EgyptbuffRadiationMinion"/>
+		
+		</effect_group>
+	</item_modifier>
+	
+	
+	<item_modifier name="modBossRAD" installable_tags="head,armor" modifier_tags="resistance" type="attachment" rarity="0.5">
+		<property name="Stacknumber" value="1"/>
+		<property name="CustomIcon" value="modBossRAD"/>
+		<property name="DescriptionKey" value="modBossRADDesc"/>
+		<effect_group >
+		<passive_effect name="BuffResistance" operation="base_add" value="0.3" tags="EgyptbuffRadiationBoss"/>
+		
+		</effect_group>
+	</item_modifier>
+	
+	<item_modifier name="modBossRADRare" installable_tags="head,armor" modifier_tags="resistance" type="attachment" rarity="0.5">
+		<property name="Stacknumber" value="1"/>
+		<property name="CustomIcon" value="modBossRADRare"/>
+		<property name="DescriptionKey" value="modBossRADRareDesc"/>
+		<effect_group >
+		<passive_effect name="BuffResistance" operation="base_add" value="0.7" tags="EgyptbuffRadiationBoss"/>
+		
+		</effect_group>
+	</item_modifier>
+	
+	
+	<item_modifier name="modBossRecoveryRare" installable_tags="head,armor" modifier_tags="resistance" type="attachment" rarity="0.5">
+		<property name="Stacknumber" value="1"/>
+		<property name="CustomIcon" value="modBossRecoveryRare"/>
+		<property name="DescriptionKey" value="modBossRecoveryRareDesc"/>
+		<effect_group>
+				<triggered_effect trigger="onSelfEquipStart" action="AddBuff" target="self" buff="EgyptRemoveRadRegenBuff"/>
+				<triggered_effect trigger="onSelfEquipStart" action="RemoveBuff" target="self" buff="EgyptAddRadRegenBuff"/>
+				
+				<triggered_effect trigger="onSelfEquipStop" action="RemoveBuff" target="self" buff="EgyptRemoveRadRegenBuff"/>
+				<triggered_effect trigger="onSelfEquipStop" action="AddBuff" target="self" buff="EgyptAddRadRegenBuff"/>
+		
+		</effect_group>
+	</item_modifier>
+	
+	
+	
+	
+			
+			
+		</append>
+</configs>

@@ -1,0 +1,58 @@
+<configs>
+
+    <append xpath="/entitygroups">
+
+	<entitygroup name="EgyptAllGroup">
+		<entity name="EgyptPharaohOld" prob="0.01"/>
+		<entity name="EgyptQueen" prob="0.01"/>
+		<entity name="EgyptAnubisOld" prob="0.01"/>
+		<entity name="EgyptHiveQueen" prob="0.01"/>
+		<entity name="EgyptSkeleton"/>
+		<entity name="EgyptMummy"/>
+		<entity name="EgyptSpiderBrown"/>
+		<entity name="EgyptSpiderBlack"/>
+	</entitygroup>
+	
+	
+	<entitygroup name="EgyptBossGroup">
+		<entity name="EgyptPharaohNew"/>
+		<entity name="EgyptAnubisNew"/>
+		<entity name="EgyptHiveQueen"/>
+	</entitygroup>
+
+	<entitygroup name="EgyptAnubisGroup">
+		<entity name="EgyptAnubisNew"/>
+	</entitygroup>
+	
+	<entitygroup name="EgyptPharaohGroup">
+		<entity name="EgyptPharaohNew"/>
+	</entitygroup>
+	
+	<entitygroup name="EgyptHiveQueenGroup">
+		<entity name="EgyptHiveQueen"/>
+	</entitygroup>
+
+	
+	<entitygroup name="EgyptMinionsGroup">
+		<entity name="EgyptMummy" />
+		<entity name="EgyptMummy" />
+		<entity name="EgyptMummy" />
+		<entity name="EgyptMummy" />
+		<entity name="EgyptPharaohOld" />
+		<entity name="EgyptQueen" />
+		<entity name="EgyptAnubisOld" />
+		<entity name="EgyptSkeleton"/>
+		<entity name="EgyptSkeleton"/>
+		<entity name="EgyptSkeleton"/>
+		<entity name="EgyptSkeleton"/>
+		<entity name="EgyptSpiderBrown"/>
+		<entity name="EgyptSpiderBlack"/>
+	</entitygroup>
+	
+	
+	
+	
+	
+    </append>
+
+</configs>

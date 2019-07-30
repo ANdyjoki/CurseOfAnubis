@@ -1,0 +1,633 @@
+<configs>
+
+    <append xpath="/quests">
+
+	
+	
+	<quest id="challenge_EgyptMummy">
+		<property name="name_key" value="challenge_itsybitsyspider" />
+		<property name="subtitle_key" value="challenge_itsybitsyspider_subtitle" />
+		<property name="description_key" value="challenge_itsybitsyspider_offer" />
+		<property name="icon" value="ui_game_symbol_zombie" />
+		<property name="repeatable" value="true" />
+		<property name="category_key" value="challenge" />
+		<property name="offer_key" value="challenge_itsybitsyspider_offer" />
+		<property name="difficulty" value="medium" />
+		<property name="completiontype" value="TurnIn" />
+
+		<objective type="RandomGoto" value="200-600" phase="1">
+			<property name="completion_distance" value="50" />
+		</objective>
+
+		<objective type="RallyPoint">
+			<property name="start_mode" value="Create" />
+			<property name="phase" value="2" />
+		</objective>
+
+		<action type="SpawnEnemy" id="EgyptMummy" value="7" phase="3" />
+
+		<objective type="ZombieKill" id="EgyptMummy" value="5" phase="3" />
+
+
+		<action type="SpawnEnemy" id="EgyptMummy" value="10" phase="4" />
+
+		<objective type="ZombieKill" id="EgyptMummy" value="7" phase="4" />
+		
+		<objective type="InteractWithNPC">
+			<property name="phase" value="5" />
+		</objective>
+
+		<reward type="Exp" value="2000" />
+		<reward type="Item" id="casinoCoin" value="200-500" />
+	</quest>
+	
+	<quest id="challenge_EgyptSkeleton">
+		<property name="name_key" value="challenge_itsybitsyspider" />
+		<property name="subtitle_key" value="challenge_itsybitsyspider_subtitle" />
+		<property name="description_key" value="challenge_itsybitsyspider_offer" />
+		<property name="icon" value="ui_game_symbol_zombie" />
+		<property name="repeatable" value="true" />
+		<property name="category_key" value="challenge" />
+		<property name="offer_key" value="challenge_itsybitsyspider_offer" />
+		<property name="difficulty" value="medium" />
+		<property name="completiontype" value="TurnIn" />
+
+		<objective type="RandomGoto" value="200-600" phase="1">
+			<property name="completion_distance" value="50" />
+		</objective>
+
+		<objective type="RallyPoint">
+			<property name="start_mode" value="Create" />
+			<property name="phase" value="2" />
+		</objective>
+
+		<action type="SpawnEnemy" id="EgyptSkeleton" value="7" phase="3" />
+
+		<objective type="ZombieKill" id="EgyptSkeleton" value="5" phase="3" />
+
+
+		<action type="SpawnEnemy" id="EgyptSkeleton" value="10" phase="4" />
+
+		<objective type="ZombieKill" id="EgyptSkeleton" value="7" phase="4" />
+		
+		<objective type="InteractWithNPC">
+			<property name="phase" value="5" />
+		</objective>
+
+		<reward type="Exp" value="2000" />
+		<reward type="Item" id="casinoCoin" value="200-500" />
+	</quest>
+	
+	
+	
+	<quest id="challenge_EgyptAnubis">
+		<property name="name_key" value="challenge_itsybitsyspider" />
+		<property name="subtitle_key" value="challenge_itsybitsyspider_subtitle" />
+		<property name="description_key" value="challenge_itsybitsyspider_offer" />
+		<property name="icon" value="ui_game_symbol_zombie" />
+		<property name="repeatable" value="true" />
+		<property name="category_key" value="challenge" />
+		<property name="offer_key" value="challenge_itsybitsyspider_offer" />
+		<property name="difficulty" value="medium" />
+		<property name="completiontype" value="TurnIn" />
+
+		<objective type="RandomGoto" value="200-600" phase="1">
+			<property name="completion_distance" value="50" />
+		</objective>
+
+		<objective type="RallyPoint">
+			<property name="start_mode" value="Create" />
+			<property name="phase" value="2" />
+		</objective>
+
+		<action type="SpawnEnemy" id="EgyptSkeleton" value="7" phase="3" />
+		<action type="SpawnEnemy" id="EgyptMummy" value="7" phase="3" />
+
+		<objective type="ZombieKill" id="EgyptSkeleton" value="5" phase="3" />
+		<objective type="ZombieKill" id="EgyptMummy" value="5" phase="3" />
+
+		
+		
+		<action type="SpawnEnemy" id="EgyptAnubisLeader" value="1" phase="4" />
+		<action type="SpawnEnemy" id="EgyptSkeleton" value="9" phase="4" />
+		<action type="SpawnEnemy" id="EgyptMummy" value="9" phase="4" />
+
+		<objective type="ZombieKill" id="EgyptAnubisNew" value="1" phase="4" />
+		<objective type="ZombieKill" id="EgyptSkeleton" value="7" phase="4" />
+		<objective type="ZombieKill" id="EgyptMummy" value="7" phase="4" />
+
+		
+		<objective type="InteractWithNPC">
+			<property name="phase" value="5" />
+		</objective>
+
+		<reward type="Exp" value="2000" />
+		<reward type="Item" id="casinoCoin" value="200-500" />
+	</quest>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<!-- The Sphinx - 1 - Talk to the Trader -->
+	<quest id="quest_TheSphinx1">
+		<property name="group_name_key" value="quest_TheSphinx" />
+		<property name="name_key" value="quest_TheSphinx1" />
+		<property name="subtitle_key" value="quest_TheSphinx1_subtitle" />
+		<property name="description_key" value="quest_TheSphinx1_description" />
+		<property name="completion_key" value="quest_TheSphinx1_completion" />
+		<property name="offer_key" value="quest_TheSphinx1_offer" />
+		<property name="icon" value="ui_game_symbol_quest" />
+		<property name="category_key" value="quest" />
+		<property name="difficulty" value="veryeasy"/>
+		<property name="shareable" value="false" />
+		<action type="TrackQuest" />
+		<property name="completiontype" value="TurnIn" />
+		
+
+		<objective type="ReturnToNPC">
+			<property name="phase" value="1" />
+		</objective>
+
+		<objective type="InteractWithNPC">
+			<property name="phase" value="2" />
+		</objective>
+
+		<reward type="Exp" value="100" />
+		<reward type="Quest" id="quest_TheSphinx2" />
+	</quest>
+
+
+
+	<!-- The Sphinx - 2 - Find Gold Nuggets -->
+	<quest id="quest_TheSphinx2">
+		<property name="group_name_key" value="quest_TheSphinx" />
+		<property name="name_key" value="quest_TheSphinx2" />
+		<property name="subtitle_key" value="quest_TheSphinx2_subtitle" />
+		<property name="description_key" value="quest_TheSphinx2_description" />
+		<property name="completion_key" value="quest_TheSphinx2_completion" />
+		<property name="statement_key" value="quest_TheSphinx2_statement" />
+		<property name="icon" value="ui_game_symbol_quest" />
+		<property name="category_key" value="quest" />
+		<property name="difficulty" value="veryeasy"/>
+		<property name="shareable" value="false" />
+		<property name="completiontype" value="TurnIn" />
+		
+
+		<objective type="TreasureChest">
+			<property name="block" value="EgyptGoldBarQuest" />
+			<property name="distance" value="500-1250" />
+			<property name="container_type" value="Supplies" />
+		</objective>
+
+		<objective type="FetchFromTreasure">
+			<property name="block" value="EgyptGoldBarQuest" />
+			<property name="quest_item_ID" value="3" />
+			<property name="item_count" value="1" />
+		</objective>
+
+		<action type="SpawnEnemy" id="zombieArlene,zombieDarlene,zombieMarlene,zombieBoe,zombieJoe,zombieMoe,zombieYo" value="3-5" phase="2" />
+
+		<objective type="ReturnToNPC">
+			<property name="phase" value="2" />
+		</objective>
+
+		<objective type="InteractWithNPC">
+			<property name="phase" value="2" />
+		</objective>
+		
+		<reward type="Exp" value="1000" />
+		<reward type="Quest" id="quest_TheSphinx3" />
+	</quest>
+
+
+	<!-- The Sphinx - 3 - Defend the Trader  -->
+	<quest id="quest_TheSphinx3">
+		<property name="group_name_key" value="quest_TheSphinx" />
+		<property name="name_key" value="quest_TheSphinx3" />
+		<property name="subtitle_key" value="quest_TheSphinx3_subtitle" />
+		<property name="description_key" value="quest_TheSphinx3_description" />
+		<property name="completion_key" value="quest_TheSphinx3_completion" />
+		<property name="icon" value="ui_game_symbol_quest" />
+		<property name="category_key" value="challenge" />
+		<property name="difficulty" value="hard"/>
+		<property name="shareable" value="false" />
+		<action type="TrackQuest" />
+		<property name="completiontype" value="TurnIn" />
+		
+		<objective type="RandomGoto" value="350-500" phase="1">
+			<property name="completion_distance" value="50" />
+		</objective>
+
+		<objective type="RallyPoint">
+			<property name="start_mode" value="Create" />
+			<property name="phase" value="2" />
+		</objective>
+
+		<action type="SpawnEnemy" id="zombieDarlene" value="4" phase="3" />
+		<objective type="ZombieKill" id="zombieDarlene" value="3" phase="3" />
+		
+		<action type="SpawnEnemy" id="zombieSoldier" value="4" phase="3" />
+		<objective type="ZombieKill" id="zombieSoldier" value="3" phase="3" />
+
+		<action type="SpawnEnemy" id="zombieCheerleader" value="4" phase="3" />
+		<objective type="ZombieKill" id="zombieCheerleader" value="3" phase="3" />
+
+		<action type="SpawnEnemy" id="zombieOldTimerFeral" value="1" phase="3" />
+		<objective type="ZombieKill" id="zombieOldTimerFeral" value="1" phase="3" />
+
+		
+		
+		<action type="SpawnEnemy" id="zombieFatCop" value="2" phase="4" />
+		<objective type="ZombieKill" id="zombieFatCop" value="2" phase="4" />
+		
+		<action type="SpawnEnemy" id="zombieDarlene" value="4" phase="4" />
+		<objective type="ZombieKill" id="zombieDarlene" value="3" phase="4" />
+		
+		<action type="SpawnEnemy" id="EgyptMummy" value="5" phase="4" />
+		<objective type="ZombieKill" id="EgyptMummy" value="4" phase="4" />
+		
+		
+		
+		
+		<action type="SpawnEnemy" id="EgyptAnubis" value="1" phase="5" />
+		<objective type="ZombieKill" id="EgyptAnubis" value="1" phase="5" />
+		
+		<action type="SpawnEnemy" id="EgyptMummy" value="4" phase="4" />
+		<objective type="ZombieKill" id="EgyptMummy" value="3" phase="4" />
+		
+		<action type="SpawnEnemy" id="zombieDarlene" value="3" phase="4" />
+		
+		<action type="SpawnEnemy" id="EgyptChibiMummy1" value="3" phase="5" />
+		<objective type="ZombieKill" id="EgyptChibiMummy1" value="2" phase="5" />
+		
+		<action type="SpawnEnemy" id="EgyptChibiMummy2" value="3" phase="5" />
+		<objective type="ZombieKill" id="EgyptChibiMummy2" value="2" phase="5" />
+		
+		<action type="SpawnEnemy" id="EgyptChibiMummy3" value="3" phase="5" />
+		<objective type="ZombieKill" id="EgyptChibiMummy3" value="2" phase="5" />
+		
+		<action type="SpawnEnemy" id="EgyptChibiMummy4" value="3" phase="5" />
+		<objective type="ZombieKill" id="EgyptChibiMummy4" value="2" phase="5" />
+		
+		<objective type="ReturnToNPC">
+			<property name="phase" value="6" />
+		</objective>
+
+		<objective type="InteractWithNPC">
+			<property name="phase" value="7" />
+		</objective>
+
+		
+		<reward type="Exp" value="3000" />
+		<reward type="Quest" id="quest_TheSphinx4" />
+		<reward type="Item" id="TheSphinxInfoBook" value="1" />
+	</quest>
+
+	<!-- The Sphinx - 4 - Treasure Hunt  -->
+	<quest id="quest_TheSphinx4">
+		<property name="group_name_key" value="quest_TheSphinx" />
+		<property name="name_key" value="quest_TheSphinx4" />
+		<property name="subtitle_key" value="quest_TheSphinx4_subtitle" />
+		<property name="description_key" value="quest_TheSphinx4_description" />
+		<property name="completion_key" value="quest_TheSphinx4_completion" />
+		<property name="statement_key" value="quest_TheSphinx4_statement" />
+		<property name="response_key" value="quest_buried_supplies_response" />
+		<property name="icon" value="ui_game_symbol_quest" />
+		<property name="category_key" value="treasure" />
+		<property name="difficulty" value="veryeasy" />
+		<property name="shareable" value="false" />
+
+		<property name="completiontype" value="TurnIn" />
+
+		<objective type="TreasureChest">
+			<property name="block" value="EgyptChestQuest" />
+			<property name="distance" value="1500-1750" />
+			<property name="container_type" value="Supplies" />
+		</objective>
+
+		<objective type="FetchFromTreasure">
+			<property name="block" value="EgyptChestQuest" />
+			<property name="quest_item_ID" value="4" />
+			<property name="item_count" value="1" />
+		</objective>
+
+		
+		<objective type="ReturnToNPC">
+			<property name="phase" value="2" />
+		</objective>
+
+		<objective type="InteractWithNPC">
+			<property name="phase" value="3" />
+		</objective>
+		
+		<reward type="Exp" value="1000" />
+		<reward type="Item" id="qc_SphinxSidequest1" value="1" />
+		<reward type="Quest" id="quest_TheSphinx5" />
+	</quest>
+
+	<!-- SIDEQUEST - 1 - Kill Skeletons / Mummy  -->
+	<quest id="quest_SidequestTheSphinx1">
+		<property name="offer_key" value="quest_SidequestTheSphinx1_offer" />
+		<property name="name_key" value="quest_SidequestTheSphinx1" />
+		<property name="subtitle_key" value="quest_SidequestTheSphinx1_subtitle" />
+		<property name="description_key" value="quest_SidequestTheSphinx1_description" />
+		<property name="completion_key" value="quest_SidequestTheSphinx1_completion" />
+		<property name="statement_key" value="quest_SidequestTheSphinx1_statement" /> 
+		<property name="icon" value="ui_game_symbol_quest" />
+		<property name="category_key" value="challenge" />
+		<property name="difficulty" value="veryeasy" />
+		<property name="shareable" value="false" />
+		<property name="completiontype" value="TurnIn" />
+
+		<objective type="ZombieKill" id="EgyptMummy" value="10" phase="1" />
+		
+		<objective type="ZombieKill" id="EgyptChibiMummy1" value="5" phase="1" />
+		<objective type="ZombieKill" id="EgyptChibiMummy2" value="5" phase="1" />
+		<objective type="ZombieKill" id="EgyptChibiMummy3" value="5" phase="1" />
+		<objective type="ZombieKill" id="EgyptChibiMummy4" value="5" phase="1" />
+		
+		
+		<objective type="FetchKeep" id="EgyptOldWeaponFragments" value="20" phase="1" />
+		<objective type="FetchKeep" id="EgyptOldModFragments" value="20" phase="1" />
+		<objective type="FetchKeep" id="EgyptAncientStone" value="1" phase="1" />
+		
+		<objective type="ReturnToNPC">
+			<property name="phase" value="2" />
+		</objective>
+
+		<objective type="InteractWithNPC">
+			<property name="phase" value="3" />
+		</objective>
+		
+		<reward type="Exp" value="100" />
+		<reward type="Item" id="modMinionsRAD" value="1" />
+		<reward type="SkillPoints" value="1"/>
+	</quest>
+	
+	<!-- The Sphinx - 5 - Fetch Sphinx  -->
+	<quest id="quest_TheSphinx5">
+		<property name="group_name_key" value="quest_TheSphinx" />
+		<property name="name_key" value="quest_TheSphinx5" />
+		<property name="subtitle_key" value="quest_TheSphinx5_subtitle" />
+		<property name="description_key" value="quest_TheSphinx5_description" />
+		<property name="statement_key" value="quest_TheSphinx5_statement" />
+		<property name="completion_key" value="quest_TheSphinx5_completion" />
+		<property name="response_key" value="quest_fetch_response" />
+		<property name="icon" value="ui_game_symbol_quest" />
+		<property name="repeatable" value="true" />
+		<property name="category_key" value="challenge" />
+		<property name="difficulty" value="medium" />
+		<property name="difficulty_tier" value="6" />
+		<property name="login_rally_reset" value="true" />
+
+		<property name="completiontype" value="TurnIn" />
+		
+<objective type="GotoPOISDX, Mods" value="500-2500" phase="1">
+	<property name="completion_distance" value="50" />
+    <property name="PrefabName" value="EgyptSphinx" />
+</objective>
+		
+		<objective type="RallyPoint">
+			<property name="phase" value="2" />
+		</objective>
+
+		<objective type="FetchFromContainer">
+			<property name="phase" value="3" />
+			<property name="quest_item_ID" value="5" />
+			<property name="item_count" value="1" />
+			<property name="default_container" value="cntFetchQuestSatchelPapyrusScroll" />
+		</objective>
+
+		<objective type="POIStayWithin">
+			<property name="phase" value="3" />
+			<property name="radius" value="25" />
+		</objective>
+
+		<objective type="ReturnToNPC">
+			<property name="phase" value="4" />
+		</objective>
+
+		<objective type="InteractWithNPC">
+			<property name="phase" value="4" />
+		</objective>
+
+		<reward type="Exp" value="17500" />
+		<reward type="Quest" id="quest_TheSphinx6" />
+
+	</quest> 
+	
+	<!-- The Sphinx - 6 - Kill some Zombies -->
+	<quest id="quest_TheSphinx6">
+		<property name="group_name_key" value="quest_TheSphinx" />
+		<property name="name_key" value="quest_TheSphinx6" />
+		<property name="subtitle_key" value="quest_TheSphinx6_subtitle" />
+		<property name="description_key" value="quest_TheSphinx6_description" />
+		<property name="icon" value="ui_game_symbol_quest" />
+		<property name="category_key" value="quest" />
+		<property name="difficulty" value="veryeasy" />
+		<property name="shareable" value="false" />
+
+		<objective type="RandomGoto" value="500-720" phase="1">
+			<property name="completion_distance" value="50" />
+		</objective>
+
+		<objective type="RallyPoint">
+			<property name="start_mode" value="Create" />
+			<property name="phase" value="2" />
+		</objective>
+
+		<action type="SpawnEnemy" id="EgyptMummy" value="3-5" phase="3" />
+		<objective type="ZombieKill" id="EgyptMummy" value="2" phase="3" />
+
+		<action type="SpawnEnemy" id="EgyptChibiMummy1" value="5" phase="4" />
+		<objective type="ZombieKill" id="EgyptChibiMummy1" value="4" phase="4" />
+		
+		
+		<action type="SpawnEnemy" id="EgyptPharao" value="1" phase="5" />
+		<objective type="ZombieKill" id="EgyptPharao" value="1" phase="5" />
+		
+		<action type="SpawnEnemy" id="EgyptMummy" value="4" phase="4" />
+		<objective type="ZombieKill" id="EgyptMummy" value="3" phase="4" />
+		
+		<action type="SpawnEnemy" id="zombieDarlene" value="3" phase="4" />
+		
+		<action type="SpawnEnemy" id="EgyptChibiMummy4" value="3" phase="5" />
+		<objective type="ZombieKill" id="EgyptChibiMummy4" value="2" phase="5" />
+		
+		<reward type="Exp" value="1000" />
+		<reward type="Quest" id="quest_TheSphinx7" />
+	</quest>
+	
+	<!-- The Sphinx - 7 - Kill some Zombies -->
+	<quest id="quest_TheSphinx7">
+		<property name="group_name_key" value="quest_TheSphinx" />
+		<property name="name_key" value="quest_TheSphinx7" />
+		<property name="subtitle_key" value="quest_TheSphinx7_subtitle" />
+		<property name="description_key" value="quest_TheSphinx7_description" />
+		<property name="icon" value="ui_game_symbol_quest" />
+		<property name="category_key" value="quest" />
+		<property name="difficulty" value="veryeasy" />
+		<property name="shareable" value="false" />
+
+		<objective type="RandomGoto" value="200-320" phase="1">
+			<property name="completion_distance" value="50" />
+		</objective>
+
+		<objective type="RallyPoint">
+			<property name="start_mode" value="Create" />
+			<property name="phase" value="2" />
+		</objective>
+
+		<action type="SpawnEnemy" id="EgyptMummy" value="3-5" phase="3" />
+		<objective type="ZombieKill" id="EgyptMummy" value="2" phase="3" />
+
+		<action type="SpawnEnemy" id="EgyptAnubis" value="1" phase="4" />
+		<objective type="ZombieKill" id="EgyptAnubis" value="1" phase="4" />
+		
+		<action type="SpawnEnemy" id="EgyptMummy" value="5-10" phase="4" />
+		<objective type="ZombieKill" id="EgyptMummy" value="5" phase="4" />
+		
+		<action type="SpawnEnemy" id="zombieSoldier" value="4" phase="4" />
+		<objective type="ZombieKill" id="zombieSoldier" value="3" phase="4" />
+
+		<action type="SpawnEnemy" id="zombieCheerleader" value="4" phase="4" />
+		<objective type="ZombieKill" id="zombieCheerleader" value="3" phase="4" />
+
+		<action type="SpawnEnemy" id="zombieOldTimerFeral" value="1" phase="4" />
+		<objective type="ZombieKill" id="zombieOldTimerFeral" value="1" phase="4" />
+
+		
+		
+		<action type="SpawnEnemy" id="zombieFatCop" value="1" phase="4" />
+		<objective type="ZombieKill" id="zombieFatCop" value="1" phase="4" />
+		
+		
+		
+		
+		<reward type="Exp" value="1000" />
+		<reward type="Quest" id="quest_TheSphinx8" />
+	</quest>
+
+	<!-- The Sphinx - 8 - Treasure Hunt  -->
+	<quest id="quest_TheSphinx8">
+		<property name="group_name_key" value="quest_TheSphinx" />
+		<property name="name_key" value="quest_TheSphinx8" />
+		<property name="subtitle_key" value="quest_TheSphinx8_subtitle" />
+		<property name="description_key" value="quest_TheSphinx8_description" />
+		<property name="completion_key" value="quest_TheSphinx8_completion" />
+		<property name="statement_key" value="quest_TheSphinx8_statement" />
+		<property name="response_key" value="quest_buried_supplies_response" />
+		<property name="icon" value="ui_game_symbol_quest" />
+		<property name="category_key" value="treasure" />
+		<property name="difficulty" value="veryeasy" />
+		<property name="shareable" value="false" />
+		<property name="completiontype" value="TurnIn" />
+
+		<objective type="TreasureChest">
+			<property name="block" value="EgyptBookOpenBlock" />
+			<property name="distance" value="500-700" />
+			<property name="container_type" value="Supplies" />
+		</objective>
+
+		<objective type="FetchFromTreasure">
+			<property name="block" value="EgyptBookOpenBlock" />
+			<property name="quest_item_ID" value="6" />
+			<property name="item_count" value="1" />
+		</objective>
+
+		
+		<objective type="ReturnToNPC">
+			<property name="phase" value="2" />
+		</objective>
+
+		<objective type="InteractWithNPC">
+			<property name="phase" value="3" />
+		</objective>
+		
+		<reward type="Exp" value="1000" />
+		<reward type="Quest" id="quest_TheSphinx9" />
+	</quest>
+	
+	<!-- The SphinxEND - 9 - Weapon Plans  -->
+	<!-- SIDEQUEST - Khopesh/AncientClub	 -->
+	<quest id="quest_TheSphinx9">
+		<property name="group_name_key" value="quest_TheSphinx" />
+		<property name="name_key" value="quest_TheSphinx9" />
+		<property name="subtitle_key" value="quest_TheSphinx9_subtitle" />
+		<property name="description_key" value="quest_TheSphinx9_description" />
+		<property name="completion_key" value="quest_TheSphinx9_completion" />
+		<property name="statement_key" value="quest_TheSphinx9_statement" />
+		<property name="response_key" value="quest_fetch_response" />
+		<property name="icon" value="ui_game_symbol_quest" />
+		<property name="category_key" value="challenge" />
+		<property name="difficulty" value="veryeasy" />
+		<property name="shareable" value="false" />
+		<property name="difficulty_tier" value="6" />
+		<property name="login_rally_reset" value="true" />
+
+		<property name="completiontype" value="TurnIn" />
+
+<objective type="GotoPOISDX, Mods" value="500-2500" phase="1">
+	<property name="completion_distance" value="50" />
+    <property name="PrefabName" value="EgyptSphinx" />
+</objective>
+		
+
+		<objective type="RallyPoint">
+			<property name="phase" value="2" />
+		</objective>
+		
+		<objective type="ClearSleepers">
+			<property name="phase" value="3" />
+		</objective>
+
+		<objective type="FetchFromContainer">
+			<property name="phase" value="3" />
+			<property name="quest_item_ID" value="7" />
+			<property name="item_count" value="1" />
+			<property name="default_container" value="cntFetchQuestSatchel" />
+		</objective>
+
+
+		<objective type="ReturnToNPC">
+			<property name="phase" value="4" />
+		</objective>
+
+		<objective type="InteractWithNPC">
+			<property name="phase" value="5" />
+		</objective>
+
+
+
+		<reward type="Exp" value="100" />
+		<reward type="Exp" value="30000" chainreward="true"  ischosen="true"/>
+		<reward type="SkillPoints" value="6" chainreward="true"  ischosen="true"/>
+		<reward type="Item" id="EgyptAncientClubSchematic" value="1" ischosen="true"/>
+		<reward type="Item" id="EgyptKhopeshSchematic" value="1" ischosen="true"/>
+		<reward type="Item" id="EgyptBlocksSchematic" value="1"/>
+	</quest>
+	
+	
+	
+	
+    </append>
+	
+	
+
+    <append xpath="/quests/quest_items">
+		<quest_item id="3" name="Gold Nuggets" icon="GoldBar5" icon_color="255,255,255" />
+		<quest_item id="4" name="Trader Stuff" icon="questMaster" icon_color="255,255,255" />
+		<quest_item id="5" name="PapyrusScroll" icon="PaypyrusScroll" icon_color="255,255,255" />
+		<quest_item id="6" name="Ancient Book" icon="BookOpen" icon_color="255,255,255" />
+		<quest_item id="7" name="Weapon Plan untranslated" icon="questMaster" icon_color="255,255,255" />
+    </append>
+	
+	
+	<set xpath="/quests/@max_quest_tier">6</set>
+
+</configs>

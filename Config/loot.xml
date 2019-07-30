@@ -1,0 +1,218 @@
+<configs>
+
+	
+    <append xpath="/lootcontainers/lootgroup[@name='commonBooks']">
+	<item name="qc_TheSphinx" count="1"/>
+    </append>
+	
+	
+
+
+<append xpath="/lootcontainers">
+
+
+
+<lootgroup name="EgyptAll">
+	<!-- Key / Open Tools -->
+	<item name="EgyptAncientStoneTool" count="1" />
+	<item name="EgyptpyramideMiddle" count="1" />
+	<item name="EgyptpyramideTop" count="1" />
+	<item name="EgyptAnubisDoorKey1" count="1" />
+	<item name="EgyptAnubisDoorKey2" count="1" />
+	<item name="EgyptAnubisDoorKey3" count="1" />
+	<item name="EgyptAnubisDoorKey4" count="1" />
+	<item name="qc_TheSphinx" count="1" />
+	<!-- Quest -->
+	<item name="qc_TheSphinx" count="1" />
+	<item name="qc_EgyptMummy" count="1" />
+	<item name="qc_EgyptAnubis" count="1" />
+	<!-- Items -->
+	<item name="EgyptCup" count="1,2" />
+	<item name="EgyptBook" count="1" />
+	<item name="EgyptPapyrusScroll" count="1" />
+	<item name="EgyptCross" count="1,2" />
+	<item name="EgyptGoldCoin" count="3,11" />
+	<item name="EgyptGoldBar" count="1" />
+	<item name="EgyptGold" count="1,3"  prob="0.5"/>
+	<item name="resourceGoldNugget" count="1,5" prob="0.5"/>
+	<item name="resourceSilverNugget" count="1,5" prob="0.5"/>
+	<item name="EgyptFragments" count="1,5"/>
+	<item name="EgyptAncientMushroom" count="1"/>
+	<item name="EgyptAncientStoneRed" count="1"/>
+	<item name="EgyptAncientStoneBlue" count="1"/>
+	<item name="EgyptAncientStoneYellow" count="1"/>
+	<item name="EgyptAncientStoneGreen" count="1"/>
+	<!-- Weapons -->
+	<item name="EgyptSpear1" count="1" prob="0.2"/>
+	<item name="EgyptSpear2" count="1" prob="0.2"/>
+	<item name="EgyptSpear3" count="1" prob="0.2"/>
+	<item name="EgyptZeptar1" count="1" prob="0.2"/>
+	<item name="EgyptSword" count="1" prob="0.2"/>
+	<item name="EgyptKhopesh" count="1" prob="0.2"/>
+	<item name="EgyptKnife1" count="1" prob="0.2"/>
+	<item name="EgyptSickle1" count="1" prob="0.2"/>
+	<item name="EgyptShield" count="1" prob="0.2"/>
+	<!-- Schematic -->
+	<item name="EgyptSwordSchematic" count="1" prob="0.01"/>
+	<item name="EgyptKnifeSchematic" count="1" prob="0.01"/>
+	<item name="EgyptSickleSchematic" count="1" prob="0.01"/>
+	<item name="EgyptKhopeshSchematic" count="1" prob="0.008"/>
+	<!-- Mods -->
+	<item name="modAnubis" count="1" prob="0.2"/>
+	<item name="modAnubisRare" count="1" prob="0.05"/>
+	<item name="modPharao" count="1" prob="0.2"/>
+	<item name="modPharaoRare" count="1" prob="0.05"/>
+	<item name="modQueen" count="1" prob="0.2"/>
+	<item name="modQueenRare" count="1" prob="0.05"/>
+	<item name="modMinionsRAD" count="1" prob="0.2"/>
+	<item name="modMinionsRADRare" count="1" prob="0.05"/>
+	<item name="modBossRAD" count="1" prob="0.2"/>
+	<item name="modBossRADRare" count="1" prob="0.05"/>
+	<item name="modBossRecoveryRare" count="1" prob="0.008"/>
+</lootgroup>
+
+<lootgroup name="EgyptWeapons">
+	<item name="EgyptSpear1" count="1" prob="0.2"/>
+	<item name="EgyptSpear2" count="1" prob="0.2"/>
+	<item name="EgyptSpear3" count="1" prob="0.2"/>
+	<item name="EgyptZeptar1" count="1" prob="0.2"/>
+	<item name="EgyptSword" count="1" prob="0.2"/>
+	<item name="EgyptKhopesh" count="1" prob="0.2"/>
+	<item name="EgyptKnife1" count="1" prob="0.2"/>
+	<item name="EgyptSickle1" count="1" prob="0.2"/>
+</lootgroup>
+
+
+<lootgroup name="EgyptSchematics">
+	<item name="EgyptSwordSchematic" count="1" prob="0.2"/>
+	<item name="EgyptKnifeSchematic" count="1" prob="0.2"/>
+	<item name="EgyptSickleSchematic" count="1" prob="0.2"/>
+	<item name="EgyptKhopeshSchematic" count="1" prob="0.05"/>
+	<item name="EgyptModSchematic" count="1" prob="0.05"/>
+	<item name="EgyptModRareSchematic" count="1" prob="0.05"/>
+</lootgroup>
+
+<lootgroup name="EgyptMods">
+	<item name="modAnubis" count="1" prob="0.2"/>
+	<item name="modPharao" count="1" prob="0.2"/>
+	<item name="modQueen" count="1" prob="0.2"/>
+	<item name="modMinionsRAD" count="1" prob="0.2"/>
+	<item name="modBossRAD" count="1" prob="0.2"/>
+</lootgroup>
+	
+<lootgroup name="EgyptModsRare">
+	<item name="modAnubis" count="1" prob="0.2"/>
+	<item name="modAnubisRare" count="1" prob="0.05"/>
+	<item name="modPharao" count="1" prob="0.2"/>
+	<item name="modPharaoRare" count="1" prob="0.05"/>
+	<item name="modQueen" count="1" prob="0.2"/>
+	<item name="modQueenRare" count="1" prob="0.05"/>
+	<item name="modMinionsRAD" count="1" prob="0.2"/>
+	<item name="modMinionsRADRare" count="1" prob="0.05"/>
+	<item name="modBossRAD" count="1" prob="0.2"/>
+	<item name="modBossRADRare" count="1" prob="0.05"/>
+	<item name="modBossRecoveryRare" count="1" prob="0.008"/>
+</lootgroup>
+
+<lootgroup name="EgyptLootItems">
+	<item name="EgyptFragments" count="1,5"/>
+	<item name="EgyptCross" count="1" prob="0.5"/>
+	<item name="resourceGoldNugget" count="1,3" prob="0.5"/>
+	<item name="resourceGoldNugget" count="1" prob="0.5"/>
+	<item name="EgyptGoldCoin" count="1,7" prob="0.5"/>
+	<item name="EgyptGoldBar" count="1,7" prob="0.5"/>
+	<item name="EgyptGold" count="1,3" prob="0.5"/>
+	<item name="EgyptAncientStone" count="1"/>
+</lootgroup>
+
+<lootgroup name="EgyptFragments">
+	<item name="EgyptFragments" count="1,5"/>
+</lootgroup>
+
+
+
+
+
+
+
+
+
+<!-- Boss (Anubis / Pharao) -->
+<lootcontainer id="221" count="1,2" size="5,4" sound_open="UseActions/open_cardboard" sound_close="UseActions/close_cardboard" loot_quality_template="baseTemplate">
+	<item group="EgyptAll" count="1,2" prob="0.5"/>
+	<item group="EgyptWeapons" count="1" prob="0.5"/>
+	<item group="EgyptSchematics" count="1" prob="0.5"/>
+	<item group="EgyptModsRare" count="1" prob="0.5"/>
+	<item group="EgyptLootItems" count="1,2"/>
+	<item group="EgyptFragments" count="1"/>
+	<item name="EgyptAncientStoneRed" count="1"/>
+	<item name="EgyptAncientStoneBlue" count="1"/>
+	<item name="EgyptAncientStoneYellow" count="1"/>
+	<item name="EgyptAncientStoneGreen" count="1"/>
+</lootcontainer>
+
+
+
+
+<!-- Sub-Boss (pharaohold/anubisold/queen) -->
+<lootcontainer id="222" count="1,2" size="5,4" sound_open="UseActions/open_cardboard" sound_close="UseActions/close_cardboard" loot_quality_template="baseTemplate">
+	<item group="EgyptAll" count="1" prob="0.01"/>
+	<item group="EgyptWeapons" count="1" prob="0.01"/>
+	<item group="EgyptSchematics" count="1" prob="0.005"/>
+	<item group="EgyptMods" count="1" prob="0.01"/>
+	<item group="EgyptLootItems" count="1" />
+	<item group="EgyptFragments" count="1"/>
+	<item group="commonBooks" count="1" />
+	<item group="weaponsMelee" count="1" />
+	<item group="rottenFood" count="1" />
+	<item group="treasureMaps" count="1" prob="0.3"/>
+	<item group="questChallenge" count="1" prob="0.4"/>
+	<item group="medicine" count="1" />
+	<item group="rareMedicine" count="1" prob="0.2"/>
+</lootcontainer>
+
+
+<!-- Minions (Normal Entity) -->
+<lootcontainer id="223" count="1,2" size="5,4" sound_open="UseActions/open_cardboard" sound_close="UseActions/close_cardboard" loot_quality_template="baseTemplate">
+	<item group="EgyptAll" count="1" prob="0.01"/>
+	<item group="EgyptWeapons" count="1" prob="0.01"/>
+	<item group="EgyptSchematics" count="1" prob="0.005"/>
+	<item group="EgyptMods" count="1" prob="0.01"/>
+	<item group="EgyptLootItems" count="1" />
+	<item group="EgyptFragments" count="1"/>
+	<item group="commonBooks" count="1" />
+	<item group="weaponsMelee" count="1" />
+	<item group="rottenFood" count="1" />
+	<item group="treasureMaps" count="1" prob="0.3"/>
+	<item group="questChallenge" count="1" prob="0.4"/>
+	<item group="medicine" count="1" />
+	<item group="rareMedicine" count="1" prob="0.2"/>
+</lootcontainer>
+
+
+<!-- Loot Containers -->
+<lootcontainer id="224" count="1,2" size="5,4" sound_open="UseActions/open_cardboard" sound_close="UseActions/close_cardboard" loot_quality_template="baseTemplate">
+	<item group="EgyptAll" count="1" prob="0.2"/>
+	<item group="EgyptWeapons" count="1" prob="0.1"/>
+	<item group="EgyptSchematics" count="1" prob="0.05"/>
+	<item group="EgyptMods" count="1" prob="0.01"/>
+	<item group="EgyptLootItems" count="1" />
+	<item group="EgyptFragments" count="1" />
+	<item group="seeds" count="1" prob="0.5"/>
+	<item group="books" count="1" prob="0.6"/>
+	<item group="dyes" count="1" />
+	<item group="rareBooks" count="1" prob="0.05"/>
+	<item group="commonBooks" count="1" />
+	<item group="weaponsMelee" count="1" />
+	<item group="rottenFood" count="1" />
+	<item group="treasureMaps" count="1" prob="0.3"/>
+	<item group="questChallenge" count="1" prob="0.4"/>
+	<item group="banditsGeneral" count="1" />
+	<item group="backpacks" count="1" />
+	<item group="medicine" count="1" />
+	<item group="rareMedicine" count="1" prob="0.2"/>
+	<item group="clothes" count="1" />
+</lootcontainer>
+    </append>
+
+</configs>

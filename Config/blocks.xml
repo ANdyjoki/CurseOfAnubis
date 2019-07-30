@@ -1,0 +1,3460 @@
+<configs>
+	<append xpath="/blocks">
+	
+
+<!--XXXXXX 
+
+RANDOM HELPER BLOCKS
+
+XXXXXX  -->
+
+<block name="cntEgyptDoorRandomHelper">
+	<property name="DescriptionKey" value="PaintingDesc"/>
+	<property name="Material" value="Mwood"/>
+	<property name="MaxDamage" value="250"/>
+	<property name="CustomIcon" value="ChestRandomSpawner" />
+	<property name="Model" value="#@modfolder:Resources/CoABlocks.unity3d?CoADefaultDoubleDoor" />
+	<property name="CreativeMode" value="Player"/>
+	<property name="Mesh" value="opaque"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="SortOrder2" value="0050"/> 
+	<property name="Path" value="solid"/>
+	<property name="Texture" value="241"/>
+	<property name="UseGlobalUV" value="Local"/>
+	<property name="Group" value="Building,Basics"/>
+	<property name="CanPickup" value="false"/>
+</block>
+
+<block name="cntEgyptDoorSmallRandomHelper">
+	<property name="DescriptionKey" value="PaintingDesc"/>
+	<property name="Material" value="Mwood"/>
+	<property name="MaxDamage" value="250"/>
+	<property name="CustomIcon" value="ChestRandomSpawner" />
+	<property name="Model" value="#@modfolder:Resources/CoABlocks.unity3d?CoADefaultDoorSmall" />
+	<property name="CreativeMode" value="Player"/>
+	<property name="Mesh" value="opaque"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="SortOrder2" value="0050"/> 
+	<property name="Path" value="solid"/>
+	<property name="Texture" value="241"/>
+	<property name="UseGlobalUV" value="Local"/>
+	<property name="Group" value="Building,Basics"/>
+	<property name="CanPickup" value="false"/>
+</block>
+
+<block name="cntEgyptGroundTrapRandomHelper">
+	<property name="DescriptionKey" value="PaintingDesc"/>
+	<property name="Material" value="Mwood"/>
+	<property name="MaxDamage" value="250"/>
+	<property name="CustomIcon" value="ChestRandomSpawner" />
+	<property name="Model" value="#@modfolder:Resources/CoABlocks.unity3d?CoADefaultGroundTrap"/>
+	<property name="CreativeMode" value="Player"/>
+	<property name="Mesh" value="opaque"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="SortOrder2" value="0050"/> 
+	<property name="Path" value="solid"/>
+	<property name="Texture" value="241"/>
+	<property name="UseGlobalUV" value="Local"/>
+	<property name="Group" value="Building,Basics"/>
+	<property name="CanPickup" value="false"/>
+</block>
+
+
+<block name="cntEgyptGoldRandomHelper">
+	<property name="DescriptionKey" value="PaintingDesc"/>
+	<property name="Material" value="Mwood"/>
+	<property name="MaxDamage" value="250"/>
+	<property name="CustomIcon" value="ChestRandomSpawner" />
+	<property name="Model" value="#@modfolder:Resources/CoABlocks.unity3d?CoADefaultGold" />
+	<property name="CreativeMode" value="Player"/>
+	<property name="Mesh" value="opaque"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="SortOrder2" value="0050"/> 
+	<property name="Path" value="solid"/>
+	<property name="Texture" value="241"/>
+	<property name="UseGlobalUV" value="Local"/>
+	<property name="Group" value="Building,Basics"/>
+	<property name="CanPickup" value="false"/>
+</block>
+
+
+<block name="cntEgyptChestsRandomHelper">
+	<property name="DescriptionKey" value="PaintingDesc"/>
+	<property name="Material" value="Mwood"/>
+	<property name="MaxDamage" value="250"/>
+	<property name="CustomIcon" value="ChestRandomSpawner" />
+	<property name="Model" value="#@modfolder:Resources/CoABlocks.unity3d?CoADefaultChest" />
+	<property name="CreativeMode" value="Player"/>
+	<property name="Mesh" value="opaque"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="SortOrder2" value="0050"/> 
+	<property name="Path" value="solid"/>
+	<property name="Texture" value="241"/>
+	<property name="UseGlobalUV" value="Local"/>
+	<property name="Group" value="Building,Basics"/>
+	<property name="CanPickup" value="false"/>
+</block>
+
+
+
+<block name="cntEgyptGroundBlocksRandomHelper">
+	<property name="DescriptionKey" value="PaintingDesc"/>
+	<property name="Material" value="Mmetal_medium"/>
+	<property name="MaxDamage" value="250"/>
+	<property name="CustomIcon" value="GroundBlockRandomSpawner" />
+	<property name="Model" value="#@modfolder:Resources/CoABlocks.unity3d?CoADefaultGroundBlock" />
+	<property name="CreativeMode" value="Dev"/>
+	<property name="Mesh" value="opaque"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="SortOrder2" value="0050"/> 
+	<property name="Path" value="solid"/>
+	<property name="Texture" value="241"/>
+	<property name="UseGlobalUV" value="Local"/>
+	<property name="Group" value="Building,Basics"/>
+	<property name="CanPickup" value="false"/>
+</block>
+
+
+
+
+<block name="cntEgyptCoffinSmallRandomHelper">
+	<property name="DescriptionKey" value="PaintingDesc"/>
+	<property name="Material" value="Mmetal_medium"/>
+	<property name="MaxDamage" value="250"/>
+	<property name="CustomIcon" value="Coffin1RandomSpawner" />
+	<property name="Model" value="#@modfolder:Resources/CoABlocks.unity3d?CoADefaultCoffinSmall" />
+	<property name="CreativeMode" value="Dev"/>
+	<property name="Mesh" value="opaque"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="SortOrder2" value="0050"/> 
+	<property name="Path" value="solid"/>
+	<property name="Texture" value="241"/>
+	<property name="UseGlobalUV" value="Local"/>
+	<property name="Group" value="Building,Basics"/>
+	<property name="CanPickup" value="false"/>
+	<drop event="Destroy" count="0"/>
+	<drop event="Fall" name="terrDestroyedWoodDebris" count="1" prob="0.75" stick_chance="1"/>
+</block>
+
+
+<block name="cntEgyptCoffinLargeRandomHelper">
+	<property name="DescriptionKey" value="PaintingDesc"/>
+	<property name="Material" value="Mmetal_medium"/>
+	<property name="MaxDamage" value="250"/>
+	<property name="CustomIcon" value="Coffin2RandomSpawner" />
+	<property name="Model" value="#@modfolder:Resources/CoABlocks.unity3d?CoADefaultCoffinBig" />
+	<property name="CreativeMode" value="Player"/>
+	<property name="Mesh" value="opaque"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="SortOrder2" value="0050"/> 
+	<property name="Path" value="solid"/>
+	<property name="Texture" value="241"/>
+	<property name="UseGlobalUV" value="Local"/>
+	<property name="Group" value="Building,Basics"/>
+	<property name="CanPickup" value="false"/>
+</block>
+
+
+
+
+<block name="cntEgyptVaseRandomHelper">
+	<property name="DescriptionKey" value="PaintingDesc"/>
+	<property name="Material" value="Mbrick"/>
+	<property name="MaxDamage" value="50"/>
+	<property name="CustomIcon" value="VaseRandomSpawner" />
+	<property name="Model" value="#@modfolder:Resources/CoABlocks.unity3d?CoADefaultVase" />
+	<property name="CreativeMode" value="Player"/>
+	<property name="Mesh" value="opaque"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="SortOrder2" value="0050"/> 
+	<property name="Path" value="solid"/>
+	<property name="Texture" value="241"/>
+	<property name="UseGlobalUV" value="Local"/>
+	<property name="Group" value="Building,Basics"/>
+	<property name="CanPickup" value="false"/>
+</block>
+
+
+
+<block name="cntEgyptPillarHelper">
+	<property name="DescriptionKey" value="PaintingDesc"/>
+	<property name="Material" value="Mbrick"/>
+	<property name="MaxDamage" value="50"/>
+	<property name="CustomIcon" value="" />
+	<property name="Model" value="#@modfolder:Resources/CoABlocks.unity3d?CoADefaultPillar" />
+	<property name="CreativeMode" value="Player"/>
+	<property name="Mesh" value="opaque"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="SortOrder2" value="0050"/> 
+	<property name="Path" value="solid"/>
+	<property name="Texture" value="241"/>
+	<property name="UseGlobalUV" value="Local"/>
+	<property name="Group" value="Building,Basics"/>
+	<property name="CanPickup" value="false"/>
+</block>
+
+
+<block name="cntEgyptCubesHelper">
+	<property name="DescriptionKey" value="PaintingDesc"/>
+	<property name="Material" value="Mbrick"/>
+	<property name="MaxDamage" value="50"/>
+	<property name="CustomIcon" value="" />
+	<property name="Model" value="#@modfolder:Resources/CoABlocks.unity3d?CoADefaultBlock" />
+	<property name="CreativeMode" value="Player"/>
+	<property name="Mesh" value="opaque"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="SortOrder2" value="0050"/> 
+	<property name="Path" value="solid"/>
+	<property name="Texture" value="241"/>
+	<property name="UseGlobalUV" value="Local"/>
+	<property name="Group" value="Building,Basics"/>
+	<property name="CanPickup" value="false"/>
+</block>
+
+
+
+<block name="cntEgyptWallSymbolRandomHelper">
+	<property name="DescriptionKey" value="PaintingDesc"/>
+	<property name="Material" value="Mmetal_medium"/>
+	<property name="MaxDamage" value="250"/>
+	<property name="CustomIcon" value="WallSymbolRandomSpawner" />
+	<property name="Model" value="#@modfolder:Resources/CoABlocks.unity3d?CoADefaultWallSymbol" />
+	<property name="CreativeMode" value="Player"/>
+	<property name="Mesh" value="opaque"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="SortOrder2" value="0050"/> 
+	<property name="Path" value="solid"/>
+	<property name="Texture" value="241"/>
+	<property name="UseGlobalUV" value="Local"/>
+	<property name="Group" value="Building,Basics"/>
+	<property name="CanPickup" value="false"/>
+</block>
+
+
+
+
+<block name="cntEgyptPaintingHRandomHelper">
+	<property name="DescriptionKey" value="PaintingDesc"/>
+	<property name="Material" value="Mwood"/>
+	<property name="MaxDamage" value="250"/>
+	<property name="CustomIcon" value="PaintingHRandomSpawner" />
+	<property name="Model" value="#@modfolder:Resources/CoABlocks.unity3d?CoADefaultPaintingH" />
+	<property name="CreativeMode" value="Player"/>
+	<property name="Mesh" value="opaque"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="SortOrder2" value="0050"/> 
+	<property name="Path" value="solid"/>
+	<property name="Texture" value="241"/>
+	<property name="UseGlobalUV" value="Local"/>
+	<property name="Group" value="Building,Basics"/>
+	<property name="CanPickup" value="false"/>
+</block>
+
+<block name="cntEgyptPaintingVRandomHelper">
+	<property name="DescriptionKey" value="PaintingDesc"/>
+	<property name="Material" value="Mwood"/>
+	<property name="MaxDamage" value="250"/>
+	<property name="CustomIcon" value="PaintingVRandomSpawner" />
+	<property name="Model" value="#@modfolder:Resources/CoABlocks.unity3d?CoADefaultPaintingV" />
+	<property name="CreativeMode" value="Player"/>
+	<property name="Mesh" value="opaque"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="SortOrder2" value="0050"/> 
+	<property name="Path" value="solid"/>
+	<property name="Texture" value="241"/>
+	<property name="UseGlobalUV" value="Local"/>
+	<property name="Group" value="Building,Basics"/>
+	<property name="CanPickup" value="false"/>
+</block>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--XXXXXX 
+
+FETCH Quest BLOCK
+
+XXXXXX  -->
+<block name="cntFetchQuestSatchelPapyrusScroll">
+	<property name="Extends" value="cntBackpack01"/>
+	<property name="CreativeMode" value="Dev"/>
+	<property name="Class" value="QuestLoot" />
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="#@modfolder:Resources/CoABlocks.unity3d?PapyrusScroll" />
+	<property name="Place" value="TowardsPlacerInverted"/>
+	<property name="MaxDamage" value="500"/>
+	<property name="LootList" value="72"/>
+	<property name="CreativeMode" value="None"/>
+	<property name="IndexName" value="FetchContainer"/>
+	<property name="StabilityIgnore" value="true" /> <!-- gravity shmavity -->
+</block>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+<!--XXXXXX 
+
+Quest ITEM BLOCK
+
+XXXXXX  -->
+	
+<block name="EgyptGoldBarQuest">
+	<property name="Model" value="#@modfolder:Resources/CoABlocks.unity3d?GoldPile" />
+	<property name="LootList" value="72"/>
+	<property name="CustomIcon" value="GoldBar5" />
+	<property name="DescriptionKey" value="decorationBlockGroupDesc"/>
+	<property name="Class" value="Loot"/>
+	<property name="Material" value="MCardboardLoot"/>
+	<property name="Path" value="solid"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="AllowAllRotations" value="true"/>
+	<property name="FilterTags" value="floot"/>
+</block>
+
+	
+	
+	
+	
+
+<block name="EgyptChestQuest">
+	<property name="Model" value="#@modfolder:Resources/CoABlocks.unity3d?Chest4" />
+	<property name="LootList" value="72"/>
+	<property name="CustomIcon" value="Chest4"/>
+	<property name="Class" value="Loot"/>
+	<property name="Material" value="Mwood"/>
+	<property name="MaxDamage" value="100"/>
+	<property name="Path" value="solid"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="AllowAllRotations" value="true"/>
+	<property name="FilterTags" value="floot"/>
+	<drop event="Destroy" count="0"/>
+	<drop event="Fall" name="terrDestroyedWoodDebris" count="1" prob="0.75" stick_chance="1"/>
+</block>
+	
+	
+	
+	
+	
+	
+<!--XXXXXX 
+
+Fog Blocks
+
+XXXXXX  -->
+
+
+<block name="EgyptFog1">
+	<property name="CreativeMode" value="Dev"/>
+	<property name="Mesh" value="opaque"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Group" value="Building,Basics"/>
+	<property name="Material" value="Mmetal_medium"/>
+	<property name="MaxDamage" value="250"/>
+	<property name="DescriptionKey" value="EgyptFog1"/>
+	<property name="MultiBlockDim" value="1,1,1"/>
+	<property name="SellableToTrader" value="false"/>
+	<property name="Model" value="#@modfolder:Resources/CoABlocks.unity3d?FogSmall" />
+	<property name="CustomIcon" value="EgyptFog1" />
+	<property name="CanPickup" value="false"/>
+</block>
+
+<block name="EgyptFog2">
+	<property name="CreativeMode" value="Dev"/>
+	<property name="Mesh" value="opaque"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Group" value="Building,Basics"/>
+	<property name="Material" value="Mmetal_medium"/>
+	<property name="MaxDamage" value="250"/>
+	<property name="DescriptionKey" value="EgyptFog2"/>
+	<property name="MultiBlockDim" value="1,1,1"/>
+	<property name="SellableToTrader" value="false"/>
+	<property name="Model" value="#@modfolder:Resources/CoABlocks.unity3d?FogLarge" />
+	<property name="CustomIcon" value="EgyptFog2" />
+	<property name="CanPickup" value="false"/>
+</block>
+
+<block name="EgyptFog3">
+	<property name="CreativeMode" value="Dev"/>
+	<property name="Mesh" value="opaque"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Group" value="Building,Basics"/>
+	<property name="Material" value="Mmetal_medium"/>
+	<property name="MaxDamage" value="250"/>
+	<property name="DescriptionKey" value="EgyptFog3"/>
+	<property name="MultiBlockDim" value="1,1,1"/>
+	<property name="SellableToTrader" value="false"/>
+	<property name="Model" value="#@modfolder:Resources/CoABlocks.unity3d?FogBox1" />
+	<property name="CustomIcon" value="EgyptFog3" />
+	<property name="CanPickup" value="false"/>
+</block>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+<block name="EgyptDoubleDoorClosed">
+	<property name="Extends" value="cropsGrowingMaster" param1="CustomIcon,DescriptionKey"/>
+	<property name="Material" value="Mconcrete"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Collide" value="movement,melee"/>
+	<property name="MultiBlockDim" value="2,2,1" />
+	<property name="Model" value="#@modfolder:Resources/CoABlocks.unity3d?DoubleDoorClose" />
+	<property name="PlantGrowing.FertileLevel" value="0"/>
+	<property name="IsTerrainDecoration" value="false"/>
+	<property name="IsDecoration" value="false"/>
+	<property name="PlantGrowing.Next" value="EgyptDoubleDoorOpen"/>
+	<property name="PlantGrowing.GrowthRate" value="2.0"/> <!-- setting 1 is erratic. Recommend 2+ for testing or use -->
+	<property name="PlantGrowing.IsGrowOnTopEnabled" value="false"/>
+	<property name="Group" value="Food/Cooking"/>
+</block>
+
+<block name="EgyptDoubleDoorOpen">
+	<property name="Extends" value="EgyptDoubleDoorClosed"/>
+	<property name="Model" value="#@modfolder:Resources/CoABlocks.unity3d?DoubleDoorOpen" />
+	<property name="CustomIcon" value=""/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Collide" value="movement,melee"/>
+	<property name="MultiBlockDim" value="2,2,1" />
+	<property name="Material" value="Mconcrete"/>
+	<property name="PlantGrowing.Next" value="EgyptDoubleDoorClosed"/>
+	<property name="PlantGrowing.FertileLevel" value="0"/>
+	<property name="IsTerrainDecoration" value="false"/>
+	<property name="IsDecoration" value="false"/>
+	<property name="PlantGrowing.GrowthRate" value="2.0"/> <!-- setting 1 is erratic. Recommend 2+ for testing or use -->
+	<property name="PlantGrowing.IsGrowOnTopEnabled" value="false"/>
+</block>
+
+
+
+
+
+
+
+
+<block name="EgyptDoubleWall">
+	<property name="Extends" value="cropsGrowingMaster" param1="CustomIcon,DescriptionKey"/>
+	<property name="Model" value="#@modfolder:Resources/CoABlocks.unity3d?DoubleDoorWall1" />
+	<property name="CustomIcon" value=""/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Collide" value="movement,melee"/>
+	<property name="MultiBlockDim" value="2,2,1" />
+	<property name="Material" value="Mconcrete"/>
+	<property name="PlantGrowing.Next" value="EgyptWallInvisible"/>
+	<property name="PlantGrowing.FertileLevel" value="0"/>
+	<property name="IsTerrainDecoration" value="false"/>
+	<property name="IsDecoration" value="false"/>
+	<property name="PlantGrowing.GrowthRate" value="2.0"/> <!-- setting 1 is erratic. Recommend 2+ for testing or use -->
+	<property name="PlantGrowing.IsGrowOnTopEnabled" value="false"/>
+</block>
+
+
+<block name="EgyptWallInvisible">
+	<property name="Extends" value="EgyptDoubleWall"/>
+	<property name="Model" value="#@modfolder:Resources/CoABlocks.unity3d?DoubleDoorWall" />
+	<property name="CustomIcon" value=""/>
+	<property name="Shape" value="Invisible"/>
+	<property name="Collide" value="movement,melee"/>
+	<property name="MultiBlockDim" value="2,2,1" />
+	<property name="Material" value="Mconcrete"/>
+	<property name="PlantGrowing.Next" value="EgyptDoubleWall"/>
+	<property name="PlantGrowing.FertileLevel" value="0"/>
+	<property name="IsTerrainDecoration" value="false"/>
+	<property name="IsDecoration" value="false"/>
+	<property name="PlantGrowing.GrowthRate" value="2.0"/> <!-- setting 1 is erratic. Recommend 2+ for testing or use -->
+	<property name="PlantGrowing.IsGrowOnTopEnabled" value="false"/>
+</block>
+
+
+
+
+<block name="EgyptDoubleWall2">
+	<property name="Extends" value="cropsGrowingMaster" param1="CustomIcon,DescriptionKey"/>
+	<property name="Model" value="#@modfolder:Resources/CoABlocks.unity3d?DoubleDoorWall1" />
+	<property name="CustomIcon" value=""/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Collide" value="movement,melee"/>
+	<property name="MultiBlockDim" value="2,2,1" />
+	<property name="Material" value="Mconcrete"/>
+	<property name="PlantGrowing.Next" value="EgyptWall2Invisible"/>
+	<property name="PlantGrowing.FertileLevel" value="0"/>
+	<property name="IsTerrainDecoration" value="false"/>
+	<property name="IsDecoration" value="false"/>
+	<property name="PlantGrowing.GrowthRate" value="2.0"/> <!-- setting 1 is erratic. Recommend 2+ for testing or use -->
+	<property name="PlantGrowing.IsGrowOnTopEnabled" value="false"/>
+</block>
+
+
+<block name="EgyptWall2Invisible">
+	<property name="Extends" value="EgyptDoubleWall2"/>
+	<property name="Model" value="#@modfolder:Resources/CoABlocks.unity3d?DoubleDoorWall2" />
+	<property name="CustomIcon" value=""/>
+	<property name="Shape" value="Invisible"/>
+	<property name="Collide" value="movement,melee"/>
+	<property name="MultiBlockDim" value="2,2,1" />
+	<property name="Material" value="Mconcrete"/>
+	<property name="PlantGrowing.Next" value="EgyptDoubleWall2"/>
+	<property name="PlantGrowing.FertileLevel" value="0"/>
+	<property name="IsTerrainDecoration" value="false"/>
+	<property name="IsDecoration" value="false"/>
+	<property name="PlantGrowing.GrowthRate" value="2.0"/> <!-- setting 1 is erratic. Recommend 2+ for testing or use -->
+	<property name="PlantGrowing.IsGrowOnTopEnabled" value="false"/>
+</block>
+
+
+
+
+
+
+
+
+<block name="EgyptWallDoorSmall">
+	<property name="Extends" value="cropsGrowingMaster" param1="CustomIcon,DescriptionKey"/>
+	<property name="Model" value="#@modfolder:Resources/CoABlocks.unity3d?WallDoorSmall1" />
+	<property name="CustomIcon" value=""/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Collide" value="movement,melee"/>
+	<property name="MultiBlockDim" value="1,2,1" />
+	<property name="Material" value="Mconcrete"/>
+	<property name="PlantGrowing.Next" value="EgyptWallDoorSmallInvisible"/>
+	<property name="PlantGrowing.FertileLevel" value="0"/>
+	<property name="IsTerrainDecoration" value="false"/>
+	<property name="IsDecoration" value="false"/>
+	<property name="PlantGrowing.GrowthRate" value="2.0"/> <!-- setting 1 is erratic. Recommend 2+ for testing or use -->
+	<property name="PlantGrowing.IsGrowOnTopEnabled" value="false"/>
+</block>
+
+
+<block name="EgyptWallDoorSmallInvisible">
+	<property name="Extends" value="EgyptWallDoorSmall"/>
+	<property name="Model" value="#@modfolder:Resources/CoABlocks.unity3d?WallDoorSmall1" />
+	<property name="CustomIcon" value=""/>
+	<property name="Shape" value="Invisible"/>
+	<property name="Collide" value="movement,melee"/>
+	<property name="MultiBlockDim" value="1,2,1" />
+	<property name="Material" value="Mconcrete"/>
+	<property name="PlantGrowing.Next" value="EgyptWallDoorSmall"/>
+	<property name="PlantGrowing.FertileLevel" value="0"/>
+	<property name="IsTerrainDecoration" value="false"/>
+	<property name="IsDecoration" value="false"/>
+	<property name="PlantGrowing.GrowthRate" value="2.0"/> <!-- setting 1 is erratic. Recommend 2+ for testing or use -->
+	<property name="PlantGrowing.IsGrowOnTopEnabled" value="false"/>
+</block>
+
+
+
+
+
+
+
+
+<block name="EgyptGroundTrapDoorClose">
+	<property name="Extends" value="cropsGrowingMaster" param1="CustomIcon,DescriptionKey"/>
+	<property name="Model" value="#@modfolder:Resources/CoABlocks.unity3d?GroundTrapDoorClose"/>
+	<property name="CustomIcon" value=""/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Collide" value="movement,melee"/>
+	<property name="MultiBlockDim" value="2,1,2" />
+	<property name="Material" value="Mconcrete"/>
+	<property name="PlantGrowing.Next" value="EgyptGroundTrapDoorOpen"/>
+	<property name="PlantGrowing.FertileLevel" value="0"/>
+	<property name="IsTerrainDecoration" value="false"/>
+	<property name="IsDecoration" value="false"/>
+	<property name="PlantGrowing.GrowthRate" value="2.0"/> <!-- setting 1 is erratic. Recommend 2+ for testing or use -->
+	<property name="PlantGrowing.IsGrowOnTopEnabled" value="false"/>
+</block>
+
+
+<block name="EgyptGroundTrapDoorOpen">
+	<property name="Extends" value="EgyptGroundTrapDoorClose"/>
+	<property name="Model" value="#@modfolder:Resources/CoABlocks.unity3d?GroundTrapDoorOpen"/>
+	<property name="CustomIcon" value=""/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Collide" value="movement,melee"/>
+	<property name="MultiBlockDim" value="2,1,2" />
+	<property name="Material" value="Mconcrete"/>
+	<property name="PlantGrowing.Next" value="EgyptGroundTrapDoorClose"/>
+	<property name="PlantGrowing.FertileLevel" value="0"/>
+	<property name="IsTerrainDecoration" value="false"/>
+	<property name="IsDecoration" value="false"/>
+	<property name="PlantGrowing.GrowthRate" value="2.0"/> <!-- setting 1 is erratic. Recommend 2+ for testing or use -->
+	<property name="PlantGrowing.IsGrowOnTopEnabled" value="false"/>
+</block>
+
+
+
+
+
+
+
+
+<block name="EgyptGroundTrapBlock">
+	<property name="Extends" value="cropsGrowingMaster" param1="CustomIcon,DescriptionKey"/>
+	<property name="Material" value="Mconcrete"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Collide" value="movement,melee"/>
+	<property name="MultiBlockDim" value="1,1,1" />
+	<property name="Model" value="#@modfolder:Resources/CoABlocks.unity3d?Cube4" />
+	<property name="PlantGrowing.FertileLevel" value="0"/>
+	<property name="IsTerrainDecoration" value="false"/>
+	<property name="IsDecoration" value="false"/>
+	<property name="PlantGrowing.Next" value="EgyptGroundTrapBlockInvisible"/>
+	<property name="PlantGrowing.GrowthRate" value="2.0"/> <!-- setting 1 is erratic. Recommend 2+ for testing or use -->
+	<property name="PlantGrowing.IsGrowOnTopEnabled" value="false"/>
+</block>
+
+<block name="EgyptGroundTrapBlockInvisible">
+	<property name="Extends" value="EgyptGroundTrapBlock"/>
+	<property name="Model" value="#@modfolder:Resources/CoABlocks.unity3d?Cube4" />
+	<property name="CustomIcon" value=""/>
+	<property name="Shape" value="Invisible"/>
+	<property name="Collide" value="movement,melee"/>
+	<property name="MultiBlockDim" value="1,1,1" />
+	<property name="Material" value="Mconcrete"/>
+	<property name="PlantGrowing.Next" value="EgyptGroundTrapBlock"/>
+	<property name="PlantGrowing.FertileLevel" value="0"/>
+	<property name="IsTerrainDecoration" value="false"/>
+	<property name="IsDecoration" value="false"/>
+	<property name="PlantGrowing.GrowthRate" value="2.0"/> <!-- setting 1 is erratic. Recommend 2+ for testing or use -->
+	<property name="PlantGrowing.IsGrowOnTopEnabled" value="false"/>
+</block>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+<!--XXXXXX 
+
+BLOCKS - Pyramide
+
+XXXXXX  -->
+
+
+<block name="EgyptPyramideMiddle">
+	<property name="MultiBlockDim" value="1,1,1"/>
+	<property name="Extends" value="cropsHarvestableMaster"/>
+	<property name="Model" value="#@modfolder:Resources/CoABlocks.unity3d?PyramideMiddle" />
+	<property name="PlantGrowing.FertileLevel" value="0"/>
+	<property name="CustomIcon" value=""/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="IsTerrainDecoration" value="false"/>
+	<property name="IsDecoration" value="false"/>
+	<property name="Collide" value="movement,melee"/>
+	<drop event="Harvest" name="EgyptpyramideMiddle" count="1" prob="1" tag="allHarvest"/>
+	<property name="DowngradeBlock" value="EgyptPyramideMiddleInvisible"/>
+	<property name="DisplayInfo" value="Description"/> <!-- also valid: "Name" -->
+	<property name="DescriptionKey" value="Hit to Loot Pyramid Middle Piece"/>
+</block>
+
+<block name="EgyptPyramideMiddleInvisible">
+	<property name="Extends" value="cropsGrowingMaster" param1="CustomIcon,DescriptionKey"/>
+	<property name="MultiBlockDim" value="1,1,1"/>
+	<property name="Model" value="#@modfolder:Resources/CoABlocks.unity3d?PyramideMiddle" />
+	<property name="PlantGrowing.FertileLevel" value="0"/>
+	<property name="PlantGrowing.Next" value="EgyptPyramideMiddle"/>
+	<property name="PlantGrowing.GrowthRate" value="2.0"/> <!-- setting 1 is erratic. Recommend 2+ for testing or use -->
+	<property name="PlantGrowing.IsGrowOnTopEnabled" value="false"/>
+	<property name="CustomIcon" value=""/>
+	<property name="Shape" value="Invisible"/>
+	<property name="IsTerrainDecoration" value="false"/>
+	<property name="IsDecoration" value="false"/>
+	<property name="DowngradeBlock" value="EgyptPyramideMiddle"/>
+</block>
+
+
+<block name="EgyptPyramideTop">
+	<property name="MultiBlockDim" value="1,1,1"/>
+	<property name="Extends" value="cropsHarvestableMaster"/>
+	<property name="Model" value="#@modfolder:Resources/CoABlocks.unity3d?PyramideTop" />
+	<property name="PlantGrowing.FertileLevel" value="0"/>
+	<property name="CustomIcon" value=""/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="IsTerrainDecoration" value="false"/>
+	<property name="IsDecoration" value="false"/>
+	<property name="Collide" value="movement,melee"/>
+	<drop event="Harvest" name="EgyptpyramideTop" count="1" prob="1" tag="allHarvest"/>
+	<property name="DowngradeBlock" value="EgyptPyramideTopInvisible"/>
+	<property name="DisplayInfo" value="Description"/> <!-- also valid: "Name" -->
+	<property name="DescriptionKey" value="Hit to Loot Pyramid Top Piece"/>
+</block>
+
+<block name="EgyptPyramideTopInvisible">
+	<property name="Extends" value="cropsGrowingMaster" param1="CustomIcon,DescriptionKey"/>
+	<property name="MultiBlockDim" value="1,1,1"/>
+	<property name="Model" value="#@modfolder:Resources/CoABlocks.unity3d?PyramideMiddle" />
+	<property name="PlantGrowing.FertileLevel" value="0"/>
+	<property name="PlantGrowing.Next" value="EgyptPyramideTop"/>
+	<property name="PlantGrowing.GrowthRate" value="2.0"/> <!-- setting 1 is erratic. Recommend 2+ for testing or use -->
+	<property name="PlantGrowing.IsGrowOnTopEnabled" value="false"/>
+	<property name="CustomIcon" value=""/>
+	<property name="Shape" value="Invisible"/>
+	<property name="IsTerrainDecoration" value="false"/>
+	<property name="IsDecoration" value="false"/>
+	<property name="DowngradeBlock" value="EgyptPyramideTop"/>
+</block>
+
+
+
+<block name="EgyptPyramide1">
+	<property name="MultiBlockDim" value="2,1,2"/>
+	<property name="PlantGrowing.FertileLevel" value="0"/>
+	<property name="DescriptionKey" value=""/>
+	<property name="CustomIcon" value="" />
+	<property name="Material" value="Mconcrete"/>
+	<property name="MaxDamage" value="250"/>
+	<property name="Model" value="#@modfolder:Resources/CoABlocks.unity3d?Pyramide1" />
+	<property name="CreativeMode" value="Player"/>
+	<property name="Mesh" value="opaque"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="SortOrder2" value="0050"/> 
+	<property name="Path" value="solid"/>
+	<property name="Texture" value="241"/>
+	<property name="UseGlobalUV" value="Local"/>
+	<property name="Group" value="Building,Basics"/>
+	<property name="CanPickup" value="false"/>
+	<property class="RepairItems"> <property name="EgyptGold" value="5"/> </property>
+	<property class="UpgradeBlock">
+		<property name="ToBlock" value="EgyptPyramide2"/>
+		<property name="Item" value="EgyptpyramideMiddle"/>
+		<property name="ItemCount" value="1"/>
+		<property name="UpgradeHitCount" value="1"/>
+	</property>
+	<property name="DisplayInfo" value="Description"/> <!-- also valid: "Name" -->
+	<property name="DescriptionKey" value="Find the First Part to Upgrade the Pyramid"/>
+	<drop event="Harvest" name="resourceRockSmall" count="12" tag="oreWoodHarvest"/>
+	<drop event="Harvest" name="resourceScrapIron" count="5" tag="oreWoodHarvest"/>
+	<drop event="Destroy" name="resourceRockSmall" count="2,4"/>
+</block>
+
+
+<block name="EgyptPyramide2">
+	<property name="MultiBlockDim" value="2,2,2"/>
+	<property name="DescriptionKey" value=""/>
+	<property name="CustomIcon" value="" />
+	<property name="Material" value="Mconcrete"/>
+	<property name="MaxDamage" value="250"/>
+	<property name="Model" value="#@modfolder:Resources/CoABlocks.unity3d?Pyramide2" />
+	<property name="CreativeMode" value="Player"/>
+	<property name="Mesh" value="opaque"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="SortOrder2" value="0050"/> 
+	<property name="Path" value="solid"/>
+	<property name="Texture" value="241"/>
+	<property name="UseGlobalUV" value="Local"/>
+	<property name="Group" value="Building,Basics"/>
+	<property name="CanPickup" value="false"/>
+	<property class="RepairItems"> <property name="EgyptGold" value="5"/> </property>
+	<property class="UpgradeBlock">
+		<property name="ToBlock" value="EgyptPyramide3"/>
+		<property name="Item" value="EgyptpyramideTop"/>
+		<property name="ItemCount" value="1"/>
+		<property name="UpgradeHitCount" value="1"/>
+	</property>
+	<property name="DisplayInfo" value="Description"/> <!-- also valid: "Name" -->
+	<property name="DescriptionKey" value="Find the Second Part to Upgrade the Pyramid"/>
+	<drop event="Harvest" name="resourceRockSmall" count="12" tag="oreWoodHarvest"/>
+	<drop event="Harvest" name="resourceScrapIron" count="5" tag="oreWoodHarvest"/>
+	<drop event="Destroy" name="resourceRockSmall" count="2,4"/>
+</block>
+
+
+<block name="EgyptPyramide3">
+	<property name="MultiBlockDim" value="2,2,2"/>
+	<property name="CustomIcon" value="" />
+	<property name="Material" value="Mconcrete"/>
+	<property name="MaxDamage" value="250"/>
+	<property name="Model" value="#@modfolder:Resources/CoABlocks.unity3d?Pyramide4Animated" />
+	<property name="CreativeMode" value="Player"/>
+	<property name="Mesh" value="opaque"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="SortOrder2" value="0050"/> 
+	<property name="Path" value="solid"/>
+	<property name="Texture" value="241"/>
+	<property name="UseGlobalUV" value="Local"/>
+	<property name="Group" value="Building,Basics"/>
+	<property name="CanPickup" value="false"/>
+	<property class="RepairItems"> <property name="EgyptGold" value="5"/> </property>
+	<property class="UpgradeBlock">
+		<property name="ToBlock" value="EgyptPyramide4"/>
+		<property name="Item" value="EgyptAncientStone"/>
+		<property name="ItemCount" value="1"/>
+		<property name="UpgradeHitCount" value="10"/>
+	</property>
+	<property name="DisplayInfo" value="Description"/> <!-- also valid: "Name" -->
+	<property name="DescriptionKey" value="Upgrade it"/>
+	<drop event="Harvest" name="resourceRockSmall" count="12" tag="oreWoodHarvest"/>
+	<drop event="Harvest" name="resourceScrapIron" count="5" tag="oreWoodHarvest"/>
+	<drop event="Destroy" name="resourceRockSmall" count="2,4"/>
+</block>
+
+
+
+<block name="EgyptPyramide4">
+	<property name="MultiBlockDim" value="2,2,2"/>
+	<property name="Extends" value="cropsHarvestableMaster"/>
+	<property name="Model" value="#@modfolder:Resources/CoABlocks.unity3d?Pyramide5Full" />
+	<property name="PlantGrowing.FertileLevel" value="0"/>
+	<property name="CustomIcon" value=""/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="IsTerrainDecoration" value="false"/>
+	<property name="IsDecoration" value="false"/>
+	<property class="RepairItems"> <property name="EgyptGold" value="5"/> </property>
+	<property name="Collide" value="movement,melee"/>
+	<drop event="Harvest" name="EgyptAncientStoneFire" count="1" prob="0.33" tag="allHarvest"/>
+	<drop event="Harvest" name="EgyptAncientStoneCold" count="1" prob="0.33" tag="allHarvest"/>
+	<drop event="Harvest" name="EgyptAncientStoneElectric" count="1" prob="0.33" tag="allHarvest"/>
+	<property name="DowngradeBlock" value="EgyptPyramide1"/>
+	<property name="DisplayInfo" value="Description"/> <!-- also valid: "Name" -->
+	<property name="DescriptionKey" value="Hit to Loot the Pyramid"/>
+	<drop event="Harvest" name="resourceRockSmall" count="12" tag="oreWoodHarvest"/>
+	<drop event="Harvest" name="resourceScrapIron" count="5" tag="oreWoodHarvest"/>
+	<drop event="Destroy" name="resourceRockSmall" count="2,4"/>
+</block>
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+<block name="EgyptAnubisDoor1">
+	<property name="MultiBlockDim" value="3,4,1"/>
+	<property name="PlantGrowing.FertileLevel" value="0"/>
+	<property name="DescriptionKey" value=""/>
+	<property name="CustomIcon" value="" />
+	<property name="Material" value="Mconcrete"/>
+	<property name="MaxDamage" value="250"/>
+	<property name="Model" value="#@modfolder:Resources/CoABlocks.unity3d?DoorAnubis1" />
+	<property name="CreativeMode" value="Player"/>
+	<property name="Mesh" value="opaque"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="SortOrder2" value="0050"/> 
+	<property name="Path" value="solid"/>
+	<property name="Texture" value="241"/>
+	<property name="UseGlobalUV" value="Local"/>
+	<property name="Group" value="Building,Basics"/>
+	<property name="CanPickup" value="false"/>
+	<property class="RepairItems"> <property name="EgyptGold" value="5"/> </property>
+	<property class="UpgradeBlock">
+		<property name="ToBlock" value="EgyptAnubisDoor2"/>
+		<property name="Item" value="EgyptAnubisDoorKey1"/>
+		<property name="ItemCount" value="1"/>
+		<property name="UpgradeHitCount" value="1"/>
+	</property>
+	<property name="DisplayInfo" value="Description"/> <!-- also valid: "Name" -->
+	<property name="DescriptionKey" value="Find the First Part to Upgrade the Pyramid"/>
+	<drop event="Harvest" name="resourceRockSmall" count="12" tag="oreWoodHarvest"/>
+	<drop event="Harvest" name="resourceScrapIron" count="5" tag="oreWoodHarvest"/>
+	<drop event="Destroy" name="resourceRockSmall" count="2,4"/>
+</block>
+
+
+<block name="EgyptAnubisDoor2">
+	<property name="MultiBlockDim" value="3,4,1"/>
+	<property name="DescriptionKey" value=""/>
+	<property name="CustomIcon" value="" />
+	<property name="Material" value="Mconcrete"/>
+	<property name="MaxDamage" value="250"/>
+	<property name="Model" value="#@modfolder:Resources/CoABlocks.unity3d?DoorAnubis2" />
+	<property name="CreativeMode" value="Player"/>
+	<property name="Mesh" value="opaque"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="SortOrder2" value="0050"/> 
+	<property name="Path" value="solid"/>
+	<property name="Texture" value="241"/>
+	<property name="UseGlobalUV" value="Local"/>
+	<property name="Group" value="Building,Basics"/>
+	<property name="CanPickup" value="false"/>
+	<property class="RepairItems"> <property name="EgyptGold" value="5"/> </property>
+	<property class="UpgradeBlock">
+		<property name="ToBlock" value="EgyptAnubisDoor3"/>
+		<property name="Item" value="EgyptAnubisDoorKey2"/>
+		<property name="ItemCount" value="1"/>
+		<property name="UpgradeHitCount" value="1"/>
+	</property>
+	<property name="DisplayInfo" value="Description"/> <!-- also valid: "Name" -->
+	<property name="DescriptionKey" value="Find the Second Part to Upgrade the Pyramid"/>
+	<drop event="Harvest" name="resourceRockSmall" count="12" tag="oreWoodHarvest"/>
+	<drop event="Harvest" name="resourceScrapIron" count="5" tag="oreWoodHarvest"/>
+	<drop event="Destroy" name="resourceRockSmall" count="2,4"/>
+</block>
+
+
+<block name="EgyptAnubisDoor3">
+	<property name="MultiBlockDim" value="3,4,1"/>
+	<property name="CustomIcon" value="" />
+	<property name="Material" value="Mconcrete"/>
+	<property name="MaxDamage" value="250"/>
+	<property name="Model" value="#@modfolder:Resources/CoABlocks.unity3d?DoorAnubis3" />
+	<property name="CreativeMode" value="Player"/>
+	<property name="Mesh" value="opaque"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="SortOrder2" value="0050"/> 
+	<property name="Path" value="solid"/>
+	<property name="Texture" value="241"/>
+	<property name="UseGlobalUV" value="Local"/>
+	<property name="Group" value="Building,Basics"/>
+	<property name="CanPickup" value="false"/>
+	<property class="RepairItems"> <property name="EgyptGold" value="5"/> </property>
+	<property class="UpgradeBlock">
+		<property name="ToBlock" value="EgyptAnubisDoor4"/>
+		<property name="Item" value="EgyptAnubisDoorKey3"/>
+		<property name="ItemCount" value="1"/>
+		<property name="UpgradeHitCount" value="10"/>
+	</property>
+	<property name="DisplayInfo" value="Description"/> <!-- also valid: "Name" -->
+	<property name="DescriptionKey" value="Upgrade it"/>
+	<drop event="Harvest" name="resourceRockSmall" count="12" tag="oreWoodHarvest"/>
+	<drop event="Harvest" name="resourceScrapIron" count="5" tag="oreWoodHarvest"/>
+	<drop event="Destroy" name="resourceRockSmall" count="2,4"/>
+</block>
+
+
+<block name="EgyptAnubisDoor4">
+	<property name="MultiBlockDim" value="3,4,1"/>
+	<property name="CustomIcon" value="" />
+	<property name="Material" value="Mconcrete"/>
+	<property name="MaxDamage" value="250"/>
+	<property name="Model" value="#@modfolder:Resources/CoABlocks.unity3d?DoorAnubis4" />
+	<property name="CreativeMode" value="Player"/>
+	<property name="Mesh" value="opaque"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="SortOrder2" value="0050"/> 
+	<property name="Path" value="solid"/>
+	<property name="Texture" value="241"/>
+	<property name="UseGlobalUV" value="Local"/>
+	<property name="Group" value="Building,Basics"/>
+	<property name="CanPickup" value="false"/>
+	<property class="RepairItems"> <property name="EgyptGold" value="5"/> </property>
+	<property class="UpgradeBlock">
+		<property name="ToBlock" value="EgyptAnubisDoor5"/>
+		<property name="Item" value="EgyptAnubisDoorKey4"/>
+		<property name="ItemCount" value="1"/>
+		<property name="UpgradeHitCount" value="10"/>
+	</property>
+	<property name="DisplayInfo" value="Description"/> <!-- also valid: "Name" -->
+	<property name="DescriptionKey" value="Upgrade it"/>
+	<drop event="Harvest" name="resourceRockSmall" count="12" tag="oreWoodHarvest"/>
+	<drop event="Harvest" name="resourceScrapIron" count="5" tag="oreWoodHarvest"/>
+	<drop event="Destroy" name="resourceRockSmall" count="2,4"/>
+</block>
+
+
+<block name="EgyptAnubisDoor5">
+	<property name="MultiBlockDim" value="3,4,1"/>
+	<property name="Extends" value="cropsHarvestableMaster"/>
+	<property name="Model" value="#@modfolder:Resources/CoABlocks.unity3d?DoorAnubis5" />
+	<property name="PlantGrowing.FertileLevel" value="0"/>
+	<property name="CustomIcon" value=""/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="IsTerrainDecoration" value="false"/>
+	<property name="IsDecoration" value="false"/>
+	<property class="RepairItems"> <property name="EgyptGold" value="5"/> </property>
+	<property name="Collide" value="movement,melee"/>
+	<property name="DowngradeBlock" value="EgyptAnubisDoor1"/>
+	<property name="DisplayInfo" value="Description"/> <!-- also valid: "Name" -->
+	<property name="DescriptionKey" value="Hit to Loot the Pyramid"/>
+	<drop event="Harvest" name="resourceRockSmall" count="12" tag="oreWoodHarvest"/>
+	<drop event="Harvest" name="resourceScrapIron" count="5" tag="oreWoodHarvest"/>
+	<drop event="Destroy" name="resourceRockSmall" count="2,4"/>
+</block>
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+<!--XXXXXX 
+
+BLOCKS
+
+XXXXXX  -->
+
+
+<block name="Egypt2Bars">
+	<property name="Mesh" value="opaque"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Group" value="Building,Basics"/>
+	<property name="Material" value="Mmetal_medium"/>
+	<property name="MaxDamage" value="250"/>
+	<property name="MultiBlockDim" value="1,1,1"/>
+	<property name="SellableToTrader" value="false"/>
+	<property name="Model" value="#@modfolder:Resources/CoABlocks.unity3d?2Bars" />
+	<property name="CustomIcon" value="2Bars" />
+	<property name="CanPickup" value="false"/>
+	<drop event="Harvest" name="resourceScrapIron" count="12" tag="oreWoodHarvest"/>
+	<drop event="Destroy" name="resourceScrapIron" count="2,4"/>
+</block>
+
+
+
+
+<block name="EgyptPharaoCross">
+	<property name="Mesh" value="opaque"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Group" value="Building,Basics"/>
+	<property name="Material" value="Mmetal_medium"/>
+	<property name="MaxDamage" value="250"/>
+	<property name="MultiBlockDim" value="1,1,1"/>
+	<property name="SellableToTrader" value="false"/>
+	<property name="Model" value="#@modfolder:Resources/CoABlocks.unity3d?Cross" />
+	<property name="CustomIcon" value="PharaoCross1" />
+	<property name="CanPickup" value="false"/>
+	<drop event="Harvest" name="resourceScrapIron" count="12" tag="oreWoodHarvest"/>
+	<drop event="Destroy" name="resourceScrapIron" count="2,4"/>
+</block>
+
+
+
+<block name="EgyptObelisk">
+	<property name="Mesh" value="opaque"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Group" value="Building,Basics"/>
+	<property name="Material" value="Mconcrete"/>
+	<property name="MaxDamage" value="250"/>
+	<property name="MultiBlockDim" value="2,5,2"/>
+	<property name="SellableToTrader" value="false"/>
+	<property name="Model" value="#@modfolder:Resources/CoABlocks.unity3d?Obelisk2" />
+	<property name="CustomIcon" value="Obelisk" />
+	<property name="CanPickup" value="false"/>
+	<drop event="Harvest" name="resourceRockSmall" count="12" tag="oreWoodHarvest"/>
+	<drop event="Destroy" name="resourceRockSmall" count="2,4"/>
+</block>
+
+
+
+
+<block name="EgyptStairsInnerCorner">
+	<property name="Mesh" value="opaque"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Group" value="Building,Basics"/>
+	<property name="Material" value="Mconcrete"/>
+	<property name="MaxDamage" value="250"/>
+	<property name="MultiBlockDim" value="1,1,1"/>
+	<property name="SellableToTrader" value="false"/>
+	<property name="Model" value="#@modfolder:Resources/CoABlocks.unity3d?StairsInnerCorner" />
+	<property name="CustomIcon" value="StairsInnerCorner" />
+	<property name="CanPickup" value="false"/>
+	<drop event="Harvest" name="resourceRockSmall" count="12" tag="oreWoodHarvest"/>
+	<drop event="Destroy" name="resourceRockSmall" count="2,4"/>
+</block>
+
+
+
+<block name="EgyptSkull">
+	<property name="Mesh" value="opaque"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Group" value="Building,Basics"/>
+	<property name="Material" value="Morganic"/>
+	<property name="MaxDamage" value="250"/>
+	<property name="MultiBlockDim" value="1,1,1"/>
+	<property name="SellableToTrader" value="false"/>
+	<property name="Model" value="#@modfolder:Resources/CoABlocks.unity3d?Skull" />
+	<property name="CustomIcon" value="Skull" />
+	<property name="CanPickup" value="false"/>
+	<drop event="Harvest" name="resourceFemur" count="12" tag="oreWoodHarvest"/>
+	<drop event="Destroy" name="resourceFemur" count="2,4"/>
+</block>
+
+
+<block name="EgyptSkull2">
+	<property name="Mesh" value="opaque"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Group" value="Building,Basics"/>
+	<property name="Material" value="Morganic"/>
+	<property name="MaxDamage" value="250"/>
+	<property name="MultiBlockDim" value="1,1,1"/>
+	<property name="SellableToTrader" value="false"/>
+	<property name="Model" value="#@modfolder:Resources/CoABlocks.unity3d?Skull2" />
+	<property name="CustomIcon" value="Skull" />
+	<property name="CanPickup" value="false"/>
+	<drop event="Harvest" name="resourceFemur" count="12" tag="oreWoodHarvest"/>
+	<drop event="Destroy" name="resourceFemur" count="2,4"/>
+</block>
+
+
+<block name="EgyptPlant1">
+	<property name="Mesh" value="opaque"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Group" value="Building,Basics"/>
+	<property name="Material" value="Morganic"/>
+	<property name="MaxDamage" value="150"/>
+	<property name="MultiBlockDim" value="1,1,1"/>
+	<property name="SellableToTrader" value="false"/>
+	<property name="Model" value="#@modfolder:Resources/CoABlocks.unity3d?PlantBlock1" />
+	<property name="CustomIcon" value="" />
+	<property name="CanPickup" value="false"/>
+	<drop event="Harvest" name="resourceYuccaFibers" count="12" tag="oreWoodHarvest"/>
+	<drop event="Destroy" name="resourceYuccaFibers" count="2,4"/>
+</block>
+
+<block name="EgyptPlant2">
+	<property name="Mesh" value="opaque"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Group" value="Building,Basics"/>
+	<property name="Material" value="Morganic"/>
+	<property name="MaxDamage" value="150"/>
+	<property name="MultiBlockDim" value="1,2,1"/>
+	<property name="SellableToTrader" value="false"/>
+	<property name="Model" value="#@modfolder:Resources/CoABlocks.unity3d?PlantBlock2" />
+	<property name="CustomIcon" value="" />
+	<property name="CanPickup" value="false"/>
+	<drop event="Harvest" name="resourceYuccaFibers" count="12" tag="oreWoodHarvest"/>
+	<drop event="Destroy" name="resourceYuccaFibers" count="2,4"/>
+</block>
+
+
+<block name="EgyptOldBag1">
+	<property name="Mesh" value="opaque"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Group" value="Building,Basics"/>
+	<property name="Material" value="Morganic"/>
+	<property name="MaxDamage" value="250"/>
+	<property name="MultiBlockDim" value="1,1,1"/>
+	<property name="SellableToTrader" value="false"/>
+	<property name="Model" value="#@modfolder:Resources/CoABlocks.unity3d?EgyptBag1" />
+	<property name="CustomIcon" value="" />
+	<property name="CanPickup" value="false"/>
+	<drop event="Harvest" name="resourceCloth" count="12" tag="oreWoodHarvest"/>
+	<drop event="Destroy" name="resourceCloth" count="2,4"/>
+</block>
+
+<block name="EgyptOldBag2">
+	<property name="Mesh" value="opaque"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Group" value="Building,Basics"/>
+	<property name="Material" value="Morganic"/>
+	<property name="MaxDamage" value="250"/>
+	<property name="MultiBlockDim" value="1,1,1"/>
+	<property name="SellableToTrader" value="false"/>
+	<property name="Model" value="#@modfolder:Resources/CoABlocks.unity3d?EgyptBag2" />
+	<property name="CustomIcon" value="" />
+	<property name="CanPickup" value="false"/>
+	<drop event="Harvest" name="resourceCloth" count="12" tag="oreWoodHarvest"/>
+	<drop event="Destroy" name="resourceCloth" count="2,4"/>
+</block>
+
+
+<block name="EgyptCrystalRed">
+	<property name="Mesh" value="opaque"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Group" value="Building,Basics"/>
+	<property name="Material" value="Mmetal_medium"/>
+	<property name="MaxDamage" value="250"/>
+	<property name="MultiBlockDim" value="1,1,1"/>
+	<property name="SellableToTrader" value="false"/>
+	<property name="Model" value="#@modfolder:Resources/CoABlocks.unity3d?Crystal1" />
+	<property name="CustomIcon" value="" />
+	<property name="CanPickup" value="false"/>
+	<drop event="Harvest" name="EgyptAncientStoneRed" count="1" tag="oreWoodHarvest"/>
+	<drop event="Harvest" name="resourceRockSmall" count="12" tag="oreWoodHarvest"/>
+	<drop event="Destroy" name="resourceRockSmall" count="2,4"/>
+</block>
+
+<block name="EgyptCrystalBlue">
+	<property name="Mesh" value="opaque"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Group" value="Building,Basics"/>
+	<property name="Material" value="Mmetal_medium"/>
+	<property name="MaxDamage" value="250"/>
+	<property name="MultiBlockDim" value="1,1,1"/>
+	<property name="SellableToTrader" value="false"/>
+	<property name="Model" value="#@modfolder:Resources/CoABlocks.unity3d?Crystal2" />
+	<property name="CustomIcon" value="" />
+	<property name="CanPickup" value="false"/>
+	<drop event="Harvest" name="EgyptAncientStoneBlue" count="1" tag="oreWoodHarvest"/>
+	<drop event="Harvest" name="resourceRockSmall" count="12" tag="oreWoodHarvest"/>
+	<drop event="Destroy" name="resourceRockSmall" count="2,4"/>
+</block>
+
+<block name="EgyptCrystalYellow">
+	<property name="Mesh" value="opaque"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Group" value="Building,Basics"/>
+	<property name="Material" value="Mmetal_medium"/>
+	<property name="MaxDamage" value="250"/>
+	<property name="MultiBlockDim" value="1,1,1"/>
+	<property name="SellableToTrader" value="false"/>
+	<property name="Model" value="#@modfolder:Resources/CoABlocks.unity3d?Crystal3" />
+	<property name="CustomIcon" value="" />
+	<property name="CanPickup" value="false"/>
+	<drop event="Harvest" name="EgyptAncientStoneYellow" count="1" tag="oreWoodHarvest"/>
+	<drop event="Harvest" name="resourceRockSmall" count="12" tag="oreWoodHarvest"/>
+	<drop event="Destroy" name="resourceRockSmall" count="2,4"/>
+</block>
+
+<block name="EgyptCrystalGreen">
+	<property name="Mesh" value="opaque"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Group" value="Building,Basics"/>
+	<property name="Material" value="Mmetal_medium"/>
+	<property name="MaxDamage" value="250"/>
+	<property name="MultiBlockDim" value="1,1,1"/>
+	<property name="SellableToTrader" value="false"/>
+	<property name="Model" value="#@modfolder:Resources/CoABlocks.unity3d?Crystal4" />
+	<property name="CustomIcon" value="" />
+	<property name="CanPickup" value="false"/>
+	<drop event="Harvest" name="EgyptAncientStoneGreen" count="1" tag="oreWoodHarvest"/>
+	<drop event="Harvest" name="resourceRockSmall" count="12" tag="oreWoodHarvest"/>
+	<drop event="Destroy" name="resourceRockSmall" count="2,4"/>
+</block>
+
+<block name="EgyptCrystalWhite">
+	<property name="Mesh" value="opaque"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Group" value="Building,Basics"/>
+	<property name="Material" value="Mmetal_medium"/>
+	<property name="MaxDamage" value="250"/>
+	<property name="MultiBlockDim" value="1,1,1"/>
+	<property name="SellableToTrader" value="false"/>
+	<property name="Model" value="#@modfolder:Resources/CoABlocks.unity3d?Crystal5" />
+	<property name="CustomIcon" value="" />
+	<property name="CanPickup" value="false"/>
+	<drop event="Harvest" name="EgyptAncientStoneWhite" count="1" tag="oreWoodHarvest"/>
+	<drop event="Harvest" name="resourceRockSmall" count="12" tag="oreWoodHarvest"/>
+	<drop event="Destroy" name="resourceRockSmall" count="2,4"/>
+</block>
+
+
+
+<block name="EgyptMushroom">
+	<property name="Mesh" value="opaque"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Group" value="Building,Basics"/>
+	<property name="Material" value="Morganic"/>
+	<property name="MaxDamage" value="250"/>
+	<property name="MultiBlockDim" value="1,1,1"/>
+	<property name="SellableToTrader" value="false"/>
+	<property name="Model" value="#@modfolder:Resources/CoABlocks.unity3d?Mushroom" />
+	<property name="CustomIcon" value="" />
+	<property name="CanPickup" value="false"/>
+	<drop event="Harvest" name="EgyptAncientMushroom" count="1" tag="wildCropsHarvest"/>
+	<drop event="Harvest" name="resourceScrapIron" count="12" tag="oreWoodHarvest"/>
+	<drop event="Destroy" name="resourceScrapIron" count="2,4"/>
+</block>
+
+
+
+<block name="EgyptGong">
+	<property name="Mesh" value="opaque"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Group" value="Building,Basics"/>
+	<property name="Material" value="Mconcrete"/>
+	<property name="MaxDamage" value="250"/>
+	<property name="MultiBlockDim" value="3,3,1"/>
+	<property name="SellableToTrader" value="false"/>
+	<property name="Model" value="#@modfolder:Resources/CoABlocks.unity3d?Gong" />
+	<property name="CustomIcon" value="" />
+	<property name="CanPickup" value="false"/>
+	<drop event="Harvest" name="resourceRockSmall" count="12" tag="oreWoodHarvest"/>
+	<drop event="Harvest" name="resourceScrapIron" count="5" tag="oreWoodHarvest"/>
+	<drop event="Destroy" name="resourceRockSmall" count="2,4"/>
+</block>
+
+
+<!--XXXXXX XXXXXX  -->
+
+
+<block name="EgyptPapyrusScrollBlock">
+	<property name="Mesh" value="opaque"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Group" value="Building,Basics"/>
+	<property name="Material" value="Mmetal_medium"/>
+	<property name="MaxDamage" value="250"/>
+	<property name="MultiBlockDim" value="1,1,1"/>
+	<property name="SellableToTrader" value="false"/>
+	<property name="Model" value="#@modfolder:Resources/CoABlocks.unity3d?PapyrusScroll" />
+	<property name="CustomIcon" value="PapyrusScroll" />
+	<property name="CanPickup" value="true" param1="EgyptPapyrusScroll" />
+	<drop event="Harvest" name="resourcePaper" count="12" tag="oreWoodHarvest"/>
+	<drop event="Harvest" name="resourceWood" count="5" tag="oreWoodHarvest"/>
+	<drop event="Destroy" name="resourcePaper" count="2,4"/>
+</block>
+
+
+
+<block name="EgyptBookOpenBlock">
+	<property name="Mesh" value="opaque"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Group" value="Building,Basics"/>
+	<property name="Material" value="Mmetal_medium"/>
+	<property name="MaxDamage" value="250"/>
+	<property name="MultiBlockDim" value="1,1,1"/>
+	<property name="SellableToTrader" value="false"/>
+	<property name="Model" value="#@modfolder:Resources/CoABlocks.unity3d?BookOpen" />
+	<property name="CustomIcon" value="BookOpen" />
+	<property name="CanPickup" value="true" param1="EgyptBook" />
+	<drop event="Harvest" name="resourcePaper" count="12" tag="oreWoodHarvest"/>
+	<drop event="Harvest" name="resourceWood" count="5" tag="oreWoodHarvest"/>
+	<drop event="Destroy" name="resourcePaper" count="2,4"/>
+</block>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--XXXXXX 
+
+BLOCKS - Cube
+
+XXXXXX  -->
+
+
+<block name="EgyptCubeAnubisUndestructable">
+	<property name="Mesh" value="opaque"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Group" value="Building,Basics"/>
+	<property name="Material" value="Mbedrock"/>
+	<property name="MaxDamage" value="1000"/>
+	<property name="MultiBlockDim" value="1,1,1"/>
+	<property name="SellableToTrader" value="false"/>
+	<property name="Model" value="#@modfolder:Resources/CoABlocks.unity3d?Cube1" />
+	<property name="CustomIcon" value="Cube1" />
+	<property name="CanPickup" value="false"/>
+	<drop event="Harvest" name="resourceRockSmall" count="12" tag="oreWoodHarvest"/>
+	<drop event="Destroy" name="resourceRockSmall" count="2,4"/>
+</block>
+
+<block name="EgyptCube1">
+	<property name="Mesh" value="opaque"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Group" value="Building,Basics"/>
+	<property name="Material" value="Mconcrete"/>
+	<property name="MaxDamage" value="1000"/>
+	<property name="MultiBlockDim" value="1,1,1"/>
+	<property name="SellableToTrader" value="false"/>
+	<property name="Model" value="#@modfolder:Resources/CoABlocks.unity3d?Cube1" />
+	<property name="CustomIcon" value="Cube1" />
+	<property name="CanPickup" value="false"/>
+	<drop event="Harvest" name="resourceRockSmall" count="12" tag="oreWoodHarvest"/>
+	<drop event="Destroy" name="resourceRockSmall" count="2,4"/>
+</block>
+
+
+
+<block name="EgyptCube2">
+	<property name="Mesh" value="opaque"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Group" value="Building,Basics"/>
+	<property name="Material" value="Mconcrete"/>
+	<property name="MaxDamage" value="1000"/>
+	<property name="MultiBlockDim" value="1,1,1"/>
+	<property name="SellableToTrader" value="false"/>
+	<property name="Model" value="#@modfolder:Resources/CoABlocks.unity3d?Cube2" />
+	<property name="CustomIcon" value="Cube1" />
+	<property name="CanPickup" value="false"/>
+	<drop event="Harvest" name="resourceRockSmall" count="12" tag="oreWoodHarvest"/>
+	<drop event="Destroy" name="resourceRockSmall" count="2,4"/>
+</block>
+
+
+
+<block name="EgyptCube3">
+	<property name="Mesh" value="opaque"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Group" value="Building,Basics"/>
+	<property name="Material" value="Mconcrete"/>
+	<property name="MaxDamage" value="1000"/>
+	<property name="MultiBlockDim" value="1,1,1"/>
+	<property name="SellableToTrader" value="false"/>
+	<property name="Model" value="#@modfolder:Resources/CoABlocks.unity3d?Cube3" />
+	<property name="CustomIcon" value="Cube1" />
+	<property name="CanPickup" value="false"/>
+	<drop event="Harvest" name="resourceRockSmall" count="12" tag="oreWoodHarvest"/>
+	<drop event="Destroy" name="resourceRockSmall" count="2,4"/>
+</block>
+
+
+
+<block name="EgyptCube4">
+	<property name="Mesh" value="opaque"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Group" value="Building,Basics"/>
+	<property name="Material" value="Mconcrete"/>
+	<property name="MaxDamage" value="1000"/>
+	<property name="MultiBlockDim" value="1,1,1"/>
+	<property name="SellableToTrader" value="false"/>
+	<property name="Model" value="#@modfolder:Resources/CoABlocks.unity3d?Cube4" />
+	<property name="CustomIcon" value="Cube1" />
+	<property name="CanPickup" value="false"/>
+	<drop event="Harvest" name="resourceRockSmall" count="12" tag="oreWoodHarvest"/>
+	<drop event="Destroy" name="resourceRockSmall" count="2,4"/>
+</block>
+
+
+
+<block name="EgyptCube5">
+	<property name="Mesh" value="opaque"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Group" value="Building,Basics"/>
+	<property name="Material" value="Mconcrete"/>
+	<property name="MaxDamage" value="1000"/>
+	<property name="MultiBlockDim" value="1,1,1"/>
+	<property name="SellableToTrader" value="false"/>
+	<property name="Model" value="#@modfolder:Resources/CoABlocks.unity3d?Cube5" />
+	<property name="CustomIcon" value="Cube1" />
+	<property name="CanPickup" value="false"/>
+	<drop event="Harvest" name="resourceRockSmall" count="12" tag="oreWoodHarvest"/>
+	<drop event="Destroy" name="resourceRockSmall" count="2,4"/>
+</block>
+
+
+
+<block name="EgyptCube6">
+	<property name="Mesh" value="opaque"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Group" value="Building,Basics"/>
+	<property name="Material" value="Mconcrete"/>
+	<property name="MaxDamage" value="1000"/>
+	<property name="MultiBlockDim" value="1,1,1"/>
+	<property name="SellableToTrader" value="false"/>
+	<property name="Model" value="#@modfolder:Resources/CoABlocks.unity3d?Cube6" />
+	<property name="CustomIcon" value="Cube1" />
+	<property name="CanPickup" value="false"/>
+	<drop event="Harvest" name="resourceRockSmall" count="12" tag="oreWoodHarvest"/>
+	<drop event="Destroy" name="resourceRockSmall" count="2,4"/>
+</block>
+
+
+
+<block name="EgyptCube62">
+	<property name="Mesh" value="opaque"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Group" value="Building,Basics"/>
+	<property name="Material" value="Mconcrete"/>
+	<property name="MaxDamage" value="1000"/>
+	<property name="MultiBlockDim" value="1,1,1"/>
+	<property name="SellableToTrader" value="false"/>
+	<property name="Model" value="#@modfolder:Resources/CoABlocks.unity3d?Cube62" />
+	<property name="CustomIcon" value="Cube1" />
+	<property name="CanPickup" value="false"/>
+	<drop event="Harvest" name="resourceRockSmall" count="12" tag="oreWoodHarvest"/>
+	<drop event="Destroy" name="resourceRockSmall" count="2,4"/>
+</block>
+
+
+
+
+
+
+
+
+
+
+
+<!--XXXXXX 
+
+BLOCKS - Pillar
+
+XXXXXX  -->
+
+
+
+<block name="EgyptPillar1">
+	<property name="Mesh" value="opaque"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Group" value="Building,Basics"/>
+	<property name="Material" value="Mconcrete"/>
+	<property name="MaxDamage" value="1000"/>
+	<property name="MultiBlockDim" value="1,1,1"/>
+	<property name="SellableToTrader" value="false"/>
+	<property name="Model" value="#@modfolder:Resources/CoABlocks.unity3d?Pillar1" />
+	<property name="CustomIcon" value="Pillar1" />
+	<property name="CanPickup" value="false"/>
+	<drop event="Harvest" name="resourceRockSmall" count="12" tag="oreWoodHarvest"/>
+	<drop event="Destroy" name="resourceRockSmall" count="2,4"/>
+</block>
+
+
+<block name="EgyptPillar2">
+	<property name="Mesh" value="opaque"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Group" value="Building,Basics"/>
+	<property name="Material" value="Mconcrete"/>
+	<property name="MaxDamage" value="1000"/>
+	<property name="MultiBlockDim" value="1,1,1"/>
+	<property name="SellableToTrader" value="false"/>
+	<property name="Model" value="#@modfolder:Resources/CoABlocks.unity3d?Pillar2" />
+	<property name="CustomIcon" value="Pillar1" />
+	<property name="CanPickup" value="false"/>
+	<drop event="Harvest" name="resourceRockSmall" count="12" tag="oreWoodHarvest"/>
+	<drop event="Destroy" name="resourceRockSmall" count="2,4"/>
+</block>
+
+<block name="EgyptPillar3">
+	<property name="Mesh" value="opaque"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Group" value="Building,Basics"/>
+	<property name="Material" value="Mconcrete"/>
+	<property name="MaxDamage" value="1000"/>
+	<property name="MultiBlockDim" value="1,1,1"/>
+	<property name="SellableToTrader" value="false"/>
+	<property name="Model" value="#@modfolder:Resources/CoABlocks.unity3d?Pillar3" />
+	<property name="CustomIcon" value="Pillar1" />
+	<property name="CanPickup" value="false"/>
+	<drop event="Harvest" name="resourceRockSmall" count="12" tag="oreWoodHarvest"/>
+	<drop event="Destroy" name="resourceRockSmall" count="2,4"/>
+</block>
+
+<block name="EgyptPillar4">
+	<property name="Mesh" value="opaque"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Group" value="Building,Basics"/>
+	<property name="Material" value="Mconcrete"/>
+	<property name="MaxDamage" value="1000"/>
+	<property name="MultiBlockDim" value="1,1,1"/>
+	<property name="SellableToTrader" value="false"/>
+	<property name="Model" value="#@modfolder:Resources/CoABlocks.unity3d?Pillar4" />
+	<property name="CustomIcon" value="Pillar1" />
+	<property name="CanPickup" value="false"/>
+	<drop event="Harvest" name="resourceRockSmall" count="12" tag="oreWoodHarvest"/>
+	<drop event="Destroy" name="resourceRockSmall" count="2,4"/>
+</block>
+
+<block name="EgyptPillar5">
+	<property name="Mesh" value="opaque"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Group" value="Building,Basics"/>
+	<property name="Material" value="Mconcrete"/>
+	<property name="MaxDamage" value="1000"/>
+	<property name="MultiBlockDim" value="1,1,1"/>
+	<property name="SellableToTrader" value="false"/>
+	<property name="Model" value="#@modfolder:Resources/CoABlocks.unity3d?Pillar5" />
+	<property name="CustomIcon" value="Pillar1" />
+	<property name="CanPickup" value="false"/>
+	<drop event="Harvest" name="resourceRockSmall" count="12" tag="oreWoodHarvest"/>
+	<drop event="Destroy" name="resourceRockSmall" count="2,4"/>
+</block>
+
+<block name="EgyptPillar6">
+	<property name="Mesh" value="opaque"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Group" value="Building,Basics"/>
+	<property name="Material" value="Mconcrete"/>
+	<property name="MaxDamage" value="1000"/>
+	<property name="MultiBlockDim" value="1,1,1"/>
+	<property name="SellableToTrader" value="false"/>
+	<property name="Model" value="#@modfolder:Resources/CoABlocks.unity3d?Pillar6" />
+	<property name="CustomIcon" value="Pillar1" />
+	<property name="CanPickup" value="false"/>
+	<drop event="Harvest" name="resourceRockSmall" count="12" tag="oreWoodHarvest"/>
+	<drop event="Destroy" name="resourceRockSmall" count="2,4"/>
+</block>
+
+<block name="EgyptPillar7">
+	<property name="Mesh" value="opaque"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Group" value="Building,Basics"/>
+	<property name="Material" value="Mconcrete"/>
+	<property name="MaxDamage" value="1000"/>
+	<property name="MultiBlockDim" value="1,1,1"/>
+	<property name="SellableToTrader" value="false"/>
+	<property name="Model" value="#@modfolder:Resources/CoABlocks.unity3d?Pillar7" />
+	<property name="CustomIcon" value="Pillar1" />
+	<property name="CanPickup" value="false"/>
+	<drop event="Harvest" name="resourceRockSmall" count="12" tag="oreWoodHarvest"/>
+	<drop event="Destroy" name="resourceRockSmall" count="2,4"/>
+</block>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--XXXXXX 
+
+BLOCKS - PLANE
+
+XXXXXX  -->
+
+
+<block name="EgyptPlane1">
+	<property name="Mesh" value="opaque"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Group" value="Building,Basics"/>
+	<property name="Material" value="Mbridge_metal"/>
+	<property name="MaxDamage" value="100"/>
+	<property name="MultiBlockDim" value="1,1,1"/>
+	<property name="SellableToTrader" value="false"/>
+	<property name="Model" value="#@modfolder:Resources/CoABlocks.unity3d?Plane1" />
+	<property name="CustomIcon" value="" />
+	<property name="CanPickup" value="false"/>
+	<drop event="Harvest" name="resourceScrapIron" count="5" tag="oreWoodHarvest"/>
+	<drop event="Destroy" name="resourceScrapIron" count="2,4"/>
+</block>
+
+
+<block name="EgyptPlane2">
+	<property name="Mesh" value="opaque"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Group" value="Building,Basics"/>
+	<property name="Material" value="Mbridge_metal"/>
+	<property name="MaxDamage" value="100"/>
+	<property name="MultiBlockDim" value="1,1,1"/>
+	<property name="SellableToTrader" value="false"/>
+	<property name="Model" value="#@modfolder:Resources/CoABlocks.unity3d?Plane2" />
+	<property name="CustomIcon" value="" />
+	<property name="CanPickup" value="false"/>
+	<drop event="Harvest" name="resourceScrapIron" count="5" tag="oreWoodHarvest"/>
+	<drop event="Destroy" name="resourceScrapIron" count="2,4"/>
+</block>
+
+<block name="EgyptPlane3">
+	<property name="Mesh" value="opaque"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Group" value="Building,Basics"/>
+	<property name="Material" value="Mbridge_metal"/>
+	<property name="MaxDamage" value="100"/>
+	<property name="MultiBlockDim" value="1,1,1"/>
+	<property name="SellableToTrader" value="false"/>
+	<property name="Model" value="#@modfolder:Resources/CoABlocks.unity3d?Plane3" />
+	<property name="CustomIcon" value="" />
+	<property name="CanPickup" value="false"/>
+	<drop event="Harvest" name="resourceScrapIron" count="5" tag="oreWoodHarvest"/>
+	<drop event="Destroy" name="resourceScrapIron" count="2,4"/>
+</block>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--XXXXXX 
+
+BLOCKS - PLANE - Symbol
+
+XXXXXX  -->
+
+
+<block name="EgyptPlaneSymbol1">
+	<property name="Mesh" value="opaque"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Group" value="Building,Basics"/>
+	<property name="Material" value="Mbridge_metal"/>
+	<property name="MaxDamage" value="100"/>
+	<property name="MultiBlockDim" value="1,1,1"/>
+	<property name="SellableToTrader" value="false"/>
+	<property name="Model" value="#@modfolder:Resources/CoABlocks.unity3d?PlaneSymbol1" />
+	<property name="CustomIcon" value="" />
+	<property name="CanPickup" value="false"/>
+	<drop event="Harvest" name="resourceScrapIron" count="5" tag="oreWoodHarvest"/>
+	<drop event="Destroy" name="resourceScrapIron" count="2,4"/>
+</block>
+
+<block name="EgyptPlaneSymbol2">
+	<property name="Mesh" value="opaque"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Group" value="Building,Basics"/>
+	<property name="Material" value="Mbridge_metal"/>
+	<property name="MaxDamage" value="100"/>
+	<property name="MultiBlockDim" value="1,1,1"/>
+	<property name="SellableToTrader" value="false"/>
+	<property name="Model" value="#@modfolder:Resources/CoABlocks.unity3d?PlaneSymbol2" />
+	<property name="CustomIcon" value="" />
+	<property name="CanPickup" value="false"/>
+	<drop event="Harvest" name="resourceScrapIron" count="5" tag="oreWoodHarvest"/>
+	<drop event="Destroy" name="resourceScrapIron" count="2,4"/>
+</block>
+
+
+<block name="EgyptPlaneSymbol3">
+	<property name="Mesh" value="opaque"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Group" value="Building,Basics"/>
+	<property name="Material" value="Mbridge_metal"/>
+	<property name="MaxDamage" value="100"/>
+	<property name="MultiBlockDim" value="1,1,1"/>
+	<property name="SellableToTrader" value="false"/>
+	<property name="Model" value="#@modfolder:Resources/CoABlocks.unity3d?PlaneSymbol3" />
+	<property name="CustomIcon" value="" />
+	<property name="CanPickup" value="false"/>
+	<drop event="Harvest" name="resourceScrapIron" count="5" tag="oreWoodHarvest"/>
+	<drop event="Destroy" name="resourceScrapIron" count="2,4"/>
+</block>
+
+
+<block name="EgyptPlaneSymbol4">
+	<property name="Mesh" value="opaque"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Group" value="Building,Basics"/>
+	<property name="Material" value="Mbridge_metal"/>
+	<property name="MaxDamage" value="100"/>
+	<property name="MultiBlockDim" value="1,1,1"/>
+	<property name="SellableToTrader" value="false"/>
+	<property name="Model" value="#@modfolder:Resources/CoABlocks.unity3d?PlaneSymbol4" />
+	<property name="CustomIcon" value="" />
+	<property name="CanPickup" value="false"/>
+	<drop event="Harvest" name="resourceScrapIron" count="5" tag="oreWoodHarvest"/>
+	<drop event="Destroy" name="resourceScrapIron" count="2,4"/>
+</block>
+
+<block name="EgyptPlaneSymbol5">
+	<property name="Mesh" value="opaque"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Group" value="Building,Basics"/>
+	<property name="Material" value="Mbridge_metal"/>
+	<property name="MaxDamage" value="100"/>
+	<property name="MultiBlockDim" value="1,1,1"/>
+	<property name="SellableToTrader" value="false"/>
+	<property name="Model" value="#@modfolder:Resources/CoABlocks.unity3d?PlaneSymbol5" />
+	<property name="CustomIcon" value="" />
+	<property name="CanPickup" value="false"/>
+	<drop event="Harvest" name="resourceScrapIron" count="5" tag="oreWoodHarvest"/>
+	<drop event="Destroy" name="resourceScrapIron" count="2,4"/>
+</block>
+
+<block name="EgyptPlaneSymbol6">
+	<property name="Mesh" value="opaque"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Group" value="Building,Basics"/>
+	<property name="Material" value="Mbridge_metal"/>
+	<property name="MaxDamage" value="100"/>
+	<property name="MultiBlockDim" value="1,1,1"/>
+	<property name="SellableToTrader" value="false"/>
+	<property name="Model" value="#@modfolder:Resources/CoABlocks.unity3d?PlaneSymbol6" />
+	<property name="CustomIcon" value="" />
+	<property name="CanPickup" value="false"/>
+	<drop event="Harvest" name="resourceScrapIron" count="5" tag="oreWoodHarvest"/>
+	<drop event="Destroy" name="resourceScrapIron" count="2,4"/>
+</block>
+
+<block name="EgyptPlaneSymbol7">
+	<property name="Mesh" value="opaque"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Group" value="Building,Basics"/>
+	<property name="Material" value="Mbridge_metal"/>
+	<property name="MaxDamage" value="100"/>
+	<property name="MultiBlockDim" value="1,1,1"/>
+	<property name="SellableToTrader" value="false"/>
+	<property name="Model" value="#@modfolder:Resources/CoABlocks.unity3d?PlaneSymbol7" />
+	<property name="CustomIcon" value="" />
+	<property name="CanPickup" value="false"/>
+	<drop event="Harvest" name="resourceScrapIron" count="5" tag="oreWoodHarvest"/>
+	<drop event="Destroy" name="resourceScrapIron" count="2,4"/>
+</block>
+
+<block name="EgyptPlaneSymbol8">
+	<property name="Mesh" value="opaque"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Group" value="Building,Basics"/>
+	<property name="Material" value="Mbridge_metal"/>
+	<property name="MaxDamage" value="100"/>
+	<property name="MultiBlockDim" value="1,1,1"/>
+	<property name="SellableToTrader" value="false"/>
+	<property name="Model" value="#@modfolder:Resources/CoABlocks.unity3d?PlaneSymbol8" />
+	<property name="CustomIcon" value="" />
+	<property name="CanPickup" value="false"/>
+	<drop event="Harvest" name="resourceScrapIron" count="5" tag="oreWoodHarvest"/>
+	<drop event="Destroy" name="resourceScrapIron" count="2,4"/>
+</block>
+
+<block name="EgyptPlaneSymbol9">
+	<property name="Mesh" value="opaque"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Group" value="Building,Basics"/>
+	<property name="Material" value="Mbridge_metal"/>
+	<property name="MaxDamage" value="100"/>
+	<property name="MultiBlockDim" value="1,1,1"/>
+	<property name="SellableToTrader" value="false"/>
+	<property name="Model" value="#@modfolder:Resources/CoABlocks.unity3d?PlaneSymbol9" />
+	<property name="CustomIcon" value="" />
+	<property name="CanPickup" value="false"/>
+	<drop event="Harvest" name="resourceScrapIron" count="5" tag="oreWoodHarvest"/>
+	<drop event="Destroy" name="resourceScrapIron" count="2,4"/>
+</block>
+
+<block name="EgyptPlaneSymbol10">
+	<property name="Mesh" value="opaque"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Group" value="Building,Basics"/>
+	<property name="Material" value="Mbridge_metal"/>
+	<property name="MaxDamage" value="100"/>
+	<property name="MultiBlockDim" value="1,1,1"/>
+	<property name="SellableToTrader" value="false"/>
+	<property name="Model" value="#@modfolder:Resources/CoABlocks.unity3d?PlaneSymbol10" />
+	<property name="CustomIcon" value="" />
+	<property name="CanPickup" value="false"/>
+	<drop event="Harvest" name="resourceScrapIron" count="5" tag="oreWoodHarvest"/>
+</block>
+
+<block name="EgyptPlaneSymbol11">
+	<property name="Mesh" value="opaque"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Group" value="Building,Basics"/>
+	<property name="Material" value="Mbridge_metal"/>
+	<property name="MaxDamage" value="100"/>
+	<property name="MultiBlockDim" value="1,1,1"/>
+	<property name="SellableToTrader" value="false"/>
+	<property name="Model" value="#@modfolder:Resources/CoABlocks.unity3d?PlaneSymbol11" />
+	<property name="CustomIcon" value="" />
+	<property name="CanPickup" value="false"/>
+	<drop event="Harvest" name="resourceScrapIron" count="5" tag="oreWoodHarvest"/>
+	<drop event="Destroy" name="resourceScrapIron" count="2,4"/>
+</block>
+
+<block name="EgyptPlaneSymbol12">
+	<property name="Mesh" value="opaque"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Group" value="Building,Basics"/>
+	<property name="Material" value="Mbridge_metal"/>
+	<property name="MaxDamage" value="100"/>
+	<property name="MultiBlockDim" value="1,1,1"/>
+	<property name="SellableToTrader" value="false"/>
+	<property name="Model" value="#@modfolder:Resources/CoABlocks.unity3d?PlaneSymbol12" />
+	<property name="CustomIcon" value="" />
+	<property name="CanPickup" value="false"/>
+	<drop event="Harvest" name="resourceScrapIron" count="5" tag="oreWoodHarvest"/>
+	<drop event="Destroy" name="resourceScrapIron" count="2,4"/>
+</block>
+
+<block name="EgyptPlaneSymbol13">
+	<property name="Mesh" value="opaque"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Group" value="Building,Basics"/>
+	<property name="Material" value="Mbridge_metal"/>
+	<property name="MaxDamage" value="100"/>
+	<property name="MultiBlockDim" value="1,1,1"/>
+	<property name="SellableToTrader" value="false"/>
+	<property name="Model" value="#@modfolder:Resources/CoABlocks.unity3d?PlaneSymbol13" />
+	<property name="CustomIcon" value="" />
+	<property name="CanPickup" value="false"/>
+	<drop event="Harvest" name="resourceScrapIron" count="5" tag="oreWoodHarvest"/>
+	<drop event="Destroy" name="resourceScrapIron" count="2,4"/>
+</block>
+
+<block name="EgyptPlaneSymbol14">
+	<property name="Mesh" value="opaque"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Group" value="Building,Basics"/>
+	<property name="Material" value="Mbridge_metal"/>
+	<property name="MaxDamage" value="100"/>
+	<property name="MultiBlockDim" value="1,1,1"/>
+	<property name="SellableToTrader" value="false"/>
+	<property name="Model" value="#@modfolder:Resources/CoABlocks.unity3d?PlaneSymbol14" />
+	<property name="CustomIcon" value="" />
+	<property name="CanPickup" value="false"/>
+	<drop event="Harvest" name="resourceScrapIron" count="5" tag="oreWoodHarvest"/>
+	<drop event="Destroy" name="resourceScrapIron" count="2,4"/>
+</block>
+
+
+
+
+
+
+<!--XXXXXX 
+
+BLOCKS - PLANE - Hieroglyph
+
+XXXXXX  -->
+
+<block name="EgyptWallSymbol1-1">
+	<property name="Mesh" value="opaque"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Group" value="Building,Basics"/>
+	<property name="Material" value="Mbridge_metal"/>
+	<property name="MaxDamage" value="100"/>
+	<property name="MultiBlockDim" value="1,1,1"/>
+	<property name="SellableToTrader" value="false"/>
+	<property name="Model" value="#@modfolder:Resources/CoABlocks.unity3d?WallSymbol1-1" />
+	<property name="CustomIcon" value="WallSymbol1-1" />
+	<property name="CanPickup" value="false"/>
+	<drop event="Harvest" name="resourceScrapIron" count="5" tag="oreWoodHarvest"/>
+	<drop event="Destroy" name="resourceScrapIron" count="2,4"/>
+</block>
+
+
+
+<block name="EgyptWallSymbol1-2">
+	<property name="Mesh" value="opaque"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Group" value="Building,Basics"/>
+	<property name="Material" value="Mbridge_metal"/>
+	<property name="MaxDamage" value="100"/>
+	<property name="MultiBlockDim" value="1,1,1"/>
+	<property name="SellableToTrader" value="false"/>
+	<property name="Model" value="#@modfolder:Resources/CoABlocks.unity3d?WallSymbol1-2" />
+	<property name="CustomIcon" value="WallSymbol1-2" />
+	<property name="CanPickup" value="false"/>
+	<drop event="Harvest" name="resourceScrapIron" count="5" tag="oreWoodHarvest"/>
+	<drop event="Destroy" name="resourceScrapIron" count="2,4"/>
+</block>
+
+
+
+
+<block name="EgyptWallSymbol1-3">
+	<property name="Mesh" value="opaque"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Group" value="Building,Basics"/>
+	<property name="Material" value="Mbridge_metal"/>
+	<property name="MaxDamage" value="100"/>
+	<property name="MultiBlockDim" value="1,1,1"/>
+	<property name="SellableToTrader" value="false"/>
+	<property name="Model" value="#@modfolder:Resources/CoABlocks.unity3d?WallSymbol1-3" />
+	<property name="CustomIcon" value="WallSymbol1-3" />
+	<property name="CanPickup" value="false"/>
+	<drop event="Harvest" name="resourceScrapIron" count="5" tag="oreWoodHarvest"/>
+	<drop event="Destroy" name="resourceScrapIron" count="2,4"/>
+</block>
+
+
+
+<block name="EgyptWallSymbol1-4">
+	<property name="Mesh" value="opaque"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Group" value="Building,Basics"/>
+	<property name="Material" value="Mbridge_metal"/>
+	<property name="MaxDamage" value="100"/>
+	<property name="MultiBlockDim" value="1,1,1"/>
+	<property name="SellableToTrader" value="false"/>
+	<property name="Model" value="#@modfolder:Resources/CoABlocks.unity3d?WallSymbol1-4" />
+	<property name="CustomIcon" value="WallSymbol1-4" />
+	<property name="CanPickup" value="false"/>
+	<drop event="Harvest" name="resourceScrapIron" count="5" tag="oreWoodHarvest"/>
+	<drop event="Destroy" name="resourceScrapIron" count="2,4"/>
+</block>
+
+
+
+<block name="EgyptWallSymbol1-5">
+	<property name="Mesh" value="opaque"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Group" value="Building,Basics"/>
+	<property name="Material" value="Mbridge_metal"/>
+	<property name="MaxDamage" value="100"/>
+	<property name="MultiBlockDim" value="1,1,1"/>
+	<property name="SellableToTrader" value="false"/>
+	<property name="Model" value="#@modfolder:Resources/CoABlocks.unity3d?WallSymbol1-5" />
+	<property name="CustomIcon" value="WallSymbol1-5" />
+	<property name="CanPickup" value="false"/>
+	<drop event="Harvest" name="resourceScrapIron" count="5" tag="oreWoodHarvest"/>
+	<drop event="Destroy" name="resourceScrapIron" count="2,4"/>
+</block>
+
+
+
+<block name="EgyptWallSymbol1-6">
+	<property name="Mesh" value="opaque"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Group" value="Building,Basics"/>
+	<property name="Material" value="Mbridge_metal"/>
+	<property name="MaxDamage" value="100"/>
+	<property name="MultiBlockDim" value="1,1,1"/>
+	<property name="SellableToTrader" value="false"/>
+	<property name="Model" value="#@modfolder:Resources/CoABlocks.unity3d?WallSymbol1-6" />
+	<property name="CustomIcon" value="WallSymbol1-6" />
+	<property name="CanPickup" value="false"/>
+	<drop event="Harvest" name="resourceScrapIron" count="5" tag="oreWoodHarvest"/>
+	<drop event="Destroy" name="resourceScrapIron" count="2,4"/>
+</block>
+
+
+
+<block name="EgyptWallSymbol1-7">
+	<property name="Mesh" value="opaque"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Group" value="Building,Basics"/>
+	<property name="Material" value="Mbridge_metal"/>
+	<property name="MaxDamage" value="100"/>
+	<property name="MultiBlockDim" value="1,1,1"/>
+	<property name="SellableToTrader" value="false"/>
+	<property name="Model" value="#@modfolder:Resources/CoABlocks.unity3d?WallSymbol1-7" />
+	<property name="CustomIcon" value="WallSymbol1-7" />
+	<property name="CanPickup" value="false"/>
+	<drop event="Harvest" name="resourceScrapIron" count="5" tag="oreWoodHarvest"/>
+	<drop event="Destroy" name="resourceScrapIron" count="2,4"/>
+</block>
+
+
+
+<block name="EgyptWallSymbol1-8">
+	<property name="Mesh" value="opaque"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Group" value="Building,Basics"/>
+	<property name="Material" value="Mbridge_metal"/>
+	<property name="MaxDamage" value="100"/>
+	<property name="MultiBlockDim" value="1,1,1"/>
+	<property name="SellableToTrader" value="false"/>
+	<property name="Model" value="#@modfolder:Resources/CoABlocks.unity3d?WallSymbol1-8" />
+	<property name="CustomIcon" value="WallSymbol1-8" />
+	<property name="CanPickup" value="false"/>
+	<drop event="Harvest" name="resourceScrapIron" count="5" tag="oreWoodHarvest"/>
+	<drop event="Destroy" name="resourceScrapIron" count="2,4"/>
+</block>
+
+
+
+<block name="EgyptWallSymbol1-9">
+	<property name="Mesh" value="opaque"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Group" value="Building,Basics"/>
+	<property name="Material" value="Mbridge_metal"/>
+	<property name="MaxDamage" value="100"/>
+	<property name="MultiBlockDim" value="1,1,1"/>
+	<property name="SellableToTrader" value="false"/>
+	<property name="Model" value="#@modfolder:Resources/CoABlocks.unity3d?WallSymbol1-9" />
+	<property name="CustomIcon" value="WallSymbol1-9" />
+	<property name="CanPickup" value="false"/>
+	<drop event="Harvest" name="resourceScrapIron" count="5" tag="oreWoodHarvest"/>
+	<drop event="Destroy" name="resourceScrapIron" count="2,4"/>
+</block>
+
+
+
+<block name="EgyptWallSymbol1-10">
+	<property name="Mesh" value="opaque"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Group" value="Building,Basics"/>
+	<property name="Material" value="Mbridge_metal"/>
+	<property name="MaxDamage" value="100"/>
+	<property name="MultiBlockDim" value="1,1,1"/>
+	<property name="SellableToTrader" value="false"/>
+	<property name="Model" value="#@modfolder:Resources/CoABlocks.unity3d?WallSymbol1-10" />
+	<property name="CustomIcon" value="WallSymbol1-10" />
+	<property name="CanPickup" value="false"/>
+	<drop event="Harvest" name="resourceScrapIron" count="5" tag="oreWoodHarvest"/>
+	<drop event="Destroy" name="resourceScrapIron" count="2,4"/>
+</block>
+
+
+
+<block name="EgyptWallSymbol1-11">
+	<property name="Mesh" value="opaque"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Group" value="Building,Basics"/>
+	<property name="Material" value="Mbridge_metal"/>
+	<property name="MaxDamage" value="100"/>
+	<property name="MultiBlockDim" value="1,1,1"/>
+	<property name="SellableToTrader" value="false"/>
+	<property name="Model" value="#@modfolder:Resources/CoABlocks.unity3d?WallSymbol1-11" />
+	<property name="CustomIcon" value="WallSymbol1-11" />
+	<property name="CanPickup" value="false"/>
+	<drop event="Harvest" name="resourceScrapIron" count="5" tag="oreWoodHarvest"/>
+	<drop event="Destroy" name="resourceScrapIron" count="2,4"/>
+</block>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--XXXXXX 
+
+BLOCKS - Vase
+
+XXXXXX  -->
+
+
+<block name="EgyptVase2">
+	<property name="Class" value="Loot"/>
+	<property name="Mesh" value="opaque"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Group" value="Building,Basics"/>
+	<property name="Material" value="Mbrick"/>
+	<property name="MaxDamage" value="300"/>
+	<property name="MultiBlockDim" value="1,1,1"/>
+	<property name="SellableToTrader" value="false"/>
+	<property name="Model" value="#@modfolder:Resources/CoABlocks.unity3d?Vase2-1" />
+	<property name="CustomIcon" value="Vase2" />
+	<property name="CanPickup" value="false"/>
+	<drop event="Harvest" name="resourceRockSmall" count="16" tag="oreWoodHarvest"/>
+	<drop event="Destroy" name="resourceRockSmall" count="2,4"/>
+	<property name="LootList" value="224"/>
+</block>
+
+
+
+<block name="EgyptVase2-2">
+	<property name="Class" value="Loot"/>
+	<property name="Mesh" value="opaque"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Group" value="Building,Basics"/>
+	<property name="Material" value="Mbrick"/>
+	<property name="MaxDamage" value="300"/>
+	<property name="MultiBlockDim" value="1,1,1"/>
+	<property name="SellableToTrader" value="false"/>
+	<property name="Model" value="#@modfolder:Resources/CoABlocks.unity3d?Vase2-2" />
+	<property name="CustomIcon" value="" />
+	<property name="CanPickup" value="false"/>
+	<drop event="Harvest" name="resourceRockSmall" count="16" tag="oreWoodHarvest"/>
+	<drop event="Destroy" name="resourceRockSmall" count="2,4"/>
+	<property name="LootList" value="224"/>
+</block>
+
+
+<block name="EgyptVase2-3">
+	<property name="Class" value="Loot"/>
+	<property name="Mesh" value="opaque"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Group" value="Building,Basics"/>
+	<property name="Material" value="Mbrick"/>
+	<property name="MaxDamage" value="300"/>
+	<property name="MultiBlockDim" value="1,1,1"/>
+	<property name="SellableToTrader" value="false"/>
+	<property name="Model" value="#@modfolder:Resources/CoABlocks.unity3d?Vase2-3" />
+	<property name="CustomIcon" value="" />
+	<property name="CanPickup" value="false"/>
+	<drop event="Harvest" name="resourceRockSmall" count="16" tag="oreWoodHarvest"/>
+	<drop event="Destroy" name="resourceRockSmall" count="2,4"/>
+	<property name="LootList" value="224"/>
+</block>
+
+<block name="EgyptVase2-4">
+	<property name="Class" value="Loot"/>
+	<property name="Mesh" value="opaque"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Group" value="Building,Basics"/>
+	<property name="Material" value="Mbrick"/>
+	<property name="MaxDamage" value="300"/>
+	<property name="MultiBlockDim" value="1,1,1"/>
+	<property name="SellableToTrader" value="false"/>
+	<property name="Model" value="#@modfolder:Resources/CoABlocks.unity3d?Vase2-4" />
+	<property name="CustomIcon" value="" />
+	<property name="CanPickup" value="false"/>
+	<drop event="Harvest" name="resourceRockSmall" count="16" tag="oreWoodHarvest"/>
+	<drop event="Destroy" name="resourceRockSmall" count="2,4"/>
+	<property name="LootList" value="224"/>
+</block>
+
+<block name="EgyptVase3">
+	<property name="Class" value="Loot"/>
+	<property name="Mesh" value="opaque"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Group" value="Building,Basics"/>
+	<property name="Material" value="Mbrick"/>
+	<property name="MaxDamage" value="300"/>
+	<property name="MultiBlockDim" value="1,1,1"/>
+	<property name="SellableToTrader" value="false"/>
+	<property name="Model" value="#@modfolder:Resources/CoABlocks.unity3d?Vase3" />
+	<property name="CustomIcon" value="Vase3" />
+	<property name="CanPickup" value="false"/>
+	<drop event="Harvest" name="resourceRockSmall" count="16" tag="oreWoodHarvest"/>
+	<drop event="Destroy" name="resourceRockSmall" count="2,4"/>
+	<property name="LootList" value="224"/>
+</block>
+
+
+<block name="EgyptVase4">
+	<property name="Class" value="Loot"/>
+	<property name="Mesh" value="opaque"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Group" value="Building,Basics"/>
+	<property name="Material" value="Mbrick"/>
+	<property name="MaxDamage" value="300"/>
+	<property name="MultiBlockDim" value="1,1,1"/>
+	<property name="SellableToTrader" value="false"/>
+	<property name="Model" value="#@modfolder:Resources/CoABlocks.unity3d?Vase4" />
+	<property name="CustomIcon" value="Vase4" />
+	<property name="CanPickup" value="false"/>
+	<drop event="Harvest" name="resourceRockSmall" count="16" tag="oreWoodHarvest"/>
+	<drop event="Destroy" name="resourceRockSmall" count="2,4"/>
+	<property name="LootList" value="224"/>
+</block>
+
+
+
+
+
+
+
+
+<!--XXXXXX 
+
+BLOCK - Pictures
+
+XXXXXX  -->
+
+<block name="EgyptPictureBlock1">
+	<property name="Mesh" value="opaque"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Group" value="Building,Basics"/>
+	<property name="Material" value="Mbrick"/>
+	<property name="MaxDamage" value="1000"/>
+	<property name="MultiBlockDim" value="1,1,1"/>
+	<property name="SellableToTrader" value="false"/>
+	<property name="Model" value="#@modfolder:Resources/CoABlocks.unity3d?PictureBlock1" />
+	<property name="CustomIcon" value="PictureBlock1" />
+	<property name="CanPickup" value="false"/>
+	<drop event="Harvest" name="resourceRockSmall" count="16" tag="oreWoodHarvest"/>
+	<drop event="Destroy" name="resourceRockSmall" count="2,4"/>
+</block>
+
+
+<block name="EgyptPictureBlock2">
+	<property name="Mesh" value="opaque"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Group" value="Building,Basics"/>
+	<property name="Material" value="Mbrick"/>
+	<property name="MaxDamage" value="1000"/>
+	<property name="MultiBlockDim" value="1,1,1"/>
+	<property name="SellableToTrader" value="false"/>
+	<property name="Model" value="#@modfolder:Resources/CoABlocks.unity3d?PictureBlock2" />
+	<property name="CustomIcon" value="PictureBlock2" />
+	<property name="CanPickup" value="false"/>
+	<drop event="Harvest" name="resourceRockSmall" count="16" tag="oreWoodHarvest"/>
+	<drop event="Destroy" name="resourceRockSmall" count="2,4"/>
+</block>
+
+<block name="EgyptPictureBlock3">
+	<property name="Mesh" value="opaque"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Group" value="Building,Basics"/>
+	<property name="Material" value="Mbrick"/>
+	<property name="MaxDamage" value="1000"/>
+	<property name="MultiBlockDim" value="1,1,1"/>
+	<property name="SellableToTrader" value="false"/>
+	<property name="Model" value="#@modfolder:Resources/CoABlocks.unity3d?PictureBlock3" />
+	<property name="CustomIcon" value="PictureBlock3" />
+	<property name="CanPickup" value="false"/>
+	<drop event="Harvest" name="resourceRockSmall" count="16" tag="oreWoodHarvest"/>
+	<drop event="Destroy" name="resourceRockSmall" count="2,4"/>
+</block>
+
+<block name="EgyptPictureBlock4">
+	<property name="Mesh" value="opaque"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Group" value="Building,Basics"/>
+	<property name="Material" value="Mbrick"/>
+	<property name="MaxDamage" value="1000"/>
+	<property name="MultiBlockDim" value="1,1,1"/>
+	<property name="SellableToTrader" value="false"/>
+	<property name="Model" value="#@modfolder:Resources/CoABlocks.unity3d?PictureBlock4" />
+	<property name="CustomIcon" value="PictureBlock4" />
+	<property name="CanPickup" value="false"/>
+	<drop event="Harvest" name="resourceRockSmall" count="16" tag="oreWoodHarvest"/>
+	<drop event="Destroy" name="resourceRockSmall" count="2,4"/>
+</block>
+
+
+
+
+
+
+
+
+<block name="EgyptPaintingH1">
+	<property name="Mesh" value="opaque"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Group" value="Building,Basics"/>
+	<property name="Material" value="Mwood"/>
+	<property name="MaxDamage" value="100"/>
+	<property name="MultiBlockDim" value="1,2,1"/>
+	<property name="SellableToTrader" value="false"/>
+	<property name="Model" value="#@modfolder:Resources/CoABlocks.unity3d?PaintingH1" />
+	<property name="CustomIcon" value="PaintingH1" />
+	<property name="CanPickup" value="false"/>
+	<drop event="Harvest" name="resourceWood" count="16" tag="oreWoodHarvest"/>
+	<drop event="Destroy" name="resourceWood" count="2,4"/>
+</block>
+
+
+<block name="EgyptPaintingH2">
+	<property name="Mesh" value="opaque"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Group" value="Building,Basics"/>
+	<property name="Material" value="Mwood"/>
+	<property name="MaxDamage" value="100"/>
+	<property name="MultiBlockDim" value="1,2,1"/>
+	<property name="SellableToTrader" value="false"/>
+	<property name="Model" value="#@modfolder:Resources/CoABlocks.unity3d?PaintingH2" />
+	<property name="CustomIcon" value="PaintingH2" />
+	<property name="CanPickup" value="false"/>
+	<drop event="Harvest" name="resourceWood" count="16" tag="oreWoodHarvest"/>
+	<drop event="Destroy" name="resourceWood" count="2,4"/>
+</block>
+
+
+
+<block name="EgyptPaintingH3">
+	<property name="Mesh" value="opaque"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Group" value="Building,Basics"/>
+	<property name="Material" value="Mwood"/>
+	<property name="MaxDamage" value="100"/>
+	<property name="MultiBlockDim" value="1,2,1"/>
+	<property name="SellableToTrader" value="false"/>
+	<property name="Model" value="#@modfolder:Resources/CoABlocks.unity3d?PaintingH3" />
+	<property name="CustomIcon" value="PaintingH3" />
+	<property name="CanPickup" value="false"/>
+	<drop event="Harvest" name="resourceWood" count="16" tag="oreWoodHarvest"/>
+	<drop event="Destroy" name="resourceWood" count="2,4"/>
+</block>
+
+
+
+<block name="EgyptPaintingH4">
+	<property name="Mesh" value="opaque"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Group" value="Building,Basics"/>
+	<property name="Material" value="Mwood"/>
+	<property name="MaxDamage" value="100"/>
+	<property name="MultiBlockDim" value="1,2,1"/>
+	<property name="SellableToTrader" value="false"/>
+	<property name="Model" value="#@modfolder:Resources/CoABlocks.unity3d?PaintingH4" />
+	<property name="CustomIcon" value="PaintingH4" />
+	<property name="CanPickup" value="false"/>
+	<drop event="Harvest" name="resourceWood" count="16" tag="oreWoodHarvest"/>
+	<drop event="Destroy" name="resourceWood" count="2,4"/>
+</block>
+
+
+
+<block name="EgyptPaintingH5">
+	<property name="Mesh" value="opaque"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Group" value="Building,Basics"/>
+	<property name="Material" value="Mwood"/>
+	<property name="MaxDamage" value="100"/>
+	<property name="MultiBlockDim" value="1,2,1"/>
+	<property name="SellableToTrader" value="false"/>
+	<property name="Model" value="#@modfolder:Resources/CoABlocks.unity3d?PaintingH5" />
+	<property name="CustomIcon" value="PaintingH5" />
+	<property name="CanPickup" value="false"/>
+	<drop event="Harvest" name="resourceWood" count="16" tag="oreWoodHarvest"/>
+	<drop event="Destroy" name="resourceWood" count="2,4"/>
+</block>
+
+
+
+<block name="EgyptPaintingH6">
+	<property name="Mesh" value="opaque"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Group" value="Building,Basics"/>
+	<property name="Material" value="Mwood"/>
+	<property name="MaxDamage" value="100"/>
+	<property name="MultiBlockDim" value="1,2,1"/>
+	<property name="SellableToTrader" value="false"/>
+	<property name="Model" value="#@modfolder:Resources/CoABlocks.unity3d?PaintingH6" />
+	<property name="CustomIcon" value="PaintingH6" />
+	<property name="CanPickup" value="false"/>
+	<drop event="Harvest" name="resourceWood" count="16" tag="oreWoodHarvest"/>
+	<drop event="Destroy" name="resourceWood" count="2,4"/>
+</block>
+
+
+
+
+
+
+
+
+<block name="EgyptPaintingV1">
+	<property name="Mesh" value="opaque"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Group" value="Building,Basics"/>
+	<property name="Material" value="Mwood"/>
+	<property name="MaxDamage" value="100"/>
+	<property name="MultiBlockDim" value="1,1,2"/>
+	<property name="SellableToTrader" value="false"/>
+	<property name="Model" value="#@modfolder:Resources/CoABlocks.unity3d?PaintingV1" />
+	<property name="CustomIcon" value="PaintingV1" />
+	<property name="CanPickup" value="false"/>
+	<drop event="Harvest" name="resourceWood" count="16" tag="oreWoodHarvest"/>
+	<drop event="Destroy" name="resourceWood" count="2,4"/>
+</block>
+
+
+<block name="EgyptPaintingV2">
+	<property name="Mesh" value="opaque"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Group" value="Building,Basics"/>
+	<property name="Material" value="Mwood"/>
+	<property name="MaxDamage" value="100"/>
+	<property name="MultiBlockDim" value="1,1,2"/>
+	<property name="SellableToTrader" value="false"/>
+	<property name="Model" value="#@modfolder:Resources/CoABlocks.unity3d?PaintingV2" />
+	<property name="CustomIcon" value="PaintingV2" />
+	<property name="CanPickup" value="false"/>
+	<drop event="Harvest" name="resourceWood" count="16" tag="oreWoodHarvest"/>
+	<drop event="Destroy" name="resourceWood" count="2,4"/>
+</block>
+
+<block name="EgyptPaintingV3">
+	<property name="Mesh" value="opaque"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Group" value="Building,Basics"/>
+	<property name="Material" value="Mwood"/>
+	<property name="MaxDamage" value="100"/>
+	<property name="MultiBlockDim" value="1,1,2"/>
+	<property name="SellableToTrader" value="false"/>
+	<property name="Model" value="#@modfolder:Resources/CoABlocks.unity3d?PaintingV3" />
+	<property name="CustomIcon" value="PaintingV3" />
+	<property name="CanPickup" value="false"/>
+	<drop event="Harvest" name="resourceWood" count="16" tag="oreWoodHarvest"/>
+	<drop event="Destroy" name="resourceWood" count="2,4"/>
+</block>
+
+<block name="EgyptPaintingV4">
+	<property name="Mesh" value="opaque"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Group" value="Building,Basics"/>
+	<property name="Material" value="Mwood"/>
+	<property name="MaxDamage" value="100"/>
+	<property name="MultiBlockDim" value="1,1,2"/>
+	<property name="SellableToTrader" value="false"/>
+	<property name="Model" value="#@modfolder:Resources/CoABlocks.unity3d?PaintingV4" />
+	<property name="CustomIcon" value="PaintingV4" />
+	<property name="CanPickup" value="false"/>
+	<drop event="Harvest" name="resourceWood" count="16" tag="oreWoodHarvest"/>
+	<drop event="Destroy" name="resourceWood" count="2,4"/>
+</block>
+
+<block name="EgyptPaintingV5">
+	<property name="Mesh" value="opaque"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Group" value="Building,Basics"/>
+	<property name="Material" value="Mwood"/>
+	<property name="MaxDamage" value="100"/>
+	<property name="MultiBlockDim" value="1,1,2"/>
+	<property name="SellableToTrader" value="false"/>
+	<property name="Model" value="#@modfolder:Resources/CoABlocks.unity3d?PaintingV5" />
+	<property name="CustomIcon" value="PaintingV5" />
+	<property name="CanPickup" value="false"/>
+	<drop event="Harvest" name="resourceWood" count="16" tag="oreWoodHarvest"/>
+	<drop event="Destroy" name="resourceWood" count="2,4"/>
+</block>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--XXXXXX 
+
+BLOCKS - Gold
+
+XXXXXX  -->
+
+
+<block name="EgyptGoldCoinBlock">
+	<property name="Mesh" value="opaque"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Group" value="Building,Basics"/>
+	<property name="Material" value="Mmetal"/>
+	<property name="MaxDamage" value="100"/>
+	<property name="MultiBlockDim" value="1,1,1"/>
+	<property name="SellableToTrader" value="false"/>
+	<property name="Model" value="#@modfolder:Resources/CoABlocks.unity3d?GoldCoin1" />
+	<property name="CustomIcon" value="GoldCoin" />
+	<property name="CanPickup" value="true" param1="EgyptGoldCoin" />
+	<drop event="Harvest" name="resourceRockSmall" count="16" tag="oreWoodHarvest"/>
+	<drop event="Destroy" name="resourceRockSmall" count="2,4"/>
+</block>
+
+<block name="EgyptGoldBarBlock">
+	<property name="Mesh" value="opaque"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Group" value="Building,Basics"/>
+	<property name="Material" value="Mmetal"/>
+	<property name="MaxDamage" value="100"/>
+	<property name="MultiBlockDim" value="1,1,1"/>
+	<property name="SellableToTrader" value="false"/>
+	<property name="Model" value="#@modfolder:Resources/CoABlocks.unity3d?GoldBar1" />
+	<property name="CustomIcon" value="GoldBar1" />
+	<property name="CanPickup" value="true" param1="EgyptGoldBar" />
+	<drop event="Harvest" name="resourceRockSmall" count="16" tag="oreWoodHarvest"/>
+	<drop event="Destroy" name="resourceRockSmall" count="2,4"/>
+</block>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--XXXXXX 
+
+BLOCKS - Chest/Treasure
+
+XXXXXX  -->
+
+
+<block name="EgyptChest1">
+	<property name="Class" value="Loot"/>
+	<property name="Mesh" value="opaque"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Group" value="Building,Basics"/>
+	<property name="Material" value="Mbrick"/>
+	<property name="MaxDamage" value="300"/>
+	<property name="MultiBlockDim" value="1,1,1"/>
+	<property name="SellableToTrader" value="false"/>
+	<property name="Model" value="#@modfolder:Resources/CoABlocks.unity3d?Chest1" />
+	<property name="CustomIcon" value="Chest1"/>
+	<property name="CanPickup" value="false"/>
+	<drop event="Harvest" name="resourceWood" count="16" tag="oreWoodHarvest"/>
+	<drop event="Destroy" name="resourceWood" count="2,4"/>
+	<property name="LootList" value="224"/>
+</block>
+
+
+
+<block name="EgyptChest2">
+	<property name="Class" value="Loot"/>
+	<property name="Mesh" value="opaque"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Group" value="Building,Basics"/>
+	<property name="Material" value="Mbrick"/>
+	<property name="MaxDamage" value="300"/>
+	<property name="MultiBlockDim" value="1,1,1"/>
+	<property name="SellableToTrader" value="false"/>
+	<property name="Model" value="#@modfolder:Resources/CoABlocks.unity3d?Chest2" />
+	<property name="CustomIcon" value="Chest2"/>
+	<property name="CanPickup" value="false"/>
+	<drop event="Harvest" name="resourceWood" count="16" tag="oreWoodHarvest"/>
+	<drop event="Destroy" name="resourceWood" count="2,4"/>
+	<property name="LootList" value="224"/>
+</block>
+
+
+<block name="EgyptChest3">
+	<property name="Class" value="Loot"/>
+	<property name="Mesh" value="opaque"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Group" value="Building,Basics"/>
+	<property name="Material" value="Mbrick"/>
+	<property name="MaxDamage" value="300"/>
+	<property name="MultiBlockDim" value="1,1,1"/>
+	<property name="SellableToTrader" value="false"/>
+	<property name="Model" value="#@modfolder:Resources/CoABlocks.unity3d?Chest3" />
+	<property name="CustomIcon" value="Chest3"/>
+	<property name="CanPickup" value="false"/>
+	<drop event="Harvest" name="resourceWood" count="16" tag="oreWoodHarvest"/>
+	<drop event="Destroy" name="resourceWood" count="2,4"/>
+	<property name="LootList" value="224"/>
+</block>
+
+
+<block name="EgyptChest4">
+	<property name="Class" value="Loot"/>
+	<property name="Mesh" value="opaque"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Group" value="Building,Basics"/>
+	<property name="Material" value="Mbrick"/>
+	<property name="MaxDamage" value="300"/>
+	<property name="MultiBlockDim" value="1,1,1"/>
+	<property name="SellableToTrader" value="false"/>
+	<property name="Model" value="#@modfolder:Resources/CoABlocks.unity3d?Chest4" />
+	<property name="CustomIcon" value="Chest4"/>
+	<property name="CanPickup" value="false"/>
+	<drop event="Harvest" name="resourceWood" count="16" tag="oreWoodHarvest"/>
+	<drop event="Destroy" name="resourceWood" count="2,4"/>
+	<property name="LootList" value="224"/>
+</block>
+
+
+<block name="EgyptChest5">
+	<property name="Class" value="Loot"/>
+	<property name="Mesh" value="opaque"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Group" value="Building,Basics"/>
+	<property name="Material" value="Mbrick"/>
+	<property name="MaxDamage" value="300"/>
+	<property name="MultiBlockDim" value="1,1,1"/>
+	<property name="SellableToTrader" value="false"/>
+	<property name="Model" value="#@modfolder:Resources/CoABlocks.unity3d?Chest5" />
+	<property name="CustomIcon" value="Chest5"/>
+	<property name="CanPickup" value="false"/>
+	<drop event="Harvest" name="resourceWood" count="16" tag="oreWoodHarvest"/>
+	<drop event="Destroy" name="resourceWood" count="2,4"/>
+	<property name="LootList" value="224"/>
+</block>
+
+
+<block name="EgyptChest6">
+	<property name="Class" value="Loot"/>
+	<property name="Mesh" value="opaque"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Group" value="Building,Basics"/>
+	<property name="Material" value="Mbrick"/>
+	<property name="MaxDamage" value="300"/>
+	<property name="MultiBlockDim" value="1,1,1"/>
+	<property name="SellableToTrader" value="false"/>
+	<property name="Model" value="#@modfolder:Resources/CoABlocks.unity3d?Chest6" />
+	<property name="CustomIcon" value="Chest6"/>
+	<property name="CanPickup" value="false"/>
+	<drop event="Harvest" name="resourceWood" count="16" tag="oreWoodHarvest"/>
+	<drop event="Destroy" name="resourceWood" count="2,4"/>
+	<property name="LootList" value="224"/>
+</block>
+
+
+<block name="EgyptChest7">
+	<property name="Class" value="Loot"/>
+	<property name="Mesh" value="opaque"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Group" value="Building,Basics"/>
+	<property name="Material" value="Mbrick"/>
+	<property name="MaxDamage" value="300"/>
+	<property name="MultiBlockDim" value="1,1,1"/>
+	<property name="SellableToTrader" value="false"/>
+	<property name="Model" value="#@modfolder:Resources/CoABlocks.unity3d?Chest7" />
+	<property name="CustomIcon" value="Chest7"/>
+	<property name="CanPickup" value="false"/>
+	<drop event="Harvest" name="resourceWood" count="16" tag="oreWoodHarvest"/>
+	<drop event="Destroy" name="resourceWood" count="2,4"/>
+	<property name="LootList" value="224"/>
+</block>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--XXXXXX 
+
+BLOCKS - Coffins
+
+XXXXXX  -->
+
+
+
+<block name="EgyptCoffin1-1">
+	<property name="Mesh" value="opaque"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Group" value="Building,Basics"/>
+	<property name="Material" value="Mconcrete"/>
+	<property name="MaxDamage" value="300"/>
+	<property name="MultiBlockDim" value="1,1,1"/>
+	<property name="SellableToTrader" value="false"/>
+	<property name="Model" value="#@modfolder:Resources/CoABlocks.unity3d?Coffin1-1" />
+	<property name="DescriptionKey" value="EgyptCoffin1"/>
+	<property name="CustomIcon" value="Coffin1-1" />
+	<property name="CanPickup" value="false"/>
+	<drop event="Harvest" name="resourceWood" count="16" tag="oreWoodHarvest"/>
+	<drop event="Destroy" name="resourceWood" count="2,4"/>
+</block>
+
+
+
+
+
+<block name="EgyptCoffin1-2">
+	<property name="Mesh" value="opaque"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Group" value="Building,Basics"/>
+	<property name="Material" value="Mconcrete"/>
+	<property name="MaxDamage" value="300"/>
+	<property name="MultiBlockDim" value="1,1,1"/>
+	<property name="SellableToTrader" value="false"/>
+	<property name="Model" value="#@modfolder:Resources/CoABlocks.unity3d?Coffin1-2" />
+	<property name="DescriptionKey" value="EgyptCoffin1"/>
+	<property name="CustomIcon" value="Coffin1-2" />
+	<property name="CanPickup" value="false"/>
+	<drop event="Harvest" name="resourceWood" count="16" tag="oreWoodHarvest"/>
+	<drop event="Destroy" name="resourceWood" count="2,4"/>
+</block>
+
+<block name="EgyptCoffin1-3">
+	<property name="Mesh" value="opaque"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Group" value="Building,Basics"/>
+	<property name="Material" value="Mconcrete"/>
+	<property name="MaxDamage" value="300"/>
+	<property name="MultiBlockDim" value="1,1,1"/>
+	<property name="SellableToTrader" value="false"/>
+	<property name="Model" value="#@modfolder:Resources/CoABlocks.unity3d?Coffin1-3" />
+	<property name="DescriptionKey" value="EgyptCoffin1"/>
+	<property name="CustomIcon" value="Coffin1-3" />
+	<property name="CanPickup" value="false"/>
+	<drop event="Harvest" name="resourceWood" count="16" tag="oreWoodHarvest"/>
+	<drop event="Destroy" name="resourceWood" count="2,4"/>
+</block>
+
+
+<block name="EgyptCoffin2-1">
+	<property name="Mesh" value="opaque"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Group" value="Building,Basics"/>
+	<property name="Material" value="Mconcrete"/>
+	<property name="MaxDamage" value="300"/>
+	<property name="MultiBlockDim" value="1,1,1"/>
+	<property name="SellableToTrader" value="false"/>
+	<property name="Model" value="#@modfolder:Resources/CoABlocks.unity3d?Coffin2-1" />
+	<property name="DescriptionKey" value=""/>
+	<property name="CustomIcon" value="Coffin2-1" />
+	<property name="CanPickup" value="false"/>
+	<drop event="Harvest" name="resourceWood" count="16" tag="oreWoodHarvest"/>
+	<drop event="Destroy" name="resourceWood" count="2,4"/>
+</block>
+
+<block name="EgyptCoffin2-2">
+	<property name="Mesh" value="opaque"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Group" value="Building,Basics"/>
+	<property name="Material" value="Mconcrete"/>
+	<property name="MaxDamage" value="300"/>
+	<property name="MultiBlockDim" value="1,1,1"/>
+	<property name="SellableToTrader" value="false"/>
+	<property name="Model" value="#@modfolder:Resources/CoABlocks.unity3d?Coffin2-2" />
+	<property name="DescriptionKey" value=""/>
+	<property name="CustomIcon" value="Coffin2-2" />
+	<property name="CanPickup" value="false"/>
+	<drop event="Harvest" name="resourceWood" count="16" tag="oreWoodHarvest"/>
+	<drop event="Destroy" name="resourceWood" count="2,4"/>
+</block>
+<block name="EgyptCoffin2-3">
+	<property name="Mesh" value="opaque"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Group" value="Building,Basics"/>
+	<property name="Material" value="Mconcrete"/>
+	<property name="MaxDamage" value="300"/>
+	<property name="MultiBlockDim" value="1,1,1"/>
+	<property name="SellableToTrader" value="false"/>
+	<property name="Model" value="#@modfolder:Resources/CoABlocks.unity3d?Coffin2-3" />
+	<property name="DescriptionKey" value=""/>
+	<property name="CustomIcon" value="Coffin2-3" />
+	<property name="CanPickup" value="false"/>
+	<drop event="Harvest" name="resourceWood" count="16" tag="oreWoodHarvest"/>
+	<drop event="Destroy" name="resourceWood" count="2,4"/>
+</block>
+
+
+
+
+
+<block name="EgyptCoffin2Open">
+	<property name="Mesh" value="opaque"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Group" value="Building,Basics"/>
+	<property name="Material" value="Mconcrete"/>
+	<property name="MaxDamage" value="300"/>
+	<property name="MultiBlockDim" value="1,1,1"/>
+	<property name="SellableToTrader" value="false"/>
+	<property name="Model" value="#@modfolder:Resources/CoABlocks.unity3d?Coffin2Open" />
+	<property name="DescriptionKey" value=""/>
+	<property name="CustomIcon" value="Coffin2Open" />
+	<property name="CanPickup" value="false"/>
+	<drop event="Harvest" name="resourceWood" count="16" tag="oreWoodHarvest"/>
+	<drop event="Destroy" name="resourceWood" count="2,4"/>
+</block>
+
+
+
+
+<block name="EgyptCoffin3-1">
+	<property name="Mesh" value="opaque"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Group" value="Building,Basics"/>
+	<property name="Material" value="Mconcrete"/>
+	<property name="MaxDamage" value="300"/>
+	<property name="MultiBlockDim" value="1,1,1"/>
+	<property name="SellableToTrader" value="false"/>
+	<property name="Model" value="#@modfolder:Resources/CoABlocks.unity3d?Coffin3-1" />
+	<property name="DescriptionKey" value=""/>
+	<property name="CustomIcon" value="Coffin3-1" />
+	<property name="CanPickup" value="false"/>
+	<drop event="Harvest" name="resourceWood" count="16" tag="oreWoodHarvest"/>
+	<drop event="Destroy" name="resourceWood" count="2,4"/>
+</block>
+
+
+
+
+<block name="EgyptCoffin3-2">
+	<property name="Mesh" value="opaque"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Group" value="Building,Basics"/>
+	<property name="Material" value="Mconcrete"/>
+	<property name="MaxDamage" value="300"/>
+	<property name="MultiBlockDim" value="1,1,1"/>
+	<property name="SellableToTrader" value="false"/>
+	<property name="Model" value="#@modfolder:Resources/CoABlocks.unity3d?Coffin3-2" />
+	<property name="DescriptionKey" value=""/>
+	<property name="CustomIcon" value="Coffin3-2" />
+	<property name="CanPickup" value="false"/>
+	<drop event="Harvest" name="resourceWood" count="16" tag="oreWoodHarvest"/>
+	<drop event="Destroy" name="resourceWood" count="2,4"/>
+</block>
+
+
+<block name="EgyptCoffin3-3">
+	<property name="Mesh" value="opaque"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Group" value="Building,Basics"/>
+	<property name="Material" value="Mconcrete"/>
+	<property name="MaxDamage" value="300"/>
+	<property name="MultiBlockDim" value="1,1,1"/>
+	<property name="SellableToTrader" value="false"/>
+	<property name="Model" value="#@modfolder:Resources/CoABlocks.unity3d?Coffin3-3" />
+	<property name="DescriptionKey" value=""/>
+	<property name="CustomIcon" value="Coffin3-3" />
+	<property name="CanPickup" value="false"/>
+	<drop event="Harvest" name="resourceWood" count="16" tag="oreWoodHarvest"/>
+	<drop event="Destroy" name="resourceWood" count="2,4"/>
+</block>
+
+
+
+<block name="EgyptCoffin3Open">
+	<property name="Mesh" value="opaque"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Group" value="Building,Basics"/>
+	<property name="Material" value="Mconcrete"/>
+	<property name="MaxDamage" value="300"/>
+	<property name="MultiBlockDim" value="1,1,1"/>
+	<property name="SellableToTrader" value="false"/>
+	<property name="Model" value="#@modfolder:Resources/CoABlocks.unity3d?Coffin3Open" />
+	<property name="DescriptionKey" value=""/>
+	<property name="CustomIcon" value="Coffin3Open" />
+	<property name="CanPickup" value="false"/>
+	<drop event="Harvest" name="resourceWood" count="16" tag="oreWoodHarvest"/>
+	<drop event="Destroy" name="resourceWood" count="2,4"/>
+</block>
+
+
+
+
+
+<!--XXXXXX 
+
+BLOCKS - Coffin Loot
+
+XXXXXX  -->
+
+
+
+
+<block name="EgyptCoffin1-1Loot">
+	<property name="Class" value="Loot"/>
+	<property name="Mesh" value="opaque"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Group" value="Building,Basics"/>
+	<property name="Material" value="Mconcrete"/>
+	<property name="MaxDamage" value="300"/>
+	<property name="MultiBlockDim" value="1,1,1"/>
+	<property name="SellableToTrader" value="false"/>
+	<property name="Model" value="#@modfolder:Resources/CoABlocks.unity3d?Coffin1-1" />
+	<property name="DescriptionKey" value=""/>
+	<property name="CustomIcon" value="Coffin1-1" />
+	<property name="CanPickup" value="false"/>
+	<drop event="Harvest" name="resourceWood" count="16" tag="oreWoodHarvest"/>
+	<drop event="Destroy" name="resourceWood" count="2,4"/>
+	<property name="LootList" value="224"/>
+</block>
+
+
+
+
+<block name="EgyptCoffin1-1">
+	<property name="Class" value="Loot"/>
+	<property name="Mesh" value="opaque"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Group" value="Building,Basics"/>
+	<property name="Material" value="Mconcrete"/>
+	<property name="MaxDamage" value="300"/>
+	<property name="MultiBlockDim" value="1,1,1"/>
+	<property name="SellableToTrader" value="false"/>
+	<property name="Model" value="#@modfolder:Resources/CoABlocks.unity3d?Coffin1-1" />
+	<property name="DescriptionKey" value="EgyptCoffin1"/>
+	<property name="CustomIcon" value="Coffin1-1" />
+	<property name="CanPickup" value="false"/>
+	<drop event="Harvest" name="resourceWood" count="16" tag="oreWoodHarvest"/>
+	<drop event="Destroy" name="resourceWood" count="2,4"/>
+	<property name="LootList" value="224"/>
+</block>
+
+
+
+
+
+<block name="EgyptCoffin1-2">
+	<property name="Class" value="Loot"/>
+	<property name="Mesh" value="opaque"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Group" value="Building,Basics"/>
+	<property name="Material" value="Mconcrete"/>
+	<property name="MaxDamage" value="300"/>
+	<property name="MultiBlockDim" value="1,1,1"/>
+	<property name="SellableToTrader" value="false"/>
+	<property name="Model" value="#@modfolder:Resources/CoABlocks.unity3d?Coffin1-2" />
+	<property name="DescriptionKey" value="EgyptCoffin1"/>
+	<property name="CustomIcon" value="Coffin1-2" />
+	<property name="CanPickup" value="false"/>
+	<drop event="Harvest" name="resourceWood" count="16" tag="oreWoodHarvest"/>
+	<drop event="Destroy" name="resourceWood" count="2,4"/>
+	<property name="LootList" value="224"/>
+</block>
+
+<block name="EgyptCoffin1-3">
+	<property name="Class" value="Loot"/>
+	<property name="Mesh" value="opaque"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Group" value="Building,Basics"/>
+	<property name="Material" value="Mconcrete"/>
+	<property name="MaxDamage" value="300"/>
+	<property name="MultiBlockDim" value="1,1,1"/>
+	<property name="SellableToTrader" value="false"/>
+	<property name="Model" value="#@modfolder:Resources/CoABlocks.unity3d?Coffin1-3" />
+	<property name="DescriptionKey" value="EgyptCoffin1"/>
+	<property name="CustomIcon" value="Coffin1-3" />
+	<property name="CanPickup" value="false"/>
+	<drop event="Harvest" name="resourceWood" count="16" tag="oreWoodHarvest"/>
+	<drop event="Destroy" name="resourceWood" count="2,4"/>
+	<property name="LootList" value="224"/>
+</block>
+
+
+<block name="EgyptCoffin2-1">
+	<property name="Class" value="Loot"/>
+	<property name="Mesh" value="opaque"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Group" value="Building,Basics"/>
+	<property name="Material" value="Mconcrete"/>
+	<property name="MaxDamage" value="300"/>
+	<property name="MultiBlockDim" value="1,1,1"/>
+	<property name="SellableToTrader" value="false"/>
+	<property name="Model" value="#@modfolder:Resources/CoABlocks.unity3d?Coffin2-1" />
+	<property name="DescriptionKey" value=""/>
+	<property name="CustomIcon" value="Coffin2-1" />
+	<property name="CanPickup" value="false"/>
+	<drop event="Harvest" name="resourceWood" count="16" tag="oreWoodHarvest"/>
+	<drop event="Destroy" name="resourceWood" count="2,4"/>
+	<property name="LootList" value="224"/>
+</block>
+
+<block name="EgyptCoffin2-2">
+	<property name="Class" value="Loot"/>
+	<property name="Mesh" value="opaque"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Group" value="Building,Basics"/>
+	<property name="Material" value="Mconcrete"/>
+	<property name="MaxDamage" value="300"/>
+	<property name="MultiBlockDim" value="1,1,1"/>
+	<property name="SellableToTrader" value="false"/>
+	<property name="Model" value="#@modfolder:Resources/CoABlocks.unity3d?Coffin2-2" />
+	<property name="DescriptionKey" value=""/>
+	<property name="CustomIcon" value="Coffin2-2" />
+	<property name="CanPickup" value="false"/>
+	<drop event="Harvest" name="resourceWood" count="16" tag="oreWoodHarvest"/>
+	<drop event="Destroy" name="resourceWood" count="2,4"/>
+	<property name="LootList" value="224"/>
+</block>
+<block name="EgyptCoffin2-3">
+	<property name="Class" value="Loot"/>
+	<property name="Mesh" value="opaque"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Group" value="Building,Basics"/>
+	<property name="Material" value="Mconcrete"/>
+	<property name="MaxDamage" value="300"/>
+	<property name="MultiBlockDim" value="1,1,1"/>
+	<property name="SellableToTrader" value="false"/>
+	<property name="Model" value="#@modfolder:Resources/CoABlocks.unity3d?Coffin2-3" />
+	<property name="DescriptionKey" value=""/>
+	<property name="CustomIcon" value="Coffin2-3" />
+	<property name="CanPickup" value="false"/>
+	<drop event="Harvest" name="resourceWood" count="16" tag="oreWoodHarvest"/>
+	<drop event="Destroy" name="resourceWood" count="2,4"/>
+	<property name="LootList" value="224"/>
+</block>
+
+
+
+
+<block name="EgyptCoffin3-1">
+	<property name="Class" value="Loot"/>
+	<property name="Mesh" value="opaque"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Group" value="Building,Basics"/>
+	<property name="Material" value="Mconcrete"/>
+	<property name="MaxDamage" value="300"/>
+	<property name="MultiBlockDim" value="1,1,1"/>
+	<property name="SellableToTrader" value="false"/>
+	<property name="Model" value="#@modfolder:Resources/CoABlocks.unity3d?Coffin3-1" />
+	<property name="DescriptionKey" value=""/>
+	<property name="CustomIcon" value="Coffin3-1" />
+	<property name="CanPickup" value="false"/>
+	<drop event="Harvest" name="resourceWood" count="16" tag="oreWoodHarvest"/>
+	<drop event="Destroy" name="resourceWood" count="2,4"/>
+	<property name="LootList" value="224"/>
+</block>
+
+
+
+
+<block name="EgyptCoffin3-2">
+	<property name="Class" value="Loot"/>
+	<property name="Mesh" value="opaque"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Group" value="Building,Basics"/>
+	<property name="Material" value="Mconcrete"/>
+	<property name="MaxDamage" value="300"/>
+	<property name="MultiBlockDim" value="1,1,1"/>
+	<property name="SellableToTrader" value="false"/>
+	<property name="Model" value="#@modfolder:Resources/CoABlocks.unity3d?Coffin3-2" />
+	<property name="DescriptionKey" value=""/>
+	<property name="CustomIcon" value="Coffin3-2" />
+	<property name="CanPickup" value="false"/>
+	<drop event="Harvest" name="resourceWood" count="16" tag="oreWoodHarvest"/>
+	<drop event="Destroy" name="resourceWood" count="2,4"/>
+	<property name="LootList" value="224"/>
+</block>
+
+
+<block name="EgyptCoffin3-3">
+	<property name="Class" value="Loot"/>
+	<property name="Mesh" value="opaque"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Group" value="Building,Basics"/>
+	<property name="Material" value="Mconcrete"/>
+	<property name="MaxDamage" value="300"/>
+	<property name="MultiBlockDim" value="1,1,1"/>
+	<property name="SellableToTrader" value="false"/>
+	<property name="Model" value="#@modfolder:Resources/CoABlocks.unity3d?Coffin3-3" />
+	<property name="DescriptionKey" value=""/>
+	<property name="CustomIcon" value="Coffin3-3" />
+	<property name="CanPickup" value="false"/>
+	<drop event="Harvest" name="resourceWood" count="16" tag="oreWoodHarvest"/>
+	<drop event="Destroy" name="resourceWood" count="2,4"/>
+	<property name="LootList" value="224"/>
+</block>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--XXXXXX 
+
+BLOCKS - Door Animated
+
+XXXXXX  -->
+
+
+
+<block name="EgyptDoubleDoor1-1">
+	<property name="MultiBlockDim" value="2,2,1" />
+	<property name="CustomIcon" value="DoubleDoor"/>
+	<property name="Model" value="#@modfolder:Resources/CoABlocks.unity3d?DoubleDoor" />
+	<property name="Tag" value="Door"/>
+	<property name="Place" value="Door"/>
+	<property name="Material" value="Mconcrete"/>
+	<property name="PassThroughDamage" value="true"/>
+	<property name="LightOpacity" value="1"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="PlaceEverywhere" value="true"/>
+	<property name="OpenSound" value="open_door_wood"/>
+	<property name="CloseSound" value="close_door_wood"/>
+	<property name="EconomicValue" value="5"/>
+	<property name="EconomicBundleSize" value="10"/>
+	<property name="FilterTags" value="fdecor,fdoors"/>
+	<property name="SortOrder1" value="7060"/>
+	<property name="SortOrder2" value="0100"/> <!-- SortDoors -->
+	<property name="MaxDamage" value="250"/>
+	<property class="RepairItems"> <property name="EgyptGold" value="5"/> </property>
+	<property class="UpgradeBlock">
+		<property name="ToBlock" value="EgyptDoubleDoor1-2"/>
+		<property name="Item" value="EgyptAncientStone"/>
+		<property name="ItemCount" value="1"/>
+		<property name="UpgradeHitCount" value="1"/>
+	</property>
+	<property name="DisplayInfo" value="Description"/> <!-- also valid: "Name" -->
+	<property name="DescriptionKey" value="Find the AncientStone to Open the Door"/>
+	<drop event="Harvest" name="resourceRockSmall" count="16" tag="oreWoodHarvest"/>
+	<drop event="Destroy" name="resourceRockSmall" count="2,4"/>
+</block>
+
+<block name="EgyptDoubleDoor1-2">
+	<property name="MultiBlockDim" value="2,2,1" />
+	<property name="CustomIcon" value="DoubleDoor"/>
+	<property name="Model" value="#@modfolder:Resources/CoABlocks.unity3d?DoubleDoor" />
+	<property name="Class" value="DoorSecure"/>
+	<property name="Tag" value="Door"/>
+	<property name="Place" value="Door"/>
+	<property name="Material" value="Mconcrete"/>
+	<property name="PassThroughDamage" value="true"/>
+	<property name="LightOpacity" value="1"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="PlaceEverywhere" value="true"/>
+	<property name="OpenSound" value="open_door_wood"/>
+	<property name="CloseSound" value="close_door_wood"/>
+	<property name="EconomicValue" value="5"/>
+	<property name="EconomicBundleSize" value="10"/>
+	<property name="FilterTags" value="fdecor,fdoors"/>
+	<property name="SortOrder1" value="7060"/>
+	<property name="SortOrder2" value="0100"/> <!-- SortDoors -->
+	<property name="MaxDamage" value="500"/>
+	<drop event="Harvest" name="resourceRockSmall" count="16" tag="oreWoodHarvest"/>
+	<drop event="Destroy" name="resourceRockSmall" count="2,4"/>
+</block>
+<block name="EgyptDoubleDoor2-1">	
+	<property name="MultiBlockDim" value="2,2,1" />
+	<property name="CustomIcon" value="DoubleDoor2"/>
+	<property name="Model" value="#@modfolder:Resources/CoABlocks.unity3d?DoubleDoor2" />
+	<property name="Tag" value="Door"/>
+	<property name="Place" value="Door"/>
+	<property name="Material" value="Mconcrete"/>
+	<property name="PassThroughDamage" value="true"/>
+	<property name="LightOpacity" value="1"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="PlaceEverywhere" value="true"/>
+	<property name="OpenSound" value="open_door_wood"/>
+	<property name="CloseSound" value="close_door_wood"/>
+	<property name="EconomicValue" value="5"/>
+	<property name="EconomicBundleSize" value="10"/>
+	<property name="FilterTags" value="fdecor,fdoors"/>
+	<property name="SortOrder1" value="7060"/>
+	<property name="SortOrder2" value="0100"/> <!-- SortDoors -->
+	<property name="DowngradeBlock" value="EgyptDoubleDoor2-2"/>
+	<property name="MaxDamage" value="250"/>
+	<drop event="Harvest" name="resourceRockSmall" count="16" tag="oreWoodHarvest"/>
+	<drop event="Destroy" name="resourceRockSmall" count="2,4"/>
+</block>
+<block name="EgyptDoubleDoor2-2">	
+	<property name="MultiBlockDim" value="2,2,1" />
+	<property name="CustomIcon" value="DoubleDoor2"/>
+	<property name="Model" value="#@modfolder:Resources/CoABlocks.unity3d?DoubleDoor2" />
+	<property name="Class" value="DoorSecure"/>
+	<property name="Tag" value="Door"/>
+	<property name="Place" value="Door"/>
+	<property name="Material" value="Mconcrete"/>
+	<property name="PassThroughDamage" value="true"/>
+	<property name="LightOpacity" value="1"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="PlaceEverywhere" value="true"/>
+	<property name="OpenSound" value="open_door_wood"/>
+	<property name="CloseSound" value="close_door_wood"/>
+	<property name="EconomicValue" value="5"/>
+	<property name="EconomicBundleSize" value="10"/>
+	<property name="FilterTags" value="fdecor,fdoors"/>
+	<property name="SortOrder1" value="7060"/>
+	<property name="SortOrder2" value="0100"/> <!-- SortDoors -->
+	<property name="MaxDamage" value="500"/>
+	<drop event="Harvest" name="resourceRockSmall" count="16" tag="oreWoodHarvest"/>
+	<drop event="Destroy" name="resourceRockSmall" count="2,4"/>
+</block>
+
+
+<block name="EgyptDoubleDoor3-1">
+	<property name="MultiBlockDim" value="2,2,1" />
+	<property name="CustomIcon" value="DoubleDoor"/>
+	<property name="Model" value="#@modfolder:Resources/CoABlocks.unity3d?DoubleDoor3" />
+	<property name="Tag" value="Door"/>
+	<property name="Place" value="Door"/>
+	<property name="Material" value="Mconcrete"/>
+	<property name="PassThroughDamage" value="true"/>
+	<property name="LightOpacity" value="1"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="PlaceEverywhere" value="true"/>
+	<property name="OpenSound" value="open_door_wood"/>
+	<property name="CloseSound" value="close_door_wood"/>
+	<property name="EconomicValue" value="5"/>
+	<property name="EconomicBundleSize" value="10"/>
+	<property name="FilterTags" value="fdecor,fdoors"/>
+	<property name="SortOrder1" value="7060"/>
+	<property name="SortOrder2" value="0100"/> <!-- SortDoors -->
+	<property name="DowngradeBlock" value="EgyptDoubleDoor1-2"/>
+	<property name="MaxDamage" value="250"/>
+	<drop event="Harvest" name="resourceRockSmall" count="16" tag="oreWoodHarvest"/>
+	<drop event="Destroy" name="resourceRockSmall" count="2,4"/>
+</block>
+
+<block name="EgyptDoubleDoor3-2">
+	<property name="MultiBlockDim" value="2,2,1" />
+	<property name="CustomIcon" value="DoubleDoor"/>
+	<property name="Model" value="#@modfolder:Resources/CoABlocks.unity3d?DoubleDoor3" />
+	<property name="Class" value="DoorSecure"/>
+	<property name="Tag" value="Door"/>
+	<property name="Place" value="Door"/>
+	<property name="Material" value="Mconcrete"/>
+	<property name="PassThroughDamage" value="true"/>
+	<property name="LightOpacity" value="1"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="PlaceEverywhere" value="true"/>
+	<property name="OpenSound" value="open_door_wood"/>
+	<property name="CloseSound" value="close_door_wood"/>
+	<property name="EconomicValue" value="5"/>
+	<property name="EconomicBundleSize" value="10"/>
+	<property name="FilterTags" value="fdecor,fdoors"/>
+	<property name="SortOrder1" value="7060"/>
+	<property name="SortOrder2" value="0100"/> <!-- SortDoors -->
+	<property name="MaxDamage" value="500"/>
+	<drop event="Harvest" name="resourceRockSmall" count="16" tag="oreWoodHarvest"/>
+	<drop event="Destroy" name="resourceRockSmall" count="2,4"/>
+</block>
+<block name="EgyptDoubleDoor4-1">	
+	<property name="MultiBlockDim" value="2,2,1" />
+	<property name="CustomIcon" value="DoubleDoor2"/>
+	<property name="Model" value="#@modfolder:Resources/CoABlocks.unity3d?DoubleDoor4" />
+	<property name="Tag" value="Door"/>
+	<property name="Place" value="Door"/>
+	<property name="Material" value="Mconcrete"/>
+	<property name="PassThroughDamage" value="true"/>
+	<property name="LightOpacity" value="1"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="PlaceEverywhere" value="true"/>
+	<property name="OpenSound" value="open_door_wood"/>
+	<property name="CloseSound" value="close_door_wood"/>
+	<property name="EconomicValue" value="5"/>
+	<property name="EconomicBundleSize" value="10"/>
+	<property name="FilterTags" value="fdecor,fdoors"/>
+	<property name="SortOrder1" value="7060"/>
+	<property name="SortOrder2" value="0100"/> <!-- SortDoors -->
+	<property name="DowngradeBlock" value="EgyptDoubleDoor2-2"/>
+	<property name="MaxDamage" value="250"/>
+	<drop event="Harvest" name="resourceRockSmall" count="16" tag="oreWoodHarvest"/>
+	<drop event="Destroy" name="resourceRockSmall" count="2,4"/>
+</block>
+<block name="EgyptDoubleDoor4-2">	
+	<property name="MultiBlockDim" value="2,2,1" />
+	<property name="CustomIcon" value="DoubleDoor2"/>
+	<property name="Model" value="#@modfolder:Resources/CoABlocks.unity3d?DoubleDoor4" />
+	<property name="Class" value="DoorSecure"/>
+	<property name="Tag" value="Door"/>
+	<property name="Place" value="Door"/>
+	<property name="Material" value="Mconcrete"/>
+	<property name="PassThroughDamage" value="true"/>
+	<property name="LightOpacity" value="1"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="PlaceEverywhere" value="true"/>
+	<property name="OpenSound" value="open_door_wood"/>
+	<property name="CloseSound" value="close_door_wood"/>
+	<property name="EconomicValue" value="5"/>
+	<property name="EconomicBundleSize" value="10"/>
+	<property name="FilterTags" value="fdecor,fdoors"/>
+	<property name="SortOrder1" value="7060"/>
+	<property name="SortOrder2" value="0100"/> <!-- SortDoors -->
+	<property name="MaxDamage" value="500"/>
+	<drop event="Harvest" name="resourceRockSmall" count="16" tag="oreWoodHarvest"/>
+	<drop event="Destroy" name="resourceRockSmall" count="2,4"/>
+</block>
+
+
+
+<block name="EgyptWallSymbol2-1">	
+	<property name="MultiBlockDim" value="1,2,1" />
+	<property name="CustomIcon" value="WallDoor"/>
+	<property name="Model" value="#@modfolder:Resources/CoABlocks.unity3d?WallSymbol2-1" />
+	<property name="Tag" value="Door"/>
+	<property name="Place" value="Door"/>
+	<property name="Material" value="Mconcrete"/>
+	<property name="PassThroughDamage" value="true"/>
+	<property name="LightOpacity" value="1"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="PlaceEverywhere" value="true"/>
+	<property name="OpenSound" value="open_door_wood"/>
+	<property name="CloseSound" value="close_door_wood"/>
+	<property name="EconomicValue" value="5"/>
+	<property name="EconomicBundleSize" value="10"/>
+	<property name="FilterTags" value="fdecor,fdoors"/>
+	<property name="SortOrder1" value="7060"/>
+	<property name="SortOrder2" value="0100"/> <!-- SortDoors -->
+	<property name="DowngradeBlock" value="EgyptWallSymbol2-2"/>
+	<property name="MaxDamage" value="100"/>
+	<drop event="Harvest" name="resourceRockSmall" count="16" tag="oreWoodHarvest"/>
+	<drop event="Destroy" name="resourceRockSmall" count="2,4"/>
+</block>
+<block name="EgyptWallSymbol2-2">	
+	<property name="MultiBlockDim" value="1,2,1" />
+	<property name="CustomIcon" value="WallDoor"/>
+	<property name="Model" value="#@modfolder:Resources/CoABlocks.unity3d?WallSymbol2-1" />
+	<property name="Class" value="DoorSecure"/>
+	<property name="Tag" value="Door"/>
+	<property name="Place" value="Door"/>
+	<property name="Material" value="Mconcrete"/>
+	<property name="PassThroughDamage" value="true"/>
+	<property name="LightOpacity" value="1"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="PlaceEverywhere" value="true"/>
+	<property name="OpenSound" value="open_door_wood"/>
+	<property name="CloseSound" value="close_door_wood"/>
+	<property name="EconomicValue" value="5"/>
+	<property name="EconomicBundleSize" value="10"/>
+	<property name="FilterTags" value="fdecor,fdoors"/>
+	<property name="SortOrder1" value="7060"/>
+	<property name="SortOrder2" value="0100"/> <!-- SortDoors -->
+	<property name="MaxDamage" value="500"/>
+	<drop event="Harvest" name="resourceRockSmall" count="16" tag="oreWoodHarvest"/>
+	<drop event="Destroy" name="resourceRockSmall" count="2,4"/>
+</block>
+
+
+
+
+	</append>
+</configs>
+	
+	
+	
+	
+	
+	
+	
